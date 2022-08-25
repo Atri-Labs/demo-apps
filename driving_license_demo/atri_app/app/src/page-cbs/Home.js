@@ -68,22 +68,6 @@ export function useNavWrapperCb() {
 }), [])
 	return { onClick }
 }
-export function useButton1Cb() {
-	const onClick = useCallback(callbackFactory("Button1", "Home", "/", "onClick", 
-			{
-  "handlers": [
-    {
-      "sendEventData": true
-    }
-  ],
-  "actions": [
-    {
-      "type": "do_nothing"
-    }
-  ]
-}), [])
-	return { onClick }
-}
 export function useImage6Cb() {
 	const onClick = useCallback(callbackFactory("Image6", "Home", "/", "onClick", 
 			{
@@ -2186,6 +2170,22 @@ export function useButton2Cb() {
 }
 export function useButton3Cb() {
 	const onClick = useCallback(callbackFactory("Button3", "Home", "/", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
+}
+export function useButton19Cb() {
+	const onClick = useCallback(callbackFactory("Button19", "Home", "/", "onClick", 
 			{
   "handlers": [
     {

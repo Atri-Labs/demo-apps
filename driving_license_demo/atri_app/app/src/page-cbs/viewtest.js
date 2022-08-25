@@ -1348,22 +1348,6 @@ export function useTextBox75Cb() {
 
 	return {  }
 }
-export function useButton7Cb() {
-	const onClick = useCallback(callbackFactory("Button7", "viewtest", "/viewtest", "onClick", 
-			{
-  "handlers": [
-    {
-      "sendEventData": true
-    }
-  ],
-  "actions": [
-    {
-      "type": "do_nothing"
-    }
-  ]
-}), [])
-	return { onClick }
-}
 export function useFlex181Cb() {
 	const onClick = useCallback(callbackFactory("Flex181", "viewtest", "/viewtest", "onClick", 
 			{
@@ -2259,6 +2243,22 @@ export function useFlex226Cb() {
 }
 export function useButton16Cb() {
 	const onClick = useCallback(callbackFactory("Button16", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
+}
+export function useButton20Cb() {
+	const onClick = useCallback(callbackFactory("Button20", "viewtest", "/viewtest", "onClick", 
 			{
   "handlers": [
     {

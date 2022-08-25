@@ -8,6 +8,12 @@
     },
     "/viewtest": {
       "name": "viewtest"
+    },
+    "/newtest": {
+      "name": "newtest"
+    },
+    "/newtestresult": {
+      "name": "newtestresult"
     }
   },
   "publicUrlAssetMap": {

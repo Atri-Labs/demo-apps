@@ -49,5 +49,14 @@
   },
   "propfile_pic_2.png": {
     "mime": "image/png"
+  },
+  "file_upload.svg": {
+    "mime": "image/svg+xml"
+  },
+  "run_test.svg": {
+    "mime": "image/svg+xml"
+  },
+  "check.svg": {
+    "mime": "image/svg+xml"
   }
 }
