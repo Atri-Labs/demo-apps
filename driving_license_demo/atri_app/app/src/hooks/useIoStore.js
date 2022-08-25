@@ -14,7 +14,8 @@ const useIoStore = create((set) => {
       }
     }
   },
-  "newtestresult": {}
+  "newtestresult": {},
+  "login": {}
 }});
 
 export default useIoStore;

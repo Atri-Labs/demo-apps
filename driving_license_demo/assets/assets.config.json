@@ -58,5 +58,8 @@
   },
   "check.svg": {
     "mime": "image/svg+xml"
+  },
+  "login_wallpaper.png": {
+    "mime": "image/png"
   }
 }
