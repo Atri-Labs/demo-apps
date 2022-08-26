@@ -6,7 +6,6 @@ from utils.utils import get_comments, sort_by_date
 from .atri import Atri
 from fastapi import Request, Response
 from atri_utils import *
-from datetime import datetime
 
 def iterate_alias(at: Atri, alias_prefix: str, limits: Tuple[int, int], arr: List[str], reg: TestRegistry, cb: Callable[[Atri, int, str, List[str], TestRegistry], None]):
     start_index = limits[0]
@@ -51,7 +50,8 @@ def get_item_range(at: Atri):
 def set_testitems(at: Atri, index: int, alias: str, arr: List[str], reg: TestRegistry):
     [start, end] = get_item_range(at)
 
-    sorted_test_index = end + index - 1
+    sorted_test_index = start + index - 1 - 1
+    print(sorted_test_index)
     # get the test instance
     if sorted_test_index < len(arr):
         testname = arr[sorted_test_index]
@@ -88,19 +88,36 @@ def handle_page_request(at: Atri, req: Request, res: Response):
         keys = list(reg.keys())
         [start, end] = get_item_range(at)
 
-        # sort in reverse time
-        keys.sort(reverse=True, key=sort_by_date(reg))
-        iterate_alias(at, "testitem_", [1, 10], keys, reg, set_testitems)
-
         new_start = min(end + 1, len(keys))
         new_end = min(end + 10, len(keys))
         total_count = len(keys)
         set_item_count(at, new_start, new_end)
         set_total_count(at, total_count)
 
+        # sort in reverse time
+        keys.sort(reverse=True, key=sort_by_date(reg))
+        iterate_alias(at, "testitem_", [1, 10], keys, reg, set_testitems)
+
 def handle_event(at: Atri, req: Request, res: Response):
     """
     This function is called whenever an event is received. An event occurs when user
     performs some action such as click button.
     """
-    pass
+    if at.next.onClick:
+        with open("data/tests.json") as f:
+            reg: TestRegistry = json.load(f)
+            keys = list(reg.keys())
+            [start, end] = get_item_range(at)
+
+            new_start = min(end + 1, len(keys))
+            new_end = min(end + 10, len(keys))
+            total_count = len(keys)
+            set_item_count(at, new_start, new_end)
+            set_total_count(at, total_count)
+
+            # sort in reverse time
+            keys.sort(reverse=True, key=sort_by_date(reg))
+            iterate_alias(at, "testitem_", [1, 10], keys, reg, set_testitems)
+
+    if at.prev.onClick:
+        pass

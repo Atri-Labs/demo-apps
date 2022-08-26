@@ -2115,7 +2115,11 @@ export function useImage66Cb() {
 export function usenextCb() {
 	const onClick = useCallback(callbackFactory("next", "Home", "/", "onClick", 
 			{
-  "handlers": [],
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
   "actions": [
     {
       "type": "do_nothing"
@@ -2127,11 +2131,7 @@ export function usenextCb() {
 export function useImage67Cb() {
 	const onClick = useCallback(callbackFactory("Image67", "Home", "/", "onClick", 
 			{
-  "handlers": [
-    {
-      "sendEventData": true
-    }
-  ],
+  "handlers": [],
   "actions": [
     {
       "type": "do_nothing"
