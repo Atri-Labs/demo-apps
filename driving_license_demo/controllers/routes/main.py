@@ -69,6 +69,8 @@ def set_testitems(at: Atri, index: int, alias: str, arr: List[str], reg: TestReg
 
         # show test item
         show_testitems(at, index, alias, arr, reg)
+    else:
+        hide_testitems(at, index, alias, arr, reg)
 
 def init_state(at: Atri):
     """
@@ -109,8 +111,11 @@ def handle_event(at: Atri, req: Request, res: Response):
             keys = list(reg.keys())
             [start, end] = get_item_range(at)
 
-            new_start = min(end + 1, len(keys))
-            new_end = min(end + 10, len(keys))
+            if end >= len(keys):
+                return
+
+            new_start = min(start + 10, len(keys))
+            new_end = min(new_start + 10, len(keys))
             total_count = len(keys)
             set_item_count(at, new_start, new_end)
             set_total_count(at, total_count)
@@ -120,4 +125,17 @@ def handle_event(at: Atri, req: Request, res: Response):
             iterate_alias(at, "testitem_", [1, 10], keys, reg, set_testitems)
 
     if at.prev.onClick:
-        pass
+        with open("data/tests.json") as f:
+            reg: TestRegistry = json.load(f)
+            keys = list(reg.keys())
+            [start, end] = get_item_range(at)
+
+            new_start = max(start - 10, 1 if len(keys) > 0 else 0)
+            new_end = min(new_start + 9, len(keys))
+            total_count = len(keys)
+            set_item_count(at, new_start, new_end)
+            set_total_count(at, total_count)
+
+            # sort in reverse time
+            keys.sort(reverse=True, key=sort_by_date(reg))
+            iterate_alias(at, "testitem_", [1, 10], keys, reg, set_testitems)

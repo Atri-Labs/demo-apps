@@ -2087,7 +2087,11 @@ export function useFlex112Cb() {
 export function useprevCb() {
 	const onClick = useCallback(callbackFactory("prev", "Home", "/", "onClick", 
 			{
-  "handlers": [],
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
   "actions": [
     {
       "type": "do_nothing"
@@ -2099,11 +2103,7 @@ export function useprevCb() {
 export function useImage66Cb() {
 	const onClick = useCallback(callbackFactory("Image66", "Home", "/", "onClick", 
 			{
-  "handlers": [
-    {
-      "sendEventData": true
-    }
-  ],
+  "handlers": [],
   "actions": [
     {
       "type": "do_nothing"
