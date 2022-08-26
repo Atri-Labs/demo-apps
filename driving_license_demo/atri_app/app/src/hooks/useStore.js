@@ -661,7 +661,7 @@ const desktopModeProps = {
         "text": "Tests"
       }
     },
-    "TextBox5": {
+    "current_range": {
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -704,7 +704,7 @@ const desktopModeProps = {
         "zIndex": ""
       },
       "custom": {
-        "text": "40"
+        "text": "1-10"
       }
     },
     "Flex12": {
@@ -805,7 +805,7 @@ const desktopModeProps = {
         "text": "tests"
       }
     },
-    "TextBox7": {
+    "testname_1": {
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -903,7 +903,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Image9": {
+    "status_1": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -1051,7 +1051,7 @@ const desktopModeProps = {
         "src": "/app-assets/Chat%20bubble.svg"
       }
     },
-    "Image11": {
+    "navtest_1": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -1151,7 +1151,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "TextBox8": {
+    "commentnum_1": {
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -1197,7 +1197,7 @@ const desktopModeProps = {
         "text": "5"
       }
     },
-    "Flex17": {
+    "commenticon_1": {
       "onClick": false,
       "styles": {
         "display": "flex",
@@ -1249,7 +1249,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Flex18": {
+    "testitem_1": {
       "onClick": false,
       "styles": {
         "display": "flex",
@@ -4413,7 +4413,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "TextBox27": {
+    "commentnum_2": {
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -4507,7 +4507,7 @@ const desktopModeProps = {
         "src": "/app-assets/Chat%20bubble.svg"
       }
     },
-    "Flex65": {
+    "commenticon_2": {
       "onClick": false,
       "styles": {
         "display": "flex",
@@ -4559,7 +4559,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Image40": {
+    "navtest_2": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -4659,7 +4659,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Image41": {
+    "status_2": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -4707,7 +4707,7 @@ const desktopModeProps = {
         "src": "/app-assets/exclaim.svg"
       }
     },
-    "TextBox28": {
+    "testname_2": {
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -4857,7 +4857,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Flex69": {
+    "testitem_2": {
       "onClick": false,
       "styles": {
         "display": "flex",
@@ -4909,7 +4909,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "TextBox29": {
+    "commentnum_3": {
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -5003,7 +5003,7 @@ const desktopModeProps = {
         "src": "/app-assets/Chat%20bubble.svg"
       }
     },
-    "Flex70": {
+    "commenticon_3": {
       "onClick": false,
       "styles": {
         "display": "flex",
@@ -5055,7 +5055,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Image43": {
+    "navtest_3": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -5155,7 +5155,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Image44": {
+    "status_3": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -5203,7 +5203,7 @@ const desktopModeProps = {
         "src": "/app-assets/exclaim.svg"
       }
     },
-    "TextBox30": {
+    "testname_3": {
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -5353,7 +5353,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Flex74": {
+    "testitem_3": {
       "onClick": false,
       "styles": {
         "display": "flex",
@@ -5405,7 +5405,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "TextBox31": {
+    "commentnum_4": {
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -5499,7 +5499,7 @@ const desktopModeProps = {
         "src": "/app-assets/Chat%20bubble.svg"
       }
     },
-    "Flex75": {
+    "commenticon_4": {
       "onClick": false,
       "styles": {
         "display": "flex",
@@ -5551,7 +5551,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Image46": {
+    "navtest_4": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -5651,7 +5651,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Image47": {
+    "status_4": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -5699,7 +5699,7 @@ const desktopModeProps = {
         "src": "/app-assets/exclaim.svg"
       }
     },
-    "TextBox32": {
+    "testname_4": {
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -5849,7 +5849,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Flex79": {
+    "testitem_4": {
       "onClick": false,
       "styles": {
         "display": "flex",
@@ -5901,7 +5901,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "TextBox33": {
+    "commentnum_5": {
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -5995,7 +5995,7 @@ const desktopModeProps = {
         "src": "/app-assets/Chat%20bubble.svg"
       }
     },
-    "Flex80": {
+    "commenticon_5": {
       "onClick": false,
       "styles": {
         "display": "flex",
@@ -6047,7 +6047,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Image49": {
+    "navtest_5": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -6147,7 +6147,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Image50": {
+    "status_5": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -6195,7 +6195,7 @@ const desktopModeProps = {
         "src": "/app-assets/exclaim.svg"
       }
     },
-    "TextBox34": {
+    "testname_5": {
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -6345,7 +6345,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Flex84": {
+    "testitem_5": {
       "onClick": false,
       "styles": {
         "display": "flex",
@@ -6397,7 +6397,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "TextBox35": {
+    "commentnum_6": {
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -6491,7 +6491,7 @@ const desktopModeProps = {
         "src": "/app-assets/Chat%20bubble.svg"
       }
     },
-    "Flex85": {
+    "commenticon_6": {
       "onClick": false,
       "styles": {
         "display": "flex",
@@ -6543,7 +6543,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Image52": {
+    "navtest_6": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -6643,7 +6643,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Image53": {
+    "status_6": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -6691,7 +6691,7 @@ const desktopModeProps = {
         "src": "/app-assets/exclaim.svg"
       }
     },
-    "TextBox36": {
+    "testname_6": {
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -6841,7 +6841,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Flex89": {
+    "testitem_6": {
       "onClick": false,
       "styles": {
         "display": "flex",
@@ -6893,7 +6893,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "TextBox37": {
+    "commentnum_7": {
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -6987,7 +6987,7 @@ const desktopModeProps = {
         "src": "/app-assets/Chat%20bubble.svg"
       }
     },
-    "Flex90": {
+    "commenticon_7": {
       "onClick": false,
       "styles": {
         "display": "flex",
@@ -7039,7 +7039,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Image55": {
+    "navtest_7": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -7139,7 +7139,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Image56": {
+    "status_7": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -7187,7 +7187,7 @@ const desktopModeProps = {
         "src": "/app-assets/exclaim.svg"
       }
     },
-    "TextBox38": {
+    "testname_7": {
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -7337,7 +7337,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Flex94": {
+    "testitem_7": {
       "onClick": false,
       "styles": {
         "display": "flex",
@@ -7389,7 +7389,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "TextBox39": {
+    "commentnum_8": {
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -7483,7 +7483,7 @@ const desktopModeProps = {
         "src": "/app-assets/Chat%20bubble.svg"
       }
     },
-    "Flex95": {
+    "commenticon_8": {
       "onClick": false,
       "styles": {
         "display": "flex",
@@ -7535,7 +7535,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Image58": {
+    "navtest_8": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -7635,7 +7635,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Image59": {
+    "status_8": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -7683,7 +7683,7 @@ const desktopModeProps = {
         "src": "/app-assets/exclaim.svg"
       }
     },
-    "TextBox40": {
+    "testname_8": {
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -7833,7 +7833,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Flex99": {
+    "testitem_8": {
       "onClick": false,
       "styles": {
         "display": "flex",
@@ -7885,7 +7885,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "TextBox41": {
+    "commentnum_9": {
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -7979,7 +7979,7 @@ const desktopModeProps = {
         "src": "/app-assets/Chat%20bubble.svg"
       }
     },
-    "Flex100": {
+    "commenticon_9": {
       "onClick": false,
       "styles": {
         "display": "flex",
@@ -8031,7 +8031,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Image61": {
+    "navtest_9": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -8131,7 +8131,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Image62": {
+    "status_9": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -8179,7 +8179,7 @@ const desktopModeProps = {
         "src": "/app-assets/exclaim.svg"
       }
     },
-    "TextBox42": {
+    "testname_9": {
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -8329,7 +8329,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Flex104": {
+    "testitem_9": {
       "onClick": false,
       "styles": {
         "display": "flex",
@@ -8381,7 +8381,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "TextBox43": {
+    "commentnum_10": {
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -8475,7 +8475,7 @@ const desktopModeProps = {
         "src": "/app-assets/Chat%20bubble.svg"
       }
     },
-    "Flex105": {
+    "commenticon_10": {
       "onClick": false,
       "styles": {
         "display": "flex",
@@ -8527,7 +8527,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Image64": {
+    "navtest_10": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -8627,7 +8627,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Image65": {
+    "status_10": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -8675,7 +8675,7 @@ const desktopModeProps = {
         "src": "/app-assets/exclaim.svg"
       }
     },
-    "TextBox44": {
+    "testname_10": {
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -8825,7 +8825,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Flex109": {
+    "testitem_10": {
       "onClick": false,
       "styles": {
         "display": "flex",
@@ -9073,7 +9073,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Flex113": {
+    "prev": {
       "onClick": false,
       "styles": {
         "display": "flex",
@@ -9173,7 +9173,7 @@ const desktopModeProps = {
         "src": "/app-assets/left-arrow.svg"
       }
     },
-    "Flex114": {
+    "next": {
       "onClick": false,
       "styles": {
         "display": "flex",
@@ -9464,6 +9464,98 @@ const desktopModeProps = {
       },
       "custom": {
         "text": "Add new test"
+      }
+    },
+    "total_tests": {
+      "styles": {
+        "alignSelf": "",
+        "flexGrow": "",
+        "flexShrink": "",
+        "order": "",
+        "marginTop": "",
+        "marginBottom": "",
+        "marginRight": "",
+        "marginLeft": "",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "paddingRight": "",
+        "paddingLeft": "",
+        "width": "",
+        "height": "",
+        "minWidth": "",
+        "minHeight": "",
+        "maxWidth": "",
+        "maxHeight": "",
+        "overflow": "",
+        "fontFamily": "",
+        "fontWeight": 400,
+        "fontSize": "",
+        "textAlign": "left",
+        "color": "",
+        "opacity": "",
+        "borderRadius": "",
+        "borderWidth": "",
+        "borderStyle": "",
+        "borderColor": "",
+        "backgroundImage": "",
+        "backgroundColor": "",
+        "position": "static",
+        "float": "none",
+        "clear": "none",
+        "top": "",
+        "left": "",
+        "bottom": "",
+        "right": "",
+        "zIndex": ""
+      },
+      "custom": {
+        "text": "40"
+      }
+    },
+    "TextBox186": {
+      "styles": {
+        "alignSelf": "",
+        "flexGrow": "",
+        "flexShrink": "",
+        "order": "",
+        "marginTop": "",
+        "marginBottom": "",
+        "marginRight": "",
+        "marginLeft": "",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "paddingRight": "",
+        "paddingLeft": "",
+        "width": "",
+        "height": "",
+        "minWidth": "",
+        "minHeight": "",
+        "maxWidth": "",
+        "maxHeight": "",
+        "overflow": "",
+        "fontFamily": "",
+        "fontWeight": 400,
+        "fontSize": "",
+        "textAlign": "left",
+        "color": "#6B7280",
+        "opacity": "",
+        "borderRadius": "",
+        "borderWidth": "",
+        "borderStyle": "",
+        "borderColor": "",
+        "backgroundImage": "",
+        "backgroundColor": "",
+        "position": "static",
+        "float": "none",
+        "clear": "none",
+        "top": "",
+        "left": "",
+        "bottom": "",
+        "right": "",
+        "zIndex": ""
+      },
+      "custom": {
+        "text": "of"
       }
     }
   },
