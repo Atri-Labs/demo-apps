@@ -71,7 +71,9 @@ def handle_event(at: Atri, req: Request, res: Response):
         final_output_path = Path(TESTS_OUTPUT_DIR) / final_filename
         if Path.exists(final_input_path):
             with open(str(final_output_path), "wb") as f:
-                # get data from test result
+                # TODO: get data from test result
                 f.write(b'img_bytes')
+                # TODO: navigate after output is written
+                res.headers.append("location", "/newtestresult?testname=" + final_filename)
 
 

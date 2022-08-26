@@ -2179,7 +2179,7 @@
           "fontFamily": "IBM Plex Sans",
           "fontWeight": 500,
           "fontSize": "16px",
-          "paddingTop": "40px",
+          "paddingTop": "",
           "marginTop": ""
         }
       }
@@ -3143,7 +3143,7 @@
     "id": "fa5276e2-d524-41f8-8ee5-deb06152485d",
     "type": "PATCH$$@atrilabs/app-design-forest/lib/componentTree.js",
     "slice": {
-      "alias": "Flex238",
+      "alias": "image_placeholder",
       "parent": {
         "id": "6db71965-c813-4dd7-8844-e6b7d13da732",
         "index": 4
@@ -3166,7 +3166,7 @@
       "property": {
         "styles": {
           "width": "600px",
-          "height": "300px",
+          "height": "",
           "alignItems": "center",
           "justifyContent": "center",
           "borderStyle": "solid",
@@ -3174,7 +3174,8 @@
           "borderWidth": "1px",
           "borderRadius": "4px",
           "backgroundColor": "#F1F5F9",
-          "marginTop": "20px"
+          "marginTop": "20px",
+          "minHeight": "300px"
         }
       }
     },
@@ -3826,7 +3827,7 @@
     "id": "792f8c70-93aa-4dc7-9ef9-9b609fbd8ae0",
     "type": "PATCH$$@atrilabs/app-design-forest/lib/componentTree.js",
     "slice": {
-      "alias": "Flex239",
+      "alias": "runtest",
       "parent": {
         "id": "6db71965-c813-4dd7-8844-e6b7d13da732",
         "index": 8
@@ -5116,7 +5117,11 @@
     "id": "dcfcbc55-dbc9-49a3-bf6c-ea1c4411f900",
     "type": "PATCH$$@atrilabs/app-design-forest/lib/componentTree.js",
     "slice": {
-      "alias": "Image147"
+      "alias": "preview",
+      "parent": {
+        "id": "b9da3dac-786e-42fb-9bf6-039436f1dd11",
+        "index": 1
+      }
     }
   },
   {
@@ -5134,7 +5139,9 @@
     "slice": {
       "property": {
         "styles": {
-          "width": "6px"
+          "width": "600px",
+          "height": "300px",
+          "marginTop": "20px"
         }
       }
     },
@@ -5303,7 +5310,11 @@
     "id": "b9da3dac-786e-42fb-9bf6-039436f1dd11",
     "type": "PATCH$$@atrilabs/app-design-forest/lib/componentTree.js",
     "slice": {
-      "alias": "Flex369"
+      "alias": "preview_wrapper",
+      "parent": {
+        "id": "6db71965-c813-4dd7-8844-e6b7d13da732",
+        "index": 5
+      }
     }
   },
   {
@@ -5581,7 +5592,11 @@
     "id": "146ed430-cbbc-4aa0-a22f-4fed70e9e0c4",
     "type": "PATCH$$@atrilabs/app-design-forest/lib/componentTree.js",
     "slice": {
-      "alias": "TextBox197"
+      "alias": "filename",
+      "parent": {
+        "id": "1dcf3d70-5064-4b9c-83b1-b54e847d2855",
+        "index": 2
+      }
     }
   },
   {
@@ -5589,7 +5604,8 @@
     "slice": {
       "property": {
         "styles": {
-          "fontSize": "1px"
+          "fontSize": "16px",
+          "fontFamily": "IBM Plex Sans"
         }
       }
     },
@@ -5715,7 +5731,8 @@
     "slice": {
       "property": {
         "styles": {
-          "paddingTop": "4px"
+          "paddingTop": "40px",
+          "columnGap": "20px"
         }
       }
     },
@@ -5820,5 +5837,16 @@
       }
     },
     "id": "373664ca-4fec-4642-ad8e-34907fc1568b"
+  },
+  {
+    "type": "PATCH$$@atrilabs/app-design-forest/lib/cssTree.js",
+    "slice": {
+      "property": {
+        "styles": {
+          "cursor": "pointer"
+        }
+      }
+    },
+    "id": "e8eb964e-bad6-4ec7-839f-b96f2a894b3e"
   }
 ]

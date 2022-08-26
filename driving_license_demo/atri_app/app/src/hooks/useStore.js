@@ -22923,7 +22923,7 @@ const desktopModeProps = {
         "outlineColor": "",
         "outlineOffset": "",
         "outlineWidth": "",
-        "cursor": ""
+        "cursor": "pointer"
       }
     },
     "TextBox113": {
