@@ -69,12 +69,32 @@ export function useFlex348Cb() {
 	return { onClick }
 }
 export function useTextBox178Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox178", "login", "/login", "onClick", 
+			{
+  "handlers": [],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useTextBox179Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox179", "login", "/login", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useFlex349Cb() {
 	const onClick = useCallback(callbackFactory("Flex349", "login", "/login", "onClick", 
@@ -89,8 +109,20 @@ export function useFlex349Cb() {
 	return { onClick }
 }
 export function useTextBox181Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox181", "login", "/login", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useusernameCb() {
 	const onChange = useCallback(callbackFactory("username", "login", "/login", "onChange", 
@@ -155,8 +187,20 @@ export function usepasswordCb() {
 	return { onChange,onPressEnter }
 }
 export function useTextBox183Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox183", "login", "/login", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useFlex352Cb() {
 	const onClick = useCallback(callbackFactory("Flex352", "login", "/login", "onClick", 
@@ -199,8 +243,20 @@ export function useFlex353Cb() {
 	return { onClick }
 }
 export function useerrorboxCb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("errorbox", "login", "/login", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useerrorwrapperCb() {
 	const onClick = useCallback(callbackFactory("errorwrapper", "login", "/login", "onClick", 

@@ -18965,7 +18965,7 @@
       "property": {
         "styles": {
           "color": "#6B7280",
-          "columnGap": "20px",
+          "columnGap": "4px",
           "fontFamily": "IBM Plex Sans",
           "fontSize": "14px",
           "paddingTop": "2px",
@@ -19619,7 +19619,9 @@
     "slice": {
       "property": {
         "styles": {
-          "columnGap": "10px"
+          "columnGap": "10px",
+          "flexGrow": 1,
+          "cursor": "pointer"
         }
       }
     },
@@ -19825,7 +19827,9 @@
     "slice": {
       "property": {
         "styles": {
-          "columnGap": "10px"
+          "columnGap": "10px",
+          "flexGrow": 1,
+          "cursor": "pointer"
         }
       }
     },
@@ -23526,5 +23530,16 @@
       }
     },
     "id": "477ce2c2-ac82-4b50-b71e-f9fe68777481"
+  },
+  {
+    "type": "PATCH$$@atrilabs/app-design-forest/lib/cssTree.js",
+    "slice": {
+      "property": {
+        "styles": {
+          "cursor": "pointer"
+        }
+      }
+    },
+    "id": "a3f587a9-7d80-42ea-ae30-12affbaaded9"
   }
 ]

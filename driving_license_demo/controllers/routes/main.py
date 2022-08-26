@@ -81,7 +81,7 @@ def init_state(at: Atri):
     iterate_alias(at, "testitem_", [1, 10], [], {}, hide_testitems)
     set_initial_item_count(at)
 
-def handle_page_request(at: Atri, req: Request, res: Response):
+def handle_page_request(at: Atri, req: Request, res: Response, query: str):
     """
     This function is called whenever a user loads this route in the browser.
     """

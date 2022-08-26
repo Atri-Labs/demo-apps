@@ -17,8 +17,20 @@ export function useImage68Cb() {
 	return { onClick }
 }
 export function useTextBox47Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox47", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useImage69Cb() {
 	const onClick = useCallback(callbackFactory("Image69", "viewtest", "/viewtest", "onClick", 
@@ -37,8 +49,20 @@ export function useImage69Cb() {
 	return { onClick }
 }
 export function useTextBox48Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox48", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useImage70Cb() {
 	const onClick = useCallback(callbackFactory("Image70", "viewtest", "/viewtest", "onClick", 
@@ -57,8 +81,20 @@ export function useImage70Cb() {
 	return { onClick }
 }
 export function useTextBox49Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox49", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useImage71Cb() {
 	const onClick = useCallback(callbackFactory("Image71", "viewtest", "/viewtest", "onClick", 
@@ -77,8 +113,20 @@ export function useImage71Cb() {
 	return { onClick }
 }
 export function useTextBox50Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox50", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useImage72Cb() {
 	const onClick = useCallback(callbackFactory("Image72", "viewtest", "/viewtest", "onClick", 
@@ -97,8 +145,20 @@ export function useImage72Cb() {
 	return { onClick }
 }
 export function useTextBox51Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox51", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useImage73Cb() {
 	const onClick = useCallback(callbackFactory("Image73", "viewtest", "/viewtest", "onClick", 
@@ -117,8 +177,20 @@ export function useImage73Cb() {
 	return { onClick }
 }
 export function useTextBox52Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox52", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useImage74Cb() {
 	const onClick = useCallback(callbackFactory("Image74", "viewtest", "/viewtest", "onClick", 
@@ -137,8 +209,20 @@ export function useImage74Cb() {
 	return { onClick }
 }
 export function useTextBox53Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox53", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useImage75Cb() {
 	const onClick = useCallback(callbackFactory("Image75", "viewtest", "/viewtest", "onClick", 
@@ -157,8 +241,20 @@ export function useImage75Cb() {
 	return { onClick }
 }
 export function useTextBox54Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox54", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useImage76Cb() {
 	const onClick = useCallback(callbackFactory("Image76", "viewtest", "/viewtest", "onClick", 
@@ -177,12 +273,36 @@ export function useImage76Cb() {
 	return { onClick }
 }
 export function useTextBox55Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox55", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useTextBox56Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox56", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useImage77Cb() {
 	const onClick = useCallback(callbackFactory("Image77", "viewtest", "/viewtest", "onClick", 
@@ -513,8 +633,20 @@ export function useImage88Cb() {
 	return { onClick }
 }
 export function useTextBox57Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox57", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useImage89Cb() {
 	const onClick = useCallback(callbackFactory("Image89", "viewtest", "/viewtest", "onClick", 
@@ -533,12 +665,36 @@ export function useImage89Cb() {
 	return { onClick }
 }
 export function useTextBox58Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox58", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useTextBox59Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox59", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useImage90Cb() {
 	const onClick = useCallback(callbackFactory("Image90", "viewtest", "/viewtest", "onClick", 
@@ -569,8 +725,20 @@ export function useFlex127Cb() {
 	return { onClick }
 }
 export function useTextBox60Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox60", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useImage91Cb() {
 	const onClick = useCallback(callbackFactory("Image91", "viewtest", "/viewtest", "onClick", 
@@ -601,8 +769,20 @@ export function useFlex128Cb() {
 	return { onClick }
 }
 export function useTextBox61Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox61", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useImage92Cb() {
 	const onClick = useCallback(callbackFactory("Image92", "viewtest", "/viewtest", "onClick", 
@@ -633,8 +813,20 @@ export function useFlex129Cb() {
 	return { onClick }
 }
 export function useTextBox62Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox62", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useImage93Cb() {
 	const onClick = useCallback(callbackFactory("Image93", "viewtest", "/viewtest", "onClick", 
@@ -665,8 +857,20 @@ export function useFlex130Cb() {
 	return { onClick }
 }
 export function useTextBox63Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox63", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useImage94Cb() {
 	const onClick = useCallback(callbackFactory("Image94", "viewtest", "/viewtest", "onClick", 
@@ -697,8 +901,20 @@ export function useFlex131Cb() {
 	return { onClick }
 }
 export function useTextBox64Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox64", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useImage95Cb() {
 	const onClick = useCallback(callbackFactory("Image95", "viewtest", "/viewtest", "onClick", 
@@ -729,8 +945,20 @@ export function useFlex132Cb() {
 	return { onClick }
 }
 export function useTextBox65Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox65", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useImage96Cb() {
 	const onClick = useCallback(callbackFactory("Image96", "viewtest", "/viewtest", "onClick", 
@@ -761,8 +989,20 @@ export function useFlex133Cb() {
 	return { onClick }
 }
 export function useTextBox66Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox66", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useImage97Cb() {
 	const onClick = useCallback(callbackFactory("Image97", "viewtest", "/viewtest", "onClick", 
@@ -793,8 +1033,20 @@ export function useFlex134Cb() {
 	return { onClick }
 }
 export function useTextBox67Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox67", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useImage98Cb() {
 	const onClick = useCallback(callbackFactory("Image98", "viewtest", "/viewtest", "onClick", 
@@ -853,8 +1105,20 @@ export function useImage99Cb() {
 	return { onClick }
 }
 export function useTextBox68Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox68", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useFlex137Cb() {
 	const onClick = useCallback(callbackFactory("Flex137", "viewtest", "/viewtest", "onClick", 
@@ -893,12 +1157,36 @@ export function useFlex139Cb() {
 	return { onClick }
 }
 export function useTextBox69Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox69", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useTextBox70Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox70", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useFlex140Cb() {
 	const onClick = useCallback(callbackFactory("Flex140", "viewtest", "/viewtest", "onClick", 
@@ -1301,12 +1589,36 @@ export function useImage101Cb() {
 	return { onClick }
 }
 export function useTextBox72Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox72", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useTextBox73Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox73", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useButton6Cb() {
 	const onClick = useCallback(callbackFactory("Button6", "viewtest", "/viewtest", "onClick", 
@@ -1341,12 +1653,39 @@ export function useImage102Cb() {
 	return { onClick }
 }
 export function useTextBox74Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox74", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "navigate": {
+        "type": "internal",
+        "url": "/"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useTextBox75Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox75", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useFlex181Cb() {
 	const onClick = useCallback(callbackFactory("Flex181", "viewtest", "/viewtest", "onClick", 
@@ -1421,8 +1760,20 @@ export function useFlex186Cb() {
 	return { onClick }
 }
 export function useTextBox76Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox76", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useButton8Cb() {
 	const onClick = useCallback(callbackFactory("Button8", "viewtest", "/viewtest", "onClick", 
@@ -1457,8 +1808,20 @@ export function useImage103Cb() {
 	return { onClick }
 }
 export function useTextBox77Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox77", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useImage104Cb() {
 	const onClick = useCallback(callbackFactory("Image104", "viewtest", "/viewtest", "onClick", 
@@ -1477,8 +1840,20 @@ export function useImage104Cb() {
 	return { onClick }
 }
 export function useTextBox78Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox78", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useFlex187Cb() {
 	const onClick = useCallback(callbackFactory("Flex187", "viewtest", "/viewtest", "onClick", 
@@ -1517,8 +1892,20 @@ export function useFlex189Cb() {
 	return { onClick }
 }
 export function useTextBox80Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox80", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useFlex190Cb() {
 	const onClick = useCallback(callbackFactory("Flex190", "viewtest", "/viewtest", "onClick", 
@@ -1613,8 +2000,20 @@ export function useButton9Cb() {
 	return { onClick }
 }
 export function useTextBox81Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox81", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useFlex197Cb() {
 	const onClick = useCallback(callbackFactory("Flex197", "viewtest", "/viewtest", "onClick", 
@@ -1629,8 +2028,20 @@ export function useFlex197Cb() {
 	return { onClick }
 }
 export function useTextBox82Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox82", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useFlex198Cb() {
 	const onClick = useCallback(callbackFactory("Flex198", "viewtest", "/viewtest", "onClick", 
@@ -1657,8 +2068,20 @@ export function useFlex199Cb() {
 	return { onClick }
 }
 export function useTextBox83Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox83", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useFlex200Cb() {
 	const onClick = useCallback(callbackFactory("Flex200", "viewtest", "/viewtest", "onClick", 
@@ -1685,8 +2108,20 @@ export function useFlex201Cb() {
 	return { onClick }
 }
 export function useTextBox85Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox85", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useFlex202Cb() {
 	const onClick = useCallback(callbackFactory("Flex202", "viewtest", "/viewtest", "onClick", 
@@ -1713,8 +2148,20 @@ export function useFlex203Cb() {
 	return { onClick }
 }
 export function useTextBox87Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox87", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useFlex204Cb() {
 	const onClick = useCallback(callbackFactory("Flex204", "viewtest", "/viewtest", "onClick", 
@@ -1741,8 +2188,20 @@ export function useFlex205Cb() {
 	return { onClick }
 }
 export function useTextBox89Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox89", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useButton13Cb() {
 	const onClick = useCallback(callbackFactory("Button13", "viewtest", "/viewtest", "onClick", 
@@ -1761,8 +2220,20 @@ export function useButton13Cb() {
 	return { onClick }
 }
 export function useTextBox91Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox91", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useFlex208Cb() {
 	const onClick = useCallback(callbackFactory("Flex208", "viewtest", "/viewtest", "onClick", 
@@ -1789,20 +2260,68 @@ export function useFlex209Cb() {
 	return { onClick }
 }
 export function useTextBox93Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox93", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useTextBox94Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox94", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useTextBox95Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox95", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useTextBox96Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox96", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useFlex210Cb() {
 	const onClick = useCallback(callbackFactory("Flex210", "viewtest", "/viewtest", "onClick", 
@@ -1917,8 +2436,20 @@ export function useFlex213Cb() {
 	return { onClick }
 }
 export function useTextBox97Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox97", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useFlex214Cb() {
 	const onClick = useCallback(callbackFactory("Flex214", "viewtest", "/viewtest", "onClick", 
@@ -1973,16 +2504,52 @@ export function useImage109Cb() {
 	return { onClick }
 }
 export function useTextBox98Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox98", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useTextBox99Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox99", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useTextBox100Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox100", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useFlex218Cb() {
 	const onClick = useCallback(callbackFactory("Flex218", "viewtest", "/viewtest", "onClick", 
@@ -1997,16 +2564,52 @@ export function useFlex218Cb() {
 	return { onClick }
 }
 export function useTextBox101Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox101", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useTextBox102Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox102", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useTextBox103Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox103", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useImage110Cb() {
 	const onClick = useCallback(callbackFactory("Image110", "viewtest", "/viewtest", "onClick", 
@@ -2077,16 +2680,52 @@ export function useImage111Cb() {
 	return { onClick }
 }
 export function useTextBox104Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox104", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useTextBox105Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox105", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useTextBox106Cb() {
-
-	return {  }
+	const onClick = useCallback(callbackFactory("TextBox106", "viewtest", "/viewtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
 }
 export function useFlex222Cb() {
 	const onClick = useCallback(callbackFactory("Flex222", "viewtest", "/viewtest", "onClick", 

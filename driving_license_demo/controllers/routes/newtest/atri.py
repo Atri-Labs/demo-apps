@@ -1,7 +1,7 @@
 import json
 from typing import List, Any, Optional
 from fastapi import UploadFile
-default_state = json.loads('{"Button17":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":""}},"TextBox107":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":"Your text Here!"}},"TextBox108":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":"Your text Here!"}},"Image112":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"alt":"No preview available","src":""}},"Image113":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"alt":"No preview available","src":""}},"TextBox109":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":"Your text Here!"}},"TextBox110":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":"Your text Here!"}},"Button18":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":""}},"Flex231":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"Flex232":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"Flex233":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"Flex234":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"Flex235":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"Flex236":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"TextBox111":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":"Your text Here!"}},"TextBox112":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":"Your text Here!"}},"Upload1":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"multiple":false,"showFilename":true,"text":"Upload","disabled":false}},"Flex237":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"Image114":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"alt":"No preview available","src":""}},"image_placeholder":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"runtest":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"TextBox113":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":"Your text Here!"}},"Image115":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"alt":"No preview available","src":""}},"preview":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"alt":"No preview available","src":""}},"preview_wrapper":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"filename":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":"Your text Here!"}},"Flex370":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}}}')
+default_state = json.loads('{"Button17":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":"","outlineStyle":"","outlineColor":"","outlineOffset":"","outlineWidth":"","cursor":""},"custom":{"text":""}},"TextBox107":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":"","outlineStyle":"","outlineColor":"","outlineOffset":"","outlineWidth":"","cursor":""},"custom":{"text":"Your text Here!"}},"TextBox108":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":"","outlineStyle":"","outlineColor":"","outlineOffset":"","outlineWidth":"","cursor":""},"custom":{"text":"Your text Here!"}},"Image112":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":"","outlineStyle":"","outlineColor":"","outlineOffset":"","outlineWidth":"","cursor":""},"custom":{"alt":"No preview available","src":""}},"Image113":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":"","outlineStyle":"","outlineColor":"","outlineOffset":"","outlineWidth":"","cursor":""},"custom":{"alt":"No preview available","src":""}},"TextBox109":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":"","outlineStyle":"","outlineColor":"","outlineOffset":"","outlineWidth":"","cursor":""},"custom":{"text":"Your text Here!"}},"TextBox110":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":"","outlineStyle":"","outlineColor":"","outlineOffset":"","outlineWidth":"","cursor":""},"custom":{"text":"Your text Here!"}},"Button18":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":"","outlineStyle":"","outlineColor":"","outlineOffset":"","outlineWidth":"","cursor":""},"custom":{"text":""}},"Flex231":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":"","outlineStyle":"","outlineColor":"","outlineOffset":"","outlineWidth":"","cursor":""}},"Flex232":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":"","outlineStyle":"","outlineColor":"","outlineOffset":"","outlineWidth":"","cursor":""}},"Flex233":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":"","outlineStyle":"","outlineColor":"","outlineOffset":"","outlineWidth":"","cursor":""}},"Flex234":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":"","outlineStyle":"","outlineColor":"","outlineOffset":"","outlineWidth":"","cursor":""}},"Flex235":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":"","outlineStyle":"","outlineColor":"","outlineOffset":"","outlineWidth":"","cursor":""}},"Flex236":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":"","outlineStyle":"","outlineColor":"","outlineOffset":"","outlineWidth":"","cursor":""}},"TextBox111":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":"","outlineStyle":"","outlineColor":"","outlineOffset":"","outlineWidth":"","cursor":""},"custom":{"text":"Your text Here!"}},"TextBox112":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":"","outlineStyle":"","outlineColor":"","outlineOffset":"","outlineWidth":"","cursor":""},"custom":{"text":"Your text Here!"}},"Upload1":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":"","outlineStyle":"","outlineColor":"","outlineOffset":"","outlineWidth":"","cursor":""},"custom":{"multiple":false,"showFilename":true,"text":"Upload","disabled":false}},"Flex237":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":"","outlineStyle":"","outlineColor":"","outlineOffset":"","outlineWidth":"","cursor":""}},"Image114":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":"","outlineStyle":"","outlineColor":"","outlineOffset":"","outlineWidth":"","cursor":""},"custom":{"alt":"No preview available","src":""}},"image_placeholder":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":"","outlineStyle":"","outlineColor":"","outlineOffset":"","outlineWidth":"","cursor":""}},"runtest":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":"","outlineStyle":"","outlineColor":"","outlineOffset":"","outlineWidth":"","cursor":""}},"TextBox113":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":"","outlineStyle":"","outlineColor":"","outlineOffset":"","outlineWidth":"","cursor":""},"custom":{"text":"Your text Here!"}},"Image115":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":"","outlineStyle":"","outlineColor":"","outlineOffset":"","outlineWidth":"","cursor":""},"custom":{"alt":"No preview available","src":""}},"preview":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":"","outlineStyle":"","outlineColor":"","outlineOffset":"","outlineWidth":"","cursor":""},"custom":{"alt":"No preview available","src":""}},"preview_wrapper":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":"","outlineStyle":"","outlineColor":"","outlineOffset":"","outlineWidth":"","cursor":""}},"filename":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":"","outlineStyle":"","outlineColor":"","outlineOffset":"","outlineWidth":"","cursor":""},"custom":{"text":"Your text Here!"}},"Flex370":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":"","outlineStyle":"","outlineColor":"","outlineOffset":"","outlineWidth":"","cursor":""}}}')
 def get_defined_value(state, def_state, key):
 	return state[key] if key in state else def_state[key]
 class Atri:
@@ -83,6 +83,11 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+			self.outlineStyle: str = get_defined_value(state, def_state, "outlineStyle")
+			self.outlineColor: str = get_defined_value(state, def_state, "outlineColor")
+			self.outlineOffset: str = get_defined_value(state, def_state, "outlineOffset")
+			self.outlineWidth: str = get_defined_value(state, def_state, "outlineWidth")
+			self.cursor: str = get_defined_value(state, def_state, "cursor")
 	class __Button17ClasscustomClass:
 		def __init__(self, state, def_state):
 
@@ -134,13 +139,18 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+			self.outlineStyle: str = get_defined_value(state, def_state, "outlineStyle")
+			self.outlineColor: str = get_defined_value(state, def_state, "outlineColor")
+			self.outlineOffset: str = get_defined_value(state, def_state, "outlineOffset")
+			self.outlineWidth: str = get_defined_value(state, def_state, "outlineWidth")
+			self.cursor: str = get_defined_value(state, def_state, "cursor")
 	class __TextBox107ClasscustomClass:
 		def __init__(self, state, def_state):
 
 			self.text: str = get_defined_value(state, def_state, "text")
 	class __TextBox107Class:
 		def __init__(self, state, def_state):
-
+			self.onClick = False
 			self.styles: Atri.__TextBox107ClassstylesClass = Atri._Atri__TextBox107ClassstylesClass(get_defined_value(state, def_state, "styles"), def_state["styles"])
 			self.custom: Atri.__TextBox107ClasscustomClass = Atri._Atri__TextBox107ClasscustomClass(get_defined_value(state, def_state, "custom"), def_state["custom"])
 	class __TextBox108ClassstylesClass:
@@ -185,13 +195,18 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+			self.outlineStyle: str = get_defined_value(state, def_state, "outlineStyle")
+			self.outlineColor: str = get_defined_value(state, def_state, "outlineColor")
+			self.outlineOffset: str = get_defined_value(state, def_state, "outlineOffset")
+			self.outlineWidth: str = get_defined_value(state, def_state, "outlineWidth")
+			self.cursor: str = get_defined_value(state, def_state, "cursor")
 	class __TextBox108ClasscustomClass:
 		def __init__(self, state, def_state):
 
 			self.text: str = get_defined_value(state, def_state, "text")
 	class __TextBox108Class:
 		def __init__(self, state, def_state):
-
+			self.onClick = False
 			self.styles: Atri.__TextBox108ClassstylesClass = Atri._Atri__TextBox108ClassstylesClass(get_defined_value(state, def_state, "styles"), def_state["styles"])
 			self.custom: Atri.__TextBox108ClasscustomClass = Atri._Atri__TextBox108ClasscustomClass(get_defined_value(state, def_state, "custom"), def_state["custom"])
 	class __Image112ClassstylesClass:
@@ -236,6 +251,11 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+			self.outlineStyle: str = get_defined_value(state, def_state, "outlineStyle")
+			self.outlineColor: str = get_defined_value(state, def_state, "outlineColor")
+			self.outlineOffset: str = get_defined_value(state, def_state, "outlineOffset")
+			self.outlineWidth: str = get_defined_value(state, def_state, "outlineWidth")
+			self.cursor: str = get_defined_value(state, def_state, "cursor")
 	class __Image112ClasscustomClass:
 		def __init__(self, state, def_state):
 
@@ -288,6 +308,11 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+			self.outlineStyle: str = get_defined_value(state, def_state, "outlineStyle")
+			self.outlineColor: str = get_defined_value(state, def_state, "outlineColor")
+			self.outlineOffset: str = get_defined_value(state, def_state, "outlineOffset")
+			self.outlineWidth: str = get_defined_value(state, def_state, "outlineWidth")
+			self.cursor: str = get_defined_value(state, def_state, "cursor")
 	class __Image113ClasscustomClass:
 		def __init__(self, state, def_state):
 
@@ -340,13 +365,18 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+			self.outlineStyle: str = get_defined_value(state, def_state, "outlineStyle")
+			self.outlineColor: str = get_defined_value(state, def_state, "outlineColor")
+			self.outlineOffset: str = get_defined_value(state, def_state, "outlineOffset")
+			self.outlineWidth: str = get_defined_value(state, def_state, "outlineWidth")
+			self.cursor: str = get_defined_value(state, def_state, "cursor")
 	class __TextBox109ClasscustomClass:
 		def __init__(self, state, def_state):
 
 			self.text: str = get_defined_value(state, def_state, "text")
 	class __TextBox109Class:
 		def __init__(self, state, def_state):
-
+			self.onClick = False
 			self.styles: Atri.__TextBox109ClassstylesClass = Atri._Atri__TextBox109ClassstylesClass(get_defined_value(state, def_state, "styles"), def_state["styles"])
 			self.custom: Atri.__TextBox109ClasscustomClass = Atri._Atri__TextBox109ClasscustomClass(get_defined_value(state, def_state, "custom"), def_state["custom"])
 	class __TextBox110ClassstylesClass:
@@ -391,13 +421,18 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+			self.outlineStyle: str = get_defined_value(state, def_state, "outlineStyle")
+			self.outlineColor: str = get_defined_value(state, def_state, "outlineColor")
+			self.outlineOffset: str = get_defined_value(state, def_state, "outlineOffset")
+			self.outlineWidth: str = get_defined_value(state, def_state, "outlineWidth")
+			self.cursor: str = get_defined_value(state, def_state, "cursor")
 	class __TextBox110ClasscustomClass:
 		def __init__(self, state, def_state):
 
 			self.text: str = get_defined_value(state, def_state, "text")
 	class __TextBox110Class:
 		def __init__(self, state, def_state):
-
+			self.onClick = False
 			self.styles: Atri.__TextBox110ClassstylesClass = Atri._Atri__TextBox110ClassstylesClass(get_defined_value(state, def_state, "styles"), def_state["styles"])
 			self.custom: Atri.__TextBox110ClasscustomClass = Atri._Atri__TextBox110ClasscustomClass(get_defined_value(state, def_state, "custom"), def_state["custom"])
 	class __Button18ClassstylesClass:
@@ -442,6 +477,11 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+			self.outlineStyle: str = get_defined_value(state, def_state, "outlineStyle")
+			self.outlineColor: str = get_defined_value(state, def_state, "outlineColor")
+			self.outlineOffset: str = get_defined_value(state, def_state, "outlineOffset")
+			self.outlineWidth: str = get_defined_value(state, def_state, "outlineWidth")
+			self.cursor: str = get_defined_value(state, def_state, "cursor")
 	class __Button18ClasscustomClass:
 		def __init__(self, state, def_state):
 
@@ -501,6 +541,11 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+			self.outlineStyle: str = get_defined_value(state, def_state, "outlineStyle")
+			self.outlineColor: str = get_defined_value(state, def_state, "outlineColor")
+			self.outlineOffset: str = get_defined_value(state, def_state, "outlineOffset")
+			self.outlineWidth: str = get_defined_value(state, def_state, "outlineWidth")
+			self.cursor: str = get_defined_value(state, def_state, "cursor")
 	class __Flex231Class:
 		def __init__(self, state, def_state):
 			self.onClick = False
@@ -555,6 +600,11 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+			self.outlineStyle: str = get_defined_value(state, def_state, "outlineStyle")
+			self.outlineColor: str = get_defined_value(state, def_state, "outlineColor")
+			self.outlineOffset: str = get_defined_value(state, def_state, "outlineOffset")
+			self.outlineWidth: str = get_defined_value(state, def_state, "outlineWidth")
+			self.cursor: str = get_defined_value(state, def_state, "cursor")
 	class __Flex232Class:
 		def __init__(self, state, def_state):
 			self.onClick = False
@@ -609,6 +659,11 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+			self.outlineStyle: str = get_defined_value(state, def_state, "outlineStyle")
+			self.outlineColor: str = get_defined_value(state, def_state, "outlineColor")
+			self.outlineOffset: str = get_defined_value(state, def_state, "outlineOffset")
+			self.outlineWidth: str = get_defined_value(state, def_state, "outlineWidth")
+			self.cursor: str = get_defined_value(state, def_state, "cursor")
 	class __Flex233Class:
 		def __init__(self, state, def_state):
 			self.onClick = False
@@ -663,6 +718,11 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+			self.outlineStyle: str = get_defined_value(state, def_state, "outlineStyle")
+			self.outlineColor: str = get_defined_value(state, def_state, "outlineColor")
+			self.outlineOffset: str = get_defined_value(state, def_state, "outlineOffset")
+			self.outlineWidth: str = get_defined_value(state, def_state, "outlineWidth")
+			self.cursor: str = get_defined_value(state, def_state, "cursor")
 	class __Flex234Class:
 		def __init__(self, state, def_state):
 			self.onClick = False
@@ -717,6 +777,11 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+			self.outlineStyle: str = get_defined_value(state, def_state, "outlineStyle")
+			self.outlineColor: str = get_defined_value(state, def_state, "outlineColor")
+			self.outlineOffset: str = get_defined_value(state, def_state, "outlineOffset")
+			self.outlineWidth: str = get_defined_value(state, def_state, "outlineWidth")
+			self.cursor: str = get_defined_value(state, def_state, "cursor")
 	class __Flex235Class:
 		def __init__(self, state, def_state):
 			self.onClick = False
@@ -771,6 +836,11 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+			self.outlineStyle: str = get_defined_value(state, def_state, "outlineStyle")
+			self.outlineColor: str = get_defined_value(state, def_state, "outlineColor")
+			self.outlineOffset: str = get_defined_value(state, def_state, "outlineOffset")
+			self.outlineWidth: str = get_defined_value(state, def_state, "outlineWidth")
+			self.cursor: str = get_defined_value(state, def_state, "cursor")
 	class __Flex236Class:
 		def __init__(self, state, def_state):
 			self.onClick = False
@@ -817,13 +887,18 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+			self.outlineStyle: str = get_defined_value(state, def_state, "outlineStyle")
+			self.outlineColor: str = get_defined_value(state, def_state, "outlineColor")
+			self.outlineOffset: str = get_defined_value(state, def_state, "outlineOffset")
+			self.outlineWidth: str = get_defined_value(state, def_state, "outlineWidth")
+			self.cursor: str = get_defined_value(state, def_state, "cursor")
 	class __TextBox111ClasscustomClass:
 		def __init__(self, state, def_state):
 
 			self.text: str = get_defined_value(state, def_state, "text")
 	class __TextBox111Class:
 		def __init__(self, state, def_state):
-
+			self.onClick = False
 			self.styles: Atri.__TextBox111ClassstylesClass = Atri._Atri__TextBox111ClassstylesClass(get_defined_value(state, def_state, "styles"), def_state["styles"])
 			self.custom: Atri.__TextBox111ClasscustomClass = Atri._Atri__TextBox111ClasscustomClass(get_defined_value(state, def_state, "custom"), def_state["custom"])
 	class __TextBox112ClassstylesClass:
@@ -868,13 +943,18 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+			self.outlineStyle: str = get_defined_value(state, def_state, "outlineStyle")
+			self.outlineColor: str = get_defined_value(state, def_state, "outlineColor")
+			self.outlineOffset: str = get_defined_value(state, def_state, "outlineOffset")
+			self.outlineWidth: str = get_defined_value(state, def_state, "outlineWidth")
+			self.cursor: str = get_defined_value(state, def_state, "cursor")
 	class __TextBox112ClasscustomClass:
 		def __init__(self, state, def_state):
 
 			self.text: str = get_defined_value(state, def_state, "text")
 	class __TextBox112Class:
 		def __init__(self, state, def_state):
-
+			self.onClick = False
 			self.styles: Atri.__TextBox112ClassstylesClass = Atri._Atri__TextBox112ClassstylesClass(get_defined_value(state, def_state, "styles"), def_state["styles"])
 			self.custom: Atri.__TextBox112ClasscustomClass = Atri._Atri__TextBox112ClasscustomClass(get_defined_value(state, def_state, "custom"), def_state["custom"])
 	class __Upload1ClassstylesClass:
@@ -927,6 +1007,11 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+			self.outlineStyle: str = get_defined_value(state, def_state, "outlineStyle")
+			self.outlineColor: str = get_defined_value(state, def_state, "outlineColor")
+			self.outlineOffset: str = get_defined_value(state, def_state, "outlineOffset")
+			self.outlineWidth: str = get_defined_value(state, def_state, "outlineWidth")
+			self.cursor: str = get_defined_value(state, def_state, "cursor")
 	class __Upload1ClasscustomClass:
 		def __init__(self, state, def_state):
 
@@ -995,6 +1080,11 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+			self.outlineStyle: str = get_defined_value(state, def_state, "outlineStyle")
+			self.outlineColor: str = get_defined_value(state, def_state, "outlineColor")
+			self.outlineOffset: str = get_defined_value(state, def_state, "outlineOffset")
+			self.outlineWidth: str = get_defined_value(state, def_state, "outlineWidth")
+			self.cursor: str = get_defined_value(state, def_state, "cursor")
 	class __Flex237Class:
 		def __init__(self, state, def_state):
 			self.onClick = False
@@ -1041,6 +1131,11 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+			self.outlineStyle: str = get_defined_value(state, def_state, "outlineStyle")
+			self.outlineColor: str = get_defined_value(state, def_state, "outlineColor")
+			self.outlineOffset: str = get_defined_value(state, def_state, "outlineOffset")
+			self.outlineWidth: str = get_defined_value(state, def_state, "outlineWidth")
+			self.cursor: str = get_defined_value(state, def_state, "cursor")
 	class __Image114ClasscustomClass:
 		def __init__(self, state, def_state):
 
@@ -1101,6 +1196,11 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+			self.outlineStyle: str = get_defined_value(state, def_state, "outlineStyle")
+			self.outlineColor: str = get_defined_value(state, def_state, "outlineColor")
+			self.outlineOffset: str = get_defined_value(state, def_state, "outlineOffset")
+			self.outlineWidth: str = get_defined_value(state, def_state, "outlineWidth")
+			self.cursor: str = get_defined_value(state, def_state, "cursor")
 	class __image_placeholderClass:
 		def __init__(self, state, def_state):
 			self.onClick = False
@@ -1155,6 +1255,11 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+			self.outlineStyle: str = get_defined_value(state, def_state, "outlineStyle")
+			self.outlineColor: str = get_defined_value(state, def_state, "outlineColor")
+			self.outlineOffset: str = get_defined_value(state, def_state, "outlineOffset")
+			self.outlineWidth: str = get_defined_value(state, def_state, "outlineWidth")
+			self.cursor: str = get_defined_value(state, def_state, "cursor")
 	class __runtestClass:
 		def __init__(self, state, def_state):
 			self.onClick = False
@@ -1201,13 +1306,18 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+			self.outlineStyle: str = get_defined_value(state, def_state, "outlineStyle")
+			self.outlineColor: str = get_defined_value(state, def_state, "outlineColor")
+			self.outlineOffset: str = get_defined_value(state, def_state, "outlineOffset")
+			self.outlineWidth: str = get_defined_value(state, def_state, "outlineWidth")
+			self.cursor: str = get_defined_value(state, def_state, "cursor")
 	class __TextBox113ClasscustomClass:
 		def __init__(self, state, def_state):
 
 			self.text: str = get_defined_value(state, def_state, "text")
 	class __TextBox113Class:
 		def __init__(self, state, def_state):
-
+			self.onClick = False
 			self.styles: Atri.__TextBox113ClassstylesClass = Atri._Atri__TextBox113ClassstylesClass(get_defined_value(state, def_state, "styles"), def_state["styles"])
 			self.custom: Atri.__TextBox113ClasscustomClass = Atri._Atri__TextBox113ClasscustomClass(get_defined_value(state, def_state, "custom"), def_state["custom"])
 	class __Image115ClassstylesClass:
@@ -1252,6 +1362,11 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+			self.outlineStyle: str = get_defined_value(state, def_state, "outlineStyle")
+			self.outlineColor: str = get_defined_value(state, def_state, "outlineColor")
+			self.outlineOffset: str = get_defined_value(state, def_state, "outlineOffset")
+			self.outlineWidth: str = get_defined_value(state, def_state, "outlineWidth")
+			self.cursor: str = get_defined_value(state, def_state, "cursor")
 	class __Image115ClasscustomClass:
 		def __init__(self, state, def_state):
 
@@ -1304,6 +1419,11 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+			self.outlineStyle: str = get_defined_value(state, def_state, "outlineStyle")
+			self.outlineColor: str = get_defined_value(state, def_state, "outlineColor")
+			self.outlineOffset: str = get_defined_value(state, def_state, "outlineOffset")
+			self.outlineWidth: str = get_defined_value(state, def_state, "outlineWidth")
+			self.cursor: str = get_defined_value(state, def_state, "cursor")
 	class __previewClasscustomClass:
 		def __init__(self, state, def_state):
 
@@ -1364,6 +1484,11 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+			self.outlineStyle: str = get_defined_value(state, def_state, "outlineStyle")
+			self.outlineColor: str = get_defined_value(state, def_state, "outlineColor")
+			self.outlineOffset: str = get_defined_value(state, def_state, "outlineOffset")
+			self.outlineWidth: str = get_defined_value(state, def_state, "outlineWidth")
+			self.cursor: str = get_defined_value(state, def_state, "cursor")
 	class __preview_wrapperClass:
 		def __init__(self, state, def_state):
 			self.onClick = False
@@ -1410,13 +1535,18 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+			self.outlineStyle: str = get_defined_value(state, def_state, "outlineStyle")
+			self.outlineColor: str = get_defined_value(state, def_state, "outlineColor")
+			self.outlineOffset: str = get_defined_value(state, def_state, "outlineOffset")
+			self.outlineWidth: str = get_defined_value(state, def_state, "outlineWidth")
+			self.cursor: str = get_defined_value(state, def_state, "cursor")
 	class __filenameClasscustomClass:
 		def __init__(self, state, def_state):
 
 			self.text: str = get_defined_value(state, def_state, "text")
 	class __filenameClass:
 		def __init__(self, state, def_state):
-
+			self.onClick = False
 			self.styles: Atri.__filenameClassstylesClass = Atri._Atri__filenameClassstylesClass(get_defined_value(state, def_state, "styles"), def_state["styles"])
 			self.custom: Atri.__filenameClasscustomClass = Atri._Atri__filenameClasscustomClass(get_defined_value(state, def_state, "custom"), def_state["custom"])
 	class __Flex370ClassstylesClass:
@@ -1469,6 +1599,11 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+			self.outlineStyle: str = get_defined_value(state, def_state, "outlineStyle")
+			self.outlineColor: str = get_defined_value(state, def_state, "outlineColor")
+			self.outlineOffset: str = get_defined_value(state, def_state, "outlineOffset")
+			self.outlineWidth: str = get_defined_value(state, def_state, "outlineWidth")
+			self.cursor: str = get_defined_value(state, def_state, "cursor")
 	class __Flex370Class:
 		def __init__(self, state, def_state):
 			self.onClick = False

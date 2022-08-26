@@ -119,11 +119,11 @@
         },
         "atri": {
             "hashes": [
-                "sha256:c73adfc6985d827a3b8668f161ba50144a40fd75e34930fbb1e8ea4ed460a747",
-                "sha256:cd89018147eefc178fc7ba8baf99a09157d9b6b0a6a310c14526e805d812ef46"
+                "sha256:09d292e8d99fef79cd90500f00cc9ec546eea32011186a0d03f68245ccbffd4e",
+                "sha256:a6f6a7053f21ca4dc56cf46f2379dde343d253af5294ba67402e99eec1669ada"
             ],
             "index": "pypi",
-            "version": "==0.0.46"
+            "version": "==0.0.47"
         },
         "atri-utils": {
             "hashes": [
@@ -175,11 +175,11 @@
         },
         "fastapi": {
             "hashes": [
-                "sha256:4e542f71b5b0f4f54a82449e8bd0244305de319186a31addab976bf672206420",
-                "sha256:5340f6016860baf94a52be5040c3a2e94c39ddc7ab4cc7548558182db742d9d6"
+                "sha256:9ac5f5d252b4b394df29accb1ed4bedf30e0e87fc6eb7ec75e1449fa040bfc17",
+                "sha256:9dafdc41feda85ee5acf0f7dd6bcb7fd946318a6664b41fd33e33b26f666a346"
             ],
             "index": "pypi",
-            "version": "==0.80.0"
+            "version": "==0.81.0"
         },
         "frozenlist": {
             "hashes": [

@@ -1,17 +1,24 @@
 import create from "zustand";
 
 const useStore = create((set) => {
-  return {};
+  return {
+    setPage: (pageName, newState) =>
+      set((state) => {
+        const pageState = state[pageName];
+        return { [pageName]: { ...pageState, ...newState } };
+      }),
+  };
 });
 
 export function updateStoreStateFromController(pageName, newState) {
-  useStore.setState({ [pageName]: newState });
+  useStore.getState().setPage(pageName, newState);
 }
 
 const desktopModeProps = {
   ...{
   "Home": {
     "TextBox1": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -51,13 +58,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Docs"
       }
     },
     "TextBox2": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -97,7 +110,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Gallery"
@@ -152,7 +170,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex2": {
@@ -204,7 +227,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex3": {
@@ -256,7 +284,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex4": {
@@ -308,7 +341,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "NavWrapper": {
@@ -360,7 +398,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image6": {
@@ -404,7 +447,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -460,7 +508,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex10": {
@@ -512,7 +565,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex11": {
@@ -564,7 +622,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image8": {
@@ -608,7 +671,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -616,6 +684,7 @@ const desktopModeProps = {
       }
     },
     "TextBox4": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -655,13 +724,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Tests"
       }
     },
     "current_range": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -701,7 +776,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "0-0"
@@ -756,10 +836,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox6": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -799,13 +885,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "tests"
       }
     },
     "testname_1": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -845,7 +937,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -900,7 +997,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "status_1": {
@@ -944,7 +1046,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -1000,7 +1107,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image10": {
@@ -1044,7 +1156,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -1092,7 +1209,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -1148,10 +1270,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "commentnum_1": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -1191,7 +1319,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -1246,7 +1379,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "testitem_1": {
@@ -1298,7 +1436,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex19": {
@@ -1350,10 +1493,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox9": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -1393,7 +1542,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -1440,7 +1594,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -1496,7 +1655,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image13": {
@@ -1540,7 +1704,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -1596,7 +1765,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image14": {
@@ -1640,7 +1814,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -1648,6 +1827,7 @@ const desktopModeProps = {
       }
     },
     "TextBox10": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -1687,7 +1867,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -1734,7 +1919,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -1742,6 +1932,7 @@ const desktopModeProps = {
       }
     },
     "TextBox11": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -1781,7 +1972,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -1828,7 +2024,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -1884,10 +2085,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox12": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -1927,7 +2134,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -1974,7 +2186,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -2030,7 +2247,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image18": {
@@ -2074,7 +2296,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -2082,6 +2309,7 @@ const desktopModeProps = {
       }
     },
     "TextBox13": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -2121,7 +2349,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -2168,7 +2401,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -2224,10 +2462,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox14": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -2267,7 +2511,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -2314,7 +2563,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -2370,7 +2624,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image21": {
@@ -2414,7 +2673,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -2422,6 +2686,7 @@ const desktopModeProps = {
       }
     },
     "TextBox15": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -2461,7 +2726,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -2508,7 +2778,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -2564,10 +2839,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox16": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -2607,7 +2888,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -2654,7 +2940,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -2710,7 +3001,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image24": {
@@ -2754,7 +3050,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -2762,6 +3063,7 @@ const desktopModeProps = {
       }
     },
     "TextBox17": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -2801,7 +3103,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -2848,7 +3155,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -2904,10 +3216,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox18": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -2947,7 +3265,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -2994,7 +3317,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -3050,7 +3378,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image27": {
@@ -3094,7 +3427,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -3102,6 +3440,7 @@ const desktopModeProps = {
       }
     },
     "TextBox19": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -3141,7 +3480,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -3188,7 +3532,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -3244,10 +3593,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox20": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -3287,7 +3642,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -3334,7 +3694,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -3390,7 +3755,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image30": {
@@ -3434,7 +3804,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -3442,6 +3817,7 @@ const desktopModeProps = {
       }
     },
     "TextBox21": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -3481,7 +3857,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -3528,7 +3909,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -3584,10 +3970,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox22": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -3627,7 +4019,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -3674,7 +4071,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -3730,7 +4132,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image33": {
@@ -3774,7 +4181,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -3782,6 +4194,7 @@ const desktopModeProps = {
       }
     },
     "TextBox23": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -3821,7 +4234,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -3868,7 +4286,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -3924,10 +4347,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox24": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -3967,7 +4396,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -4014,7 +4448,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -4070,7 +4509,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image36": {
@@ -4114,7 +4558,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -4122,6 +4571,7 @@ const desktopModeProps = {
       }
     },
     "TextBox25": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -4161,7 +4611,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -4208,7 +4663,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -4264,10 +4724,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox26": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -4307,7 +4773,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -4354,7 +4825,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -4410,10 +4886,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "commentnum_2": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -4453,7 +4935,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -4500,7 +4987,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -4556,7 +5048,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "navtest_2": {
@@ -4600,7 +5097,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -4656,7 +5158,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "status_2": {
@@ -4700,7 +5207,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -4708,6 +5220,7 @@ const desktopModeProps = {
       }
     },
     "testname_2": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -4747,7 +5260,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -4802,7 +5320,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex68": {
@@ -4854,7 +5377,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "testitem_2": {
@@ -4906,10 +5434,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "commentnum_3": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -4949,7 +5483,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -4996,7 +5535,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -5052,7 +5596,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "navtest_3": {
@@ -5096,7 +5645,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -5152,7 +5706,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "status_3": {
@@ -5196,7 +5755,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -5204,6 +5768,7 @@ const desktopModeProps = {
       }
     },
     "testname_3": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -5243,7 +5808,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -5298,7 +5868,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex73": {
@@ -5350,7 +5925,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "testitem_3": {
@@ -5402,10 +5982,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "commentnum_4": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -5445,7 +6031,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -5492,7 +6083,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -5548,7 +6144,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "navtest_4": {
@@ -5592,7 +6193,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -5648,7 +6254,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "status_4": {
@@ -5692,7 +6303,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -5700,6 +6316,7 @@ const desktopModeProps = {
       }
     },
     "testname_4": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -5739,7 +6356,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -5794,7 +6416,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex78": {
@@ -5846,7 +6473,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "testitem_4": {
@@ -5898,10 +6530,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "commentnum_5": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -5941,7 +6579,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -5988,7 +6631,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -6044,7 +6692,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "navtest_5": {
@@ -6088,7 +6741,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -6144,7 +6802,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "status_5": {
@@ -6188,7 +6851,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -6196,6 +6864,7 @@ const desktopModeProps = {
       }
     },
     "testname_5": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -6235,7 +6904,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -6290,7 +6964,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex83": {
@@ -6342,7 +7021,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "testitem_5": {
@@ -6394,10 +7078,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "commentnum_6": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -6437,7 +7127,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -6484,7 +7179,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -6540,7 +7240,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "navtest_6": {
@@ -6584,7 +7289,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -6640,7 +7350,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "status_6": {
@@ -6684,7 +7399,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -6692,6 +7412,7 @@ const desktopModeProps = {
       }
     },
     "testname_6": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -6731,7 +7452,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -6786,7 +7512,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex88": {
@@ -6838,7 +7569,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "testitem_6": {
@@ -6890,10 +7626,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "commentnum_7": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -6933,7 +7675,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -6980,7 +7727,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -7036,7 +7788,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "navtest_7": {
@@ -7080,7 +7837,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -7136,7 +7898,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "status_7": {
@@ -7180,7 +7947,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -7188,6 +7960,7 @@ const desktopModeProps = {
       }
     },
     "testname_7": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -7227,7 +8000,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -7282,7 +8060,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex93": {
@@ -7334,7 +8117,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "testitem_7": {
@@ -7386,10 +8174,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "commentnum_8": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -7429,7 +8223,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -7476,7 +8275,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -7532,7 +8336,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "navtest_8": {
@@ -7576,7 +8385,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -7632,7 +8446,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "status_8": {
@@ -7676,7 +8495,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -7684,6 +8508,7 @@ const desktopModeProps = {
       }
     },
     "testname_8": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -7723,7 +8548,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -7778,7 +8608,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex98": {
@@ -7830,7 +8665,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "testitem_8": {
@@ -7882,10 +8722,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "commentnum_9": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -7925,7 +8771,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -7972,7 +8823,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -8028,7 +8884,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "navtest_9": {
@@ -8072,7 +8933,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -8128,7 +8994,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "status_9": {
@@ -8172,7 +9043,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -8180,6 +9056,7 @@ const desktopModeProps = {
       }
     },
     "testname_9": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -8219,7 +9096,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -8274,7 +9156,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex103": {
@@ -8326,7 +9213,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "testitem_9": {
@@ -8378,10 +9270,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "commentnum_10": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -8421,7 +9319,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -8468,7 +9371,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -8524,7 +9432,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "navtest_10": {
@@ -8568,7 +9481,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -8624,7 +9542,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "status_10": {
@@ -8668,7 +9591,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -8676,6 +9604,7 @@ const desktopModeProps = {
       }
     },
     "testname_10": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -8715,7 +9644,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -8770,7 +9704,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex108": {
@@ -8822,7 +9761,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "testitem_10": {
@@ -8874,7 +9818,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex110": {
@@ -8926,10 +9875,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox45": {
+      "onClick": false,
       "styles": {
         "alignSelf": "center",
         "flexGrow": "",
@@ -8969,13 +9924,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Prev"
       }
     },
     "TextBox46": {
+      "onClick": false,
       "styles": {
         "alignSelf": "center",
         "flexGrow": "",
@@ -9015,7 +9976,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Next"
@@ -9070,7 +10036,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "prev": {
@@ -9122,7 +10093,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       }
     },
     "Image66": {
@@ -9166,7 +10142,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -9222,7 +10203,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       }
     },
     "Image67": {
@@ -9266,7 +10252,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -9322,7 +10313,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Button2": {
@@ -9366,7 +10362,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Submit"
@@ -9413,7 +10414,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Submit"
@@ -9460,13 +10466,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "none",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Add new test"
       }
     },
     "total_tests": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -9506,13 +10518,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "-"
       }
     },
     "TextBox186": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -9552,7 +10570,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "of"
@@ -9601,7 +10624,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -9609,6 +10637,7 @@ const desktopModeProps = {
       }
     },
     "TextBox47": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -9648,7 +10677,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -9695,7 +10729,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -9703,6 +10742,7 @@ const desktopModeProps = {
       }
     },
     "TextBox48": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -9742,7 +10782,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -9789,7 +10834,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -9797,6 +10847,7 @@ const desktopModeProps = {
       }
     },
     "TextBox49": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -9836,7 +10887,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -9883,7 +10939,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -9891,6 +10952,7 @@ const desktopModeProps = {
       }
     },
     "TextBox50": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -9930,7 +10992,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -9977,7 +11044,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -9985,6 +11057,7 @@ const desktopModeProps = {
       }
     },
     "TextBox51": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -10024,7 +11097,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -10071,7 +11149,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -10079,6 +11162,7 @@ const desktopModeProps = {
       }
     },
     "TextBox52": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -10118,7 +11202,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -10165,7 +11254,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -10173,6 +11267,7 @@ const desktopModeProps = {
       }
     },
     "TextBox53": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -10212,7 +11307,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -10259,7 +11359,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -10267,6 +11372,7 @@ const desktopModeProps = {
       }
     },
     "TextBox54": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -10306,7 +11412,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -10353,7 +11464,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -10361,6 +11477,7 @@ const desktopModeProps = {
       }
     },
     "TextBox55": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -10400,13 +11517,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
       }
     },
     "TextBox56": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -10446,7 +11569,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "5"
@@ -10493,7 +11621,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -10541,7 +11674,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -10597,7 +11735,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image79": {
@@ -10641,7 +11784,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -10697,7 +11845,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image80": {
@@ -10741,7 +11894,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -10797,7 +11955,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image81": {
@@ -10841,7 +12004,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -10897,7 +12065,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image82": {
@@ -10941,7 +12114,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -10997,7 +12175,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image83": {
@@ -11041,7 +12224,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -11097,7 +12285,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image84": {
@@ -11141,7 +12334,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -11197,7 +12395,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image85": {
@@ -11241,7 +12444,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -11297,7 +12505,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image86": {
@@ -11341,7 +12554,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -11397,7 +12615,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex126": {
@@ -11449,7 +12672,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image87": {
@@ -11493,7 +12721,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -11541,7 +12774,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Submit"
@@ -11588,7 +12826,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -11596,6 +12839,7 @@ const desktopModeProps = {
       }
     },
     "TextBox57": {
+      "onClick": false,
       "styles": {
         "alignSelf": "center",
         "flexGrow": "",
@@ -11635,7 +12879,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Next"
@@ -11682,7 +12931,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -11690,6 +12944,7 @@ const desktopModeProps = {
       }
     },
     "TextBox58": {
+      "onClick": false,
       "styles": {
         "alignSelf": "center",
         "flexGrow": "",
@@ -11729,13 +12984,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Prev"
       }
     },
     "TextBox59": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -11775,7 +13036,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -11822,7 +13088,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -11878,10 +13149,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox60": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -11921,7 +13198,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -11968,7 +13250,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -12024,10 +13311,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox61": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -12067,7 +13360,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -12114,7 +13412,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -12170,10 +13473,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox62": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -12213,7 +13522,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -12260,7 +13574,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -12316,10 +13635,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox63": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -12359,7 +13684,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -12406,7 +13736,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -12462,10 +13797,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox64": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -12505,7 +13846,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -12552,7 +13898,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -12608,10 +13959,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox65": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -12651,7 +14008,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -12698,7 +14060,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -12754,10 +14121,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox66": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -12797,7 +14170,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -12844,7 +14222,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -12900,10 +14283,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox67": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -12943,7 +14332,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -12990,7 +14384,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -13046,7 +14445,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex136": {
@@ -13098,7 +14502,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image99": {
@@ -13142,7 +14551,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -13150,6 +14564,7 @@ const desktopModeProps = {
       }
     },
     "TextBox68": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -13189,7 +14604,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Your text Here!"
@@ -13244,7 +14664,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex138": {
@@ -13296,7 +14721,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex139": {
@@ -13348,10 +14778,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox69": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -13391,13 +14827,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "tests"
       }
     },
     "TextBox70": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -13437,7 +14879,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "40"
@@ -13492,7 +14939,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex141": {
@@ -13544,7 +14996,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex142": {
@@ -13596,7 +15053,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex143": {
@@ -13648,7 +15110,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex144": {
@@ -13700,7 +15167,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex145": {
@@ -13752,7 +15224,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex146": {
@@ -13804,7 +15281,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex147": {
@@ -13856,7 +15338,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex148": {
@@ -13908,7 +15395,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex149": {
@@ -13960,7 +15452,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex150": {
@@ -14012,7 +15509,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex151": {
@@ -14064,7 +15566,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex152": {
@@ -14116,7 +15623,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex153": {
@@ -14168,7 +15680,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex154": {
@@ -14220,7 +15737,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex155": {
@@ -14272,7 +15794,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex156": {
@@ -14324,7 +15851,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex157": {
@@ -14376,7 +15908,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex158": {
@@ -14428,7 +15965,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex159": {
@@ -14480,7 +16022,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex160": {
@@ -14532,7 +16079,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex161": {
@@ -14584,7 +16136,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex162": {
@@ -14636,7 +16193,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex163": {
@@ -14688,7 +16250,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex164": {
@@ -14740,7 +16307,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex165": {
@@ -14792,7 +16364,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex166": {
@@ -14844,7 +16421,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex167": {
@@ -14896,7 +16478,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex168": {
@@ -14948,7 +16535,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex169": {
@@ -15000,7 +16592,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex170": {
@@ -15052,7 +16649,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex171": {
@@ -15104,7 +16706,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image101": {
@@ -15148,7 +16755,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -15156,6 +16768,7 @@ const desktopModeProps = {
       }
     },
     "TextBox72": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -15195,13 +16808,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Gallery"
       }
     },
     "TextBox73": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -15241,7 +16860,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Docs"
@@ -15288,7 +16912,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "none",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Add new test"
@@ -15335,7 +16964,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -15343,6 +16977,7 @@ const desktopModeProps = {
       }
     },
     "TextBox74": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -15382,13 +17017,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Gallery"
       }
     },
     "TextBox75": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -15428,7 +17069,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Docs"
@@ -15483,7 +17129,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex182": {
@@ -15535,7 +17186,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex183": {
@@ -15587,7 +17243,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex184": {
@@ -15639,7 +17300,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex185": {
@@ -15691,7 +17357,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex186": {
@@ -15743,10 +17414,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox76": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -15786,7 +17463,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "View Test"
@@ -15833,7 +17515,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Submit"
@@ -15880,7 +17567,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -15888,6 +17580,7 @@ const desktopModeProps = {
       }
     },
     "TextBox77": {
+      "onClick": false,
       "styles": {
         "alignSelf": "center",
         "flexGrow": "",
@@ -15927,7 +17620,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Next"
@@ -15974,7 +17672,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -15982,6 +17685,7 @@ const desktopModeProps = {
       }
     },
     "TextBox78": {
+      "onClick": false,
       "styles": {
         "alignSelf": "center",
         "flexGrow": "",
@@ -16021,7 +17725,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Prev"
@@ -16076,7 +17785,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex188": {
@@ -16128,7 +17842,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex189": {
@@ -16180,10 +17899,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox80": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -16223,7 +17948,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "testname"
@@ -16278,7 +18008,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex191": {
@@ -16330,7 +18065,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex192": {
@@ -16382,7 +18122,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image105": {
@@ -16426,7 +18171,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -16482,7 +18232,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex194": {
@@ -16534,7 +18289,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Button9": {
@@ -16578,13 +18338,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": ""
       }
     },
     "TextBox81": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -16624,7 +18390,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Name"
@@ -16679,10 +18450,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox82": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -16722,7 +18499,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Jane Doe"
@@ -16777,7 +18559,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex199": {
@@ -16829,10 +18616,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox83": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -16872,7 +18665,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Passport no."
@@ -16927,7 +18725,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex201": {
@@ -16979,10 +18782,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox85": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -17022,7 +18831,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Date of Birth"
@@ -17077,7 +18891,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex203": {
@@ -17129,10 +18948,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox87": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -17172,7 +18997,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Place of Birth"
@@ -17227,7 +19057,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex205": {
@@ -17279,10 +19114,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox89": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -17322,7 +19163,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Name"
@@ -17369,13 +19215,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": ""
       }
     },
     "TextBox91": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -17415,7 +19267,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Nationality"
@@ -17470,7 +19327,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex209": {
@@ -17522,10 +19384,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox93": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -17565,13 +19433,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Jane Doe"
       }
     },
     "TextBox94": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -17611,13 +19485,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Jane Doe"
       }
     },
     "TextBox95": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -17657,13 +19537,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Jane Doe"
       }
     },
     "TextBox96": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -17703,7 +19589,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Jane Doe"
@@ -17758,7 +19649,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex211": {
@@ -17810,7 +19706,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image106": {
@@ -17854,7 +19755,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -17902,7 +19808,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -17950,7 +19861,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -17998,7 +19914,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Leave a comment"
@@ -18053,7 +19974,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex213": {
@@ -18105,10 +20031,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox97": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -18148,7 +20080,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "All comments"
@@ -18203,7 +20140,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex215": {
@@ -18255,7 +20197,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex216": {
@@ -18307,7 +20254,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image109": {
@@ -18351,7 +20303,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -18359,6 +20316,7 @@ const desktopModeProps = {
       }
     },
     "TextBox98": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -18398,13 +20356,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "username"
       }
     },
     "TextBox99": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -18444,13 +20408,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "3h"
       }
     },
     "TextBox100": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -18490,7 +20460,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
@@ -18545,10 +20520,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox101": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -18588,13 +20569,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
       }
     },
     "TextBox102": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -18634,13 +20621,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "3h"
       }
     },
     "TextBox103": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -18680,7 +20673,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "username"
@@ -18727,7 +20725,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -18783,7 +20786,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex220": {
@@ -18835,7 +20843,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex221": {
@@ -18887,7 +20900,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image111": {
@@ -18931,7 +20949,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -18939,6 +20962,7 @@ const desktopModeProps = {
       }
     },
     "TextBox104": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -18978,13 +21002,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "username"
       }
     },
     "TextBox105": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -19024,13 +21054,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "3h"
       }
     },
     "TextBox106": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -19070,7 +21106,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
@@ -19125,7 +21166,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex223": {
@@ -19177,7 +21223,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex224": {
@@ -19229,7 +21280,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex225": {
@@ -19281,7 +21337,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Input1": {
@@ -19326,11 +21387,17 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "none",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "value": "",
-        "placeholder": "Leave a comment"
+        "placeholder": "Leave a comment",
+        "isPasswordField": false
       }
     },
     "Flex226": {
@@ -19382,7 +21449,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Button16": {
@@ -19426,7 +21498,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "none",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Submit"
@@ -19473,7 +21550,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "none",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Add new test"
@@ -19520,7 +21602,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": ""
@@ -19567,7 +21654,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": ""
@@ -19614,7 +21706,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": ""
@@ -19661,7 +21758,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": ""
@@ -19710,13 +21812,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "none",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Add new test"
       }
     },
     "TextBox107": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -19756,13 +21864,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Docs"
       }
     },
     "TextBox108": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -19802,7 +21916,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Gallery"
@@ -19849,7 +21968,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -19897,7 +22021,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -19905,6 +22034,7 @@ const desktopModeProps = {
       }
     },
     "TextBox109": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -19944,13 +22074,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Gallery"
       }
     },
     "TextBox110": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -19990,7 +22126,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Docs"
@@ -20037,7 +22178,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "none",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Add new test"
@@ -20092,7 +22238,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex232": {
@@ -20144,7 +22295,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex233": {
@@ -20196,7 +22352,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex234": {
@@ -20248,7 +22409,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex235": {
@@ -20300,7 +22466,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex236": {
@@ -20352,10 +22523,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox111": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -20395,13 +22572,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Add new test"
       }
     },
     "TextBox112": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -20441,7 +22624,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Input Image"
@@ -20497,7 +22685,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "multiple": false,
@@ -20558,7 +22751,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       }
     },
     "Image114": {
@@ -20602,7 +22800,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -20658,7 +22861,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "runtest": {
@@ -20710,10 +22918,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox113": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -20753,7 +22967,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Run Test"
@@ -20800,7 +23019,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -20848,7 +23072,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -20904,10 +23133,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "filename": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -20947,7 +23182,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": ""
@@ -21002,12 +23242,18 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     }
   },
   "newtestresult": {
     "TextBox114": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -21047,13 +23293,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
       }
     },
     "TextBox115": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -21093,13 +23345,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "3h"
       }
     },
     "TextBox116": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -21139,7 +23397,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "username"
@@ -21186,7 +23449,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -21234,7 +23502,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -21242,6 +23515,7 @@ const desktopModeProps = {
       }
     },
     "TextBox117": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -21281,13 +23555,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "username"
       }
     },
     "TextBox118": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -21327,13 +23607,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "3h"
       }
     },
     "TextBox119": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -21373,13 +23659,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
       }
     },
     "TextBox120": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -21419,13 +23711,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
       }
     },
     "TextBox121": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -21465,13 +23763,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "3h"
       }
     },
     "TextBox122": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -21511,7 +23815,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "username"
@@ -21558,7 +23867,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -21566,6 +23880,7 @@ const desktopModeProps = {
       }
     },
     "TextBox123": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -21605,7 +23920,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Nationality"
@@ -21652,7 +23972,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": ""
@@ -21699,13 +24024,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": ""
       }
     },
     "TextBox124": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -21745,7 +24076,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Place of Birth"
@@ -21792,13 +24128,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": ""
       }
     },
     "TextBox125": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -21838,7 +24180,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Date of Birth"
@@ -21885,13 +24232,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": ""
       }
     },
     "TextBox126": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -21931,13 +24284,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Passport no."
       }
     },
     "TextBox127": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -21977,7 +24336,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Name"
@@ -22024,7 +24388,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": ""
@@ -22079,7 +24448,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex241": {
@@ -22131,7 +24505,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex242": {
@@ -22183,7 +24562,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex243": {
@@ -22235,7 +24619,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex244": {
@@ -22287,7 +24676,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex245": {
@@ -22339,7 +24733,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Button27": {
@@ -22383,13 +24782,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "none",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Submit"
       }
     },
     "TextBox128": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -22429,7 +24834,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Jane Doe"
@@ -22484,10 +24894,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox129": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -22527,7 +24943,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Jane Doe"
@@ -22582,10 +25003,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox130": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -22625,7 +25052,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Jane Doe"
@@ -22680,10 +25112,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox131": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -22723,7 +25161,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Jane Doe"
@@ -22778,10 +25221,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox132": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -22821,7 +25270,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Jane Doe"
@@ -22876,7 +25330,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image119": {
@@ -22920,7 +25379,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -22928,6 +25392,7 @@ const desktopModeProps = {
       }
     },
     "TextBox133": {
+      "onClick": false,
       "styles": {
         "alignSelf": "center",
         "flexGrow": "",
@@ -22967,7 +25432,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Prev"
@@ -23014,7 +25484,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -23022,6 +25497,7 @@ const desktopModeProps = {
       }
     },
     "TextBox134": {
+      "onClick": false,
       "styles": {
         "alignSelf": "center",
         "flexGrow": "",
@@ -23061,7 +25537,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Next"
@@ -23108,7 +25589,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -23156,7 +25642,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Submit"
@@ -23211,7 +25702,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex252": {
@@ -23263,7 +25759,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex253": {
@@ -23315,7 +25816,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex254": {
@@ -23367,7 +25873,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Input2": {
@@ -23412,11 +25923,17 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "none",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "value": "",
-        "placeholder": "Leave a comment"
+        "placeholder": "Leave a comment",
+        "isPasswordField": false
       }
     },
     "Flex255": {
@@ -23468,7 +25985,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex256": {
@@ -23520,7 +26042,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex257": {
@@ -23572,7 +26099,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex258": {
@@ -23624,7 +26156,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex259": {
@@ -23676,7 +26213,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex260": {
@@ -23728,10 +26270,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox135": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -23771,13 +26319,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "40"
       }
     },
     "TextBox136": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -23817,7 +26371,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "tests"
@@ -23872,7 +26431,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex262": {
@@ -23924,7 +26488,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex263": {
@@ -23976,7 +26545,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex265": {
@@ -24028,7 +26602,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Button29": {
@@ -24072,7 +26651,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Leave a comment"
@@ -24119,7 +26703,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -24167,7 +26756,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -24215,7 +26809,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -24271,7 +26870,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex267": {
@@ -24323,7 +26927,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex268": {
@@ -24375,7 +26984,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex269": {
@@ -24427,7 +27041,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image125": {
@@ -24471,7 +27090,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -24479,6 +27103,7 @@ const desktopModeProps = {
       }
     },
     "TextBox139": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -24518,13 +27143,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Gallery"
       }
     },
     "TextBox140": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -24564,7 +27195,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Docs"
@@ -24611,7 +27247,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "none",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Add new test"
@@ -24658,7 +27299,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -24666,6 +27312,7 @@ const desktopModeProps = {
       }
     },
     "TextBox141": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -24705,13 +27352,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Gallery"
       }
     },
     "TextBox142": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -24751,7 +27404,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Docs"
@@ -24798,7 +27456,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "none",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Add new test"
@@ -24845,7 +27508,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -24853,6 +27521,7 @@ const desktopModeProps = {
       }
     },
     "TextBox143": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -24892,13 +27561,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Gallery"
       }
     },
     "TextBox144": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -24938,7 +27613,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Docs"
@@ -24985,7 +27665,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "none",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Add new test"
@@ -25032,7 +27717,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -25040,6 +27730,7 @@ const desktopModeProps = {
       }
     },
     "TextBox145": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -25079,13 +27770,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Gallery"
       }
     },
     "TextBox146": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -25125,7 +27822,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Docs"
@@ -25172,7 +27874,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "none",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Add new test"
@@ -25219,7 +27926,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -25227,6 +27939,7 @@ const desktopModeProps = {
       }
     },
     "TextBox147": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -25266,13 +27979,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Gallery"
       }
     },
     "TextBox148": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -25312,7 +28031,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Docs"
@@ -25359,7 +28083,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "none",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Add new test"
@@ -25406,7 +28135,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -25414,6 +28148,7 @@ const desktopModeProps = {
       }
     },
     "TextBox149": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -25453,13 +28188,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Gallery"
       }
     },
     "TextBox150": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -25499,7 +28240,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Docs"
@@ -25546,7 +28292,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "none",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Add new test"
@@ -25601,7 +28352,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex302": {
@@ -25653,7 +28409,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex303": {
@@ -25705,7 +28466,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex304": {
@@ -25757,7 +28523,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex305": {
@@ -25809,10 +28580,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox151": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -25852,13 +28629,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
       }
     },
     "TextBox152": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -25898,13 +28681,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "3h"
       }
     },
     "TextBox153": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -25944,7 +28733,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "username"
@@ -25991,7 +28785,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -26039,7 +28838,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -26047,6 +28851,7 @@ const desktopModeProps = {
       }
     },
     "TextBox154": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -26086,13 +28891,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "username"
       }
     },
     "TextBox155": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -26132,13 +28943,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "3h"
       }
     },
     "TextBox156": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -26178,13 +28995,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
       }
     },
     "TextBox157": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -26224,13 +29047,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
       }
     },
     "TextBox158": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -26270,13 +29099,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "3h"
       }
     },
     "TextBox159": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -26316,7 +29151,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "username"
@@ -26363,7 +29203,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -26371,6 +29216,7 @@ const desktopModeProps = {
       }
     },
     "TextBox160": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -26410,7 +29256,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Nationality"
@@ -26457,7 +29308,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": ""
@@ -26504,13 +29360,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": ""
       }
     },
     "TextBox161": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -26550,7 +29412,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Place of Birth"
@@ -26597,13 +29464,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": ""
       }
     },
     "TextBox162": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -26643,7 +29516,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Date of Birth"
@@ -26690,13 +29568,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": ""
       }
     },
     "TextBox163": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -26736,13 +29620,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Passport no."
       }
     },
     "TextBox164": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -26782,7 +29672,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Name"
@@ -26829,7 +29724,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": ""
@@ -26884,7 +29784,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex307": {
@@ -26936,7 +29841,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex308": {
@@ -26988,7 +29898,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex309": {
@@ -27040,7 +29955,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex310": {
@@ -27092,7 +30012,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex311": {
@@ -27144,10 +30069,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox165": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -27187,7 +30118,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Jane Doe"
@@ -27242,10 +30178,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox166": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -27285,7 +30227,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Jane Doe"
@@ -27340,10 +30287,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox167": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -27383,7 +30336,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Jane Doe"
@@ -27438,10 +30396,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox168": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -27481,7 +30445,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Jane Doe"
@@ -27536,10 +30505,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox169": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -27579,7 +30554,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Jane Doe"
@@ -27634,7 +30614,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image134": {
@@ -27678,7 +30663,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -27686,6 +30676,7 @@ const desktopModeProps = {
       }
     },
     "TextBox170": {
+      "onClick": false,
       "styles": {
         "alignSelf": "center",
         "flexGrow": "",
@@ -27725,7 +30716,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Prev"
@@ -27772,7 +30768,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -27780,6 +30781,7 @@ const desktopModeProps = {
       }
     },
     "TextBox171": {
+      "onClick": false,
       "styles": {
         "alignSelf": "center",
         "flexGrow": "",
@@ -27819,7 +30821,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Next"
@@ -27866,7 +30873,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -27914,7 +30926,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Submit"
@@ -27969,7 +30986,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex318": {
@@ -28021,7 +31043,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex319": {
@@ -28073,7 +31100,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex320": {
@@ -28125,7 +31157,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Input3": {
@@ -28170,11 +31207,17 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "none",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "value": "",
-        "placeholder": "Leave a comment"
+        "placeholder": "Leave a comment",
+        "isPasswordField": false
       }
     },
     "Flex321": {
@@ -28226,7 +31269,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex322": {
@@ -28278,7 +31326,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex323": {
@@ -28330,7 +31383,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex324": {
@@ -28382,7 +31440,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex325": {
@@ -28434,7 +31497,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex326": {
@@ -28486,10 +31554,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox172": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -28529,7 +31603,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "testname"
@@ -28584,7 +31663,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex328": {
@@ -28636,7 +31720,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex329": {
@@ -28688,7 +31777,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex331": {
@@ -28740,7 +31834,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Button43": {
@@ -28784,7 +31883,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Leave a comment"
@@ -28831,7 +31935,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -28879,7 +31988,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -28927,7 +32041,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -28983,7 +32102,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex335": {
@@ -29035,7 +32159,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex337": {
@@ -29087,7 +32216,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex338": {
@@ -29139,7 +32273,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex340": {
@@ -29191,10 +32330,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox175": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -29234,7 +32379,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "View Test"
@@ -29289,7 +32439,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image141": {
@@ -29333,7 +32488,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -29341,6 +32501,7 @@ const desktopModeProps = {
       }
     },
     "TextBox177": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -29380,7 +32541,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Save Test"
@@ -29435,7 +32601,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex344": {
@@ -29487,7 +32658,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Button46": {
@@ -29531,7 +32707,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "none",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Submit"
@@ -29578,13 +32759,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": ""
       }
     },
     "TextBox187": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -29624,7 +32811,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Nationality"
@@ -29671,13 +32863,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": ""
       }
     },
     "TextBox188": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -29717,7 +32915,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Place of Birth"
@@ -29764,13 +32967,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": ""
       }
     },
     "TextBox189": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -29810,7 +33019,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Date of Birth"
@@ -29857,13 +33071,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": ""
       }
     },
     "TextBox190": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -29903,13 +33123,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Passport no."
       }
     },
     "TextBox191": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -29949,7 +33175,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Name"
@@ -29996,13 +33227,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": ""
       }
     },
     "TextBox192": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -30042,7 +33279,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Jane Doe"
@@ -30097,10 +33339,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox193": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -30140,7 +33388,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Jane Doe"
@@ -30195,10 +33448,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox194": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -30238,7 +33497,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Jane Doe"
@@ -30293,10 +33557,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox195": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -30336,7 +33606,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Jane Doe"
@@ -30391,10 +33666,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox196": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -30434,7 +33715,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Jane Doe"
@@ -30489,7 +33775,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image146": {
@@ -30533,7 +33824,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -30589,7 +33885,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex361": {
@@ -30641,7 +33942,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex362": {
@@ -30693,7 +33999,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex363": {
@@ -30745,7 +34056,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex364": {
@@ -30797,7 +34113,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex365": {
@@ -30849,7 +34170,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex366": {
@@ -30901,7 +34227,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex367": {
@@ -30953,7 +34284,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Flex368": {
@@ -31005,7 +34341,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     }
   },
@@ -31059,7 +34400,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image142": {
@@ -31103,7 +34449,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -31159,7 +34510,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Image145": {
@@ -31203,7 +34559,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "alt": "No preview available",
@@ -31259,10 +34620,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox178": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -31302,13 +34669,19 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Login to Workbench"
       }
     },
     "TextBox179": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -31348,7 +34721,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Contact your team for credentials"
@@ -31403,10 +34781,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "TextBox181": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -31446,7 +34830,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Username"
@@ -31494,11 +34883,17 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "none",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "value": "",
-        "placeholder": "john_doe"
+        "placeholder": "john_doe",
+        "isPasswordField": false
       }
     },
     "Flex351": {
@@ -31550,7 +34945,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "password": {
@@ -31595,14 +34995,21 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "none",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "value": "",
-        "placeholder": "*********"
+        "placeholder": "*********",
+        "isPasswordField": false
       }
     },
     "TextBox183": {
+      "onClick": false,
       "styles": {
         "alignSelf": "",
         "flexGrow": "",
@@ -31642,7 +35049,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Password"
@@ -31697,7 +35109,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "Button48": {
@@ -31741,7 +35158,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "none",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Login"
@@ -31796,10 +35218,16 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     },
     "errorbox": {
+      "onClick": false,
       "styles": {
         "alignSelf": "center",
         "flexGrow": "",
@@ -31839,7 +35267,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       },
       "custom": {
         "text": "Incorrect login credentials. Please try again. "
@@ -31894,7 +35327,12 @@ const desktopModeProps = {
         "left": "",
         "bottom": "",
         "right": "",
-        "zIndex": ""
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
       }
     }
   }
@@ -32029,7 +35467,7 @@ function getEffectivePropsForPage(pageName) {
 
 export function setEffectivePropsForPage(pageName) {
   const effectiveProps = getEffectivePropsForPage(pageName);
-  useStore.setState({ [pageName]: effectiveProps });
+  useStore.getState().setPage(pageName, effectiveProps);
 }
 
 useStore.setState(desktopModeProps);
