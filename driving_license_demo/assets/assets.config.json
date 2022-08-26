@@ -61,5 +61,8 @@
   },
   "login_wallpaper.png": {
     "mime": "image/png"
+  },
+  "example_driving_license.png": {
+    "mime": "image/png"
   }
 }

@@ -2189,7 +2189,10 @@ export function useButton19Cb() {
 			{
   "handlers": [
     {
-      "sendEventData": true
+      "navigate": {
+        "type": "internal",
+        "url": "/newtest"
+      }
     }
   ],
   "actions": [

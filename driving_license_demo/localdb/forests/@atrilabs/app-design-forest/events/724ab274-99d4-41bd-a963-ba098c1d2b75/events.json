@@ -1352,7 +1352,12 @@
     "slice": {
       "property": {
         "styles": {
-          "paddingTop": "6px"
+          "paddingTop": "60px",
+          "boxSizing": "border-box",
+          "paddingLeft": "40px",
+          "paddingRight": "40px",
+          "flexDirection": "column",
+          "alignItems": "flex-start"
         }
       }
     },
@@ -1518,8 +1523,8 @@
     "id": "c25fc78c-e86d-4292-a45f-b5c80f29aa1d",
     "slice": {
       "parent": {
-        "id": "body",
-        "index": 4
+        "id": "6db71965-c813-4dd7-8844-e6b7d13da732",
+        "index": 1
       }
     }
   },
@@ -1538,7 +1543,7 @@
     "slice": {
       "property": {
         "custom": {
-          "text": "A"
+          "text": "Add new test"
         }
       }
     },
@@ -2050,7 +2055,7 @@
     "slice": {
       "property": {
         "custom": {
-          "text": "I"
+          "text": "Input Image"
         }
       }
     },
@@ -2171,7 +2176,11 @@
     "slice": {
       "property": {
         "styles": {
-          "fontFamily": "IBM Plex Sans"
+          "fontFamily": "IBM Plex Sans",
+          "fontWeight": 500,
+          "fontSize": "16px",
+          "paddingTop": "40px",
+          "marginTop": ""
         }
       }
     },
@@ -2420,7 +2429,11 @@
     "id": "b3bbec5b-7580-45b7-8d6e-cd72afee2f1c",
     "type": "PATCH$$@atrilabs/app-design-forest/lib/componentTree.js",
     "slice": {
-      "alias": "Upload1"
+      "alias": "Upload1",
+      "parent": {
+        "id": "cd188b7d-3f2f-4a80-9d6d-f2a3d666b015",
+        "index": 1
+      }
     }
   },
   {
@@ -2428,7 +2441,8 @@
     "slice": {
       "property": {
         "custom": {
-          "showFilename": false
+          "showFilename": false,
+          "text": "Upload Image"
         }
       }
     },
@@ -2439,7 +2453,18 @@
     "slice": {
       "property": {
         "styles": {
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "#ffffff00",
+          "color": "#1F2937",
+          "fontFamily": "IBM Plex Sans",
+          "fontWeight": 500,
+          "borderStyle": "none",
+          "borderRadius": "",
+          "borderWidth": "",
+          "borderColor": "",
+          "paddingLeft": "",
+          "paddingRight": "",
+          "paddingTop": "",
+          "paddingBottom": ""
         }
       }
     },
@@ -2548,7 +2573,11 @@
     "id": "cd188b7d-3f2f-4a80-9d6d-f2a3d666b015",
     "type": "PATCH$$@atrilabs/app-design-forest/lib/componentTree.js",
     "slice": {
-      "alias": "Flex237"
+      "alias": "Flex237",
+      "parent": {
+        "id": "fa5276e2-d524-41f8-8ee5-deb06152485d",
+        "index": 1
+      }
     }
   },
   {
@@ -2665,7 +2694,18 @@
     "slice": {
       "property": {
         "styles": {
-          "display": "inline-flex"
+          "display": "inline-flex",
+          "columnGap": "10px",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+          "paddingTop": "10px",
+          "paddingBottom": "10px",
+          "borderColor": "#1F2937",
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "borderRadius": "4px",
+          "alignItems": "center",
+          "cursor": "pointer"
         }
       }
     },
@@ -3103,7 +3143,11 @@
     "id": "fa5276e2-d524-41f8-8ee5-deb06152485d",
     "type": "PATCH$$@atrilabs/app-design-forest/lib/componentTree.js",
     "slice": {
-      "alias": "Flex238"
+      "alias": "Flex238",
+      "parent": {
+        "id": "6db71965-c813-4dd7-8844-e6b7d13da732",
+        "index": 4
+      }
     }
   },
   {
@@ -3121,7 +3165,16 @@
     "slice": {
       "property": {
         "styles": {
-          "width": "6px"
+          "width": "600px",
+          "height": "300px",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "borderStyle": "solid",
+          "borderColor": "#1F2937",
+          "borderWidth": "1px",
+          "borderRadius": "4px",
+          "backgroundColor": "#F1F5F9",
+          "marginTop": "20px"
         }
       }
     },
@@ -3527,7 +3580,8 @@
     "slice": {
       "property": {
         "styles": {
-          "paddingTop": ""
+          "paddingTop": "6px",
+          "paddingBottom": "6px"
         }
       }
     },
@@ -3692,7 +3746,7 @@
     "slice": {
       "property": {
         "styles": {
-          "marginTop": "1px"
+          "marginTop": "10px"
         }
       }
     },
@@ -3772,7 +3826,11 @@
     "id": "792f8c70-93aa-4dc7-9ef9-9b609fbd8ae0",
     "type": "PATCH$$@atrilabs/app-design-forest/lib/componentTree.js",
     "slice": {
-      "alias": "Flex239"
+      "alias": "Flex239",
+      "parent": {
+        "id": "6db71965-c813-4dd7-8844-e6b7d13da732",
+        "index": 8
+      }
     }
   },
   {
@@ -3995,7 +4053,7 @@
     "slice": {
       "property": {
         "custom": {
-          "text": ""
+          "text": "Run Test"
         }
       }
     },
@@ -4094,7 +4152,20 @@
     "slice": {
       "property": {
         "styles": {
-          "backgroundColor": "#1E293B"
+          "backgroundColor": "#1E293B",
+          "fontFamily": "IBM Plex Sans",
+          "fontSize": "16px",
+          "fontWeight": 500,
+          "color": "#ffffff",
+          "marginTop": "20px",
+          "paddingTop": "10px",
+          "paddingBottom": "10px",
+          "paddingRight": "10px",
+          "paddingLeft": "10px",
+          "columnGap": "10px",
+          "borderWidth": "",
+          "borderStyle": "none",
+          "borderRadius": "4px"
         }
       }
     },
@@ -4451,5 +4522,41 @@
       }
     },
     "id": "e8eb964e-bad6-4ec7-839f-b96f2a894b3e"
+  },
+  {
+    "type": "PATCH$$@atrilabs/app-design-forest/lib/callbackHandlerTree.js",
+    "slice": {
+      "property": {
+        "callbacks": {
+          "onClick": [
+            {
+              "navigate": {
+                "type": "internal",
+                "url": "/newtest"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "id": "1ae1d38b-a25c-45ab-bfa8-a5dfad9c0378"
+  },
+  {
+    "type": "PATCH$$@atrilabs/app-design-forest/lib/callbackHandlerTree.js",
+    "slice": {
+      "property": {
+        "callbacks": {
+          "onClick": [
+            {
+              "navigate": {
+                "type": "internal",
+                "url": "/"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "id": "5cfbce45-1169-4b83-84d6-597f706f3802"
   }
 ]

@@ -8887,7 +8887,7 @@ const desktopModeProps = {
         "flexWrap": "nowrap",
         "alignContent": "stretch",
         "rowGap": "",
-        "columnGap": "20px",
+        "columnGap": "4px",
         "alignSelf": "",
         "flexGrow": "",
         "flexShrink": "",
