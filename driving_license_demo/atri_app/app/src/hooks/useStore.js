@@ -29504,7 +29504,7 @@ const desktopModeProps = {
         "flexDirection": "row",
         "alignItems": "stretch",
         "justifyContent": "flex-start",
-        "flexWrap": "nowrap",
+        "flexWrap": "wrap",
         "alignContent": "stretch",
         "rowGap": "",
         "columnGap": "",
@@ -29806,7 +29806,7 @@ const desktopModeProps = {
         "marginRight": "",
         "marginLeft": "",
         "paddingTop": "",
-        "paddingBottom": "",
+        "paddingBottom": "40px",
         "paddingRight": "",
         "paddingLeft": "",
         "width": "",
@@ -29936,10 +29936,10 @@ const desktopModeProps = {
         "zIndex": ""
       },
       "custom": {
-        "text": "Email"
+        "text": "Username"
       }
     },
-    "Input5": {
+    "username": {
       "onChange": false,
       "onPressEnter": false,
       "styles": {
@@ -29985,7 +29985,7 @@ const desktopModeProps = {
       },
       "custom": {
         "value": "",
-        "placeholder": "abc@atrilabs.com"
+        "placeholder": "john_doe"
       }
     },
     "Flex351": {
@@ -30007,7 +30007,7 @@ const desktopModeProps = {
         "marginBottom": "",
         "marginRight": "",
         "marginLeft": "",
-        "paddingTop": "40px",
+        "paddingTop": "",
         "paddingBottom": "",
         "paddingRight": "",
         "paddingLeft": "",
@@ -30040,7 +30040,7 @@ const desktopModeProps = {
         "zIndex": ""
       }
     },
-    "Input7": {
+    "password": {
       "onChange": false,
       "onPressEnter": false,
       "styles": {
@@ -30259,6 +30259,104 @@ const desktopModeProps = {
         "paddingLeft": "",
         "width": "",
         "height": "",
+        "minWidth": "",
+        "minHeight": "",
+        "maxWidth": "",
+        "maxHeight": "",
+        "overflow": "",
+        "fontFamily": "",
+        "fontWeight": 400,
+        "fontSize": "",
+        "textAlign": "left",
+        "color": "",
+        "opacity": "",
+        "borderRadius": "",
+        "borderWidth": "",
+        "borderStyle": "",
+        "borderColor": "",
+        "backgroundImage": "",
+        "backgroundColor": "",
+        "position": "static",
+        "float": "none",
+        "clear": "none",
+        "top": "",
+        "left": "",
+        "bottom": "",
+        "right": "",
+        "zIndex": ""
+      }
+    },
+    "errorbox": {
+      "styles": {
+        "alignSelf": "center",
+        "flexGrow": "",
+        "flexShrink": "",
+        "order": "",
+        "marginTop": "",
+        "marginBottom": "",
+        "marginRight": "",
+        "marginLeft": "",
+        "paddingTop": "6px",
+        "paddingBottom": "6px",
+        "paddingRight": "10px",
+        "paddingLeft": "10px",
+        "width": "",
+        "height": "",
+        "minWidth": "",
+        "minHeight": "",
+        "maxWidth": "",
+        "maxHeight": "",
+        "overflow": "",
+        "fontFamily": "IBM Plex Sans",
+        "fontWeight": 500,
+        "fontSize": "16px",
+        "textAlign": "left",
+        "color": "#991B1B",
+        "opacity": "",
+        "borderRadius": "2px",
+        "borderWidth": "",
+        "borderStyle": "",
+        "borderColor": "",
+        "backgroundImage": "",
+        "backgroundColor": "#FEE2E2",
+        "position": "static",
+        "float": "none",
+        "clear": "none",
+        "top": "",
+        "left": "",
+        "bottom": "",
+        "right": "",
+        "zIndex": ""
+      },
+      "custom": {
+        "text": "Incorrect login credentials. Please try again. "
+      }
+    },
+    "errorwrapper": {
+      "onClick": false,
+      "styles": {
+        "display": "none",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "justifyContent": "flex-start",
+        "flexWrap": "nowrap",
+        "alignContent": "stretch",
+        "rowGap": "",
+        "columnGap": "",
+        "alignSelf": "",
+        "flexGrow": "",
+        "flexShrink": "",
+        "order": "",
+        "marginTop": "",
+        "marginBottom": "",
+        "marginRight": "",
+        "marginLeft": "",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "paddingRight": "",
+        "paddingLeft": "",
+        "width": "",
+        "height": "4rem",
         "minWidth": "",
         "minHeight": "",
         "maxWidth": "",

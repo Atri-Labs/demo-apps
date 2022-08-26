@@ -9,7 +9,7 @@ import { Image as Image4 } from "@atrilabs/react-component-manifests/src/manifes
 import { TextBox as TextBox4 } from "@atrilabs/react-component-manifests/src/manifests/TextBox/TextBox.tsx";
 import { Input as Input2 } from "@atrilabs/react-component-manifests/src/manifests/Input/Input.tsx";
 import { Button as Button4 } from "@atrilabs/react-component-manifests/src/manifests/Button/Button.tsx";
-import { useFlex345Cb, useImage142Cb, useFlex346Cb, useImage145Cb, useFlex348Cb, useTextBox178Cb, useTextBox179Cb, useFlex349Cb, useTextBox181Cb, useInput5Cb, useFlex351Cb, useInput7Cb, useTextBox183Cb, useFlex352Cb, useButton48Cb, useFlex353Cb } from "../page-cbs/login";
+import { useFlex345Cb, useImage142Cb, useFlex346Cb, useImage145Cb, useFlex348Cb, useTextBox178Cb, useTextBox179Cb, useFlex349Cb, useTextBox181Cb, useusernameCb, useFlex351Cb, usepasswordCb, useTextBox183Cb, useFlex352Cb, useButton48Cb, useFlex353Cb, useerrorboxCb, useerrorwrapperCb } from "../page-cbs/login";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -68,15 +68,15 @@ const Flex349Cb = useFlex349Cb()
 const TextBox181Props = useStore((state)=>state["login"]["TextBox181"]);
 const TextBox181IoProps = useIoStore((state)=>state["login"]["TextBox181"]);
 const TextBox181Cb = useTextBox181Cb()
-const Input5Props = useStore((state)=>state["login"]["Input5"]);
-const Input5IoProps = useIoStore((state)=>state["login"]["Input5"]);
-const Input5Cb = useInput5Cb()
+const usernameProps = useStore((state)=>state["login"]["username"]);
+const usernameIoProps = useIoStore((state)=>state["login"]["username"]);
+const usernameCb = useusernameCb()
 const Flex351Props = useStore((state)=>state["login"]["Flex351"]);
 const Flex351IoProps = useIoStore((state)=>state["login"]["Flex351"]);
 const Flex351Cb = useFlex351Cb()
-const Input7Props = useStore((state)=>state["login"]["Input7"]);
-const Input7IoProps = useIoStore((state)=>state["login"]["Input7"]);
-const Input7Cb = useInput7Cb()
+const passwordProps = useStore((state)=>state["login"]["password"]);
+const passwordIoProps = useIoStore((state)=>state["login"]["password"]);
+const passwordCb = usepasswordCb()
 const TextBox183Props = useStore((state)=>state["login"]["TextBox183"]);
 const TextBox183IoProps = useIoStore((state)=>state["login"]["TextBox183"]);
 const TextBox183Cb = useTextBox183Cb()
@@ -89,6 +89,12 @@ const Button48Cb = useButton48Cb()
 const Flex353Props = useStore((state)=>state["login"]["Flex353"]);
 const Flex353IoProps = useIoStore((state)=>state["login"]["Flex353"]);
 const Flex353Cb = useFlex353Cb()
+const errorboxProps = useStore((state)=>state["login"]["errorbox"]);
+const errorboxIoProps = useIoStore((state)=>state["login"]["errorbox"]);
+const errorboxCb = useerrorboxCb()
+const errorwrapperProps = useStore((state)=>state["login"]["errorwrapper"]);
+const errorwrapperIoProps = useIoStore((state)=>state["login"]["errorwrapper"]);
+const errorwrapperCb = useerrorwrapperCb()
 
   return (<>
   <Flex4 {...Flex345Props} {...Flex345Cb} {...Flex345IoProps}>
@@ -99,14 +105,17 @@ const Flex353Cb = useFlex353Cb()
 <Flex4 {...Flex348Props} {...Flex348Cb} {...Flex348IoProps}>
 <TextBox4 {...TextBox178Props} {...TextBox178Cb} {...TextBox178IoProps}/>
 <TextBox4 {...TextBox179Props} {...TextBox179Cb} {...TextBox179IoProps}/>
+<Flex4 {...errorwrapperProps} {...errorwrapperCb} {...errorwrapperIoProps}>
+<TextBox4 {...errorboxProps} {...errorboxCb} {...errorboxIoProps}/>
+</Flex4>
 <Flex4 {...Flex351Props} {...Flex351Cb} {...Flex351IoProps}>
 <Flex4 {...Flex349Props} {...Flex349Cb} {...Flex349IoProps}>
 <TextBox4 {...TextBox181Props} {...TextBox181Cb} {...TextBox181IoProps}/>
-<Input2 {...Input5Props} {...Input5Cb} {...Input5IoProps}/>
+<Input2 {...usernameProps} {...usernameCb} {...usernameIoProps}/>
 </Flex4>
 <Flex4 {...Flex352Props} {...Flex352Cb} {...Flex352IoProps}>
 <TextBox4 {...TextBox183Props} {...TextBox183Cb} {...TextBox183IoProps}/>
-<Input2 {...Input7Props} {...Input7Cb} {...Input7IoProps}/>
+<Input2 {...passwordProps} {...passwordCb} {...passwordIoProps}/>
 </Flex4>
 <Button4 {...Button48Props} {...Button48Cb} {...Button48IoProps}/>
 </Flex4>
