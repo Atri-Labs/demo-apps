@@ -2,6 +2,9 @@ from data.types import CommentRegistry, TestRegistry
 from datetime import datetime
 import json
 
+TESTS_IMAGES_DIR = "data/test_images"
+TESTS_OUTPUT_DIR = "data/test_outputs"
+
 DATE_FORMAT = "%d/%m/%y %H:%M:%S"
 
 epoch_base = datetime(1970, 1, 1)

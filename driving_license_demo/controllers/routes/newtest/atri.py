@@ -1,7 +1,7 @@
 import json
 from typing import List, Any, Optional
 from fastapi import UploadFile
-default_state = json.loads('{"Button17":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":""}},"TextBox107":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":"Your text Here!"}},"TextBox108":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":"Your text Here!"}},"Image112":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"alt":"No preview available","src":""}},"Image113":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"alt":"No preview available","src":""}},"TextBox109":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":"Your text Here!"}},"TextBox110":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":"Your text Here!"}},"Button18":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":""}},"Flex231":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"Flex232":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"Flex233":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"Flex234":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"Flex235":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"Flex236":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"TextBox111":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":"Your text Here!"}},"TextBox112":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":"Your text Here!"}},"Upload1":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"multiple":false,"showFilename":true,"text":"Upload","disabled":false}},"Flex237":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"Image114":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"alt":"No preview available","src":""}},"Flex238":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"Flex239":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"TextBox113":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":"Your text Here!"}},"Image115":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"alt":"No preview available","src":""}}}')
+default_state = json.loads('{"Button17":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":""}},"TextBox107":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":"Your text Here!"}},"TextBox108":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":"Your text Here!"}},"Image112":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"alt":"No preview available","src":""}},"Image113":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"alt":"No preview available","src":""}},"TextBox109":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":"Your text Here!"}},"TextBox110":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":"Your text Here!"}},"Button18":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":""}},"Flex231":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"Flex232":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"Flex233":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"Flex234":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"Flex235":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"Flex236":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"TextBox111":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":"Your text Here!"}},"TextBox112":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":"Your text Here!"}},"Upload1":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"multiple":false,"showFilename":true,"text":"Upload","disabled":false}},"Flex237":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"Image114":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"alt":"No preview available","src":""}},"image_placeholder":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"runtest":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"TextBox113":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":"Your text Here!"}},"Image115":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"alt":"No preview available","src":""}},"preview":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"alt":"No preview available","src":""}},"preview_wrapper":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}},"filename":{"styles":{"alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""},"custom":{"text":"Your text Here!"}},"Flex370":{"styles":{"display":"","flexDirection":"row","alignItems":"stretch","justifyContent":"flex-start","flexWrap":"nowrap","alignContent":"stretch","rowGap":"","columnGap":"","alignSelf":"","flexGrow":"","flexShrink":"","order":"","marginTop":"","marginBottom":"","marginRight":"","marginLeft":"","paddingTop":"","paddingBottom":"","paddingRight":"","paddingLeft":"","width":"","height":"","minWidth":"","minHeight":"","maxWidth":"","maxHeight":"","overflow":"","fontFamily":"","fontWeight":400,"fontSize":"","textAlign":"left","color":"","opacity":"","borderRadius":"","borderWidth":"","borderStyle":"","borderColor":"","backgroundImage":"","backgroundColor":"","position":"static","float":"none","clear":"none","top":"","left":"","bottom":"","right":"","zIndex":""}}}')
 def get_defined_value(state, def_state, key):
 	return state[key] if key in state else def_state[key]
 class Atri:
@@ -27,10 +27,14 @@ class Atri:
 		self.Upload1 = self.__Upload1Class(state["Upload1"], default_state["Upload1"])
 		self.Flex237 = self.__Flex237Class(state["Flex237"], default_state["Flex237"])
 		self.Image114 = self.__Image114Class(state["Image114"], default_state["Image114"])
-		self.Flex238 = self.__Flex238Class(state["Flex238"], default_state["Flex238"])
-		self.Flex239 = self.__Flex239Class(state["Flex239"], default_state["Flex239"])
+		self.image_placeholder = self.__image_placeholderClass(state["image_placeholder"], default_state["image_placeholder"])
+		self.runtest = self.__runtestClass(state["runtest"], default_state["runtest"])
 		self.TextBox113 = self.__TextBox113Class(state["TextBox113"], default_state["TextBox113"])
 		self.Image115 = self.__Image115Class(state["Image115"], default_state["Image115"])
+		self.preview = self.__previewClass(state["preview"], default_state["preview"])
+		self.preview_wrapper = self.__preview_wrapperClass(state["preview_wrapper"], default_state["preview_wrapper"])
+		self.filename = self.__filenameClass(state["filename"], default_state["filename"])
+		self.Flex370 = self.__Flex370Class(state["Flex370"], default_state["Flex370"])
 	def set_event(self, event):
 		self.event_data = event["event_data"]
 		alias = event["alias"]
@@ -1047,7 +1051,7 @@ class Atri:
 			self.onClick = False
 			self.styles: Atri.__Image114ClassstylesClass = Atri._Atri__Image114ClassstylesClass(get_defined_value(state, def_state, "styles"), def_state["styles"])
 			self.custom: Atri.__Image114ClasscustomClass = Atri._Atri__Image114ClasscustomClass(get_defined_value(state, def_state, "custom"), def_state["custom"])
-	class __Flex238ClassstylesClass:
+	class __image_placeholderClassstylesClass:
 		def __init__(self, state, def_state):
 
 			self.display: str = get_defined_value(state, def_state, "display")
@@ -1097,11 +1101,11 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
-	class __Flex238Class:
+	class __image_placeholderClass:
 		def __init__(self, state, def_state):
 			self.onClick = False
-			self.styles: Atri.__Flex238ClassstylesClass = Atri._Atri__Flex238ClassstylesClass(get_defined_value(state, def_state, "styles"), def_state["styles"])
-	class __Flex239ClassstylesClass:
+			self.styles: Atri.__image_placeholderClassstylesClass = Atri._Atri__image_placeholderClassstylesClass(get_defined_value(state, def_state, "styles"), def_state["styles"])
+	class __runtestClassstylesClass:
 		def __init__(self, state, def_state):
 
 			self.display: str = get_defined_value(state, def_state, "display")
@@ -1151,10 +1155,10 @@ class Atri:
 			self.bottom: str = get_defined_value(state, def_state, "bottom")
 			self.right: str = get_defined_value(state, def_state, "right")
 			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
-	class __Flex239Class:
+	class __runtestClass:
 		def __init__(self, state, def_state):
 			self.onClick = False
-			self.styles: Atri.__Flex239ClassstylesClass = Atri._Atri__Flex239ClassstylesClass(get_defined_value(state, def_state, "styles"), def_state["styles"])
+			self.styles: Atri.__runtestClassstylesClass = Atri._Atri__runtestClassstylesClass(get_defined_value(state, def_state, "styles"), def_state["styles"])
 	class __TextBox113ClassstylesClass:
 		def __init__(self, state, def_state):
 
@@ -1258,3 +1262,214 @@ class Atri:
 			self.onClick = False
 			self.styles: Atri.__Image115ClassstylesClass = Atri._Atri__Image115ClassstylesClass(get_defined_value(state, def_state, "styles"), def_state["styles"])
 			self.custom: Atri.__Image115ClasscustomClass = Atri._Atri__Image115ClasscustomClass(get_defined_value(state, def_state, "custom"), def_state["custom"])
+	class __previewClassstylesClass:
+		def __init__(self, state, def_state):
+
+			self.alignSelf: str = get_defined_value(state, def_state, "alignSelf")
+			self.flexGrow: str = get_defined_value(state, def_state, "flexGrow")
+			self.flexShrink: str = get_defined_value(state, def_state, "flexShrink")
+			self.order: str = get_defined_value(state, def_state, "order")
+			self.marginTop: str = get_defined_value(state, def_state, "marginTop")
+			self.marginBottom: str = get_defined_value(state, def_state, "marginBottom")
+			self.marginRight: str = get_defined_value(state, def_state, "marginRight")
+			self.marginLeft: str = get_defined_value(state, def_state, "marginLeft")
+			self.paddingTop: str = get_defined_value(state, def_state, "paddingTop")
+			self.paddingBottom: str = get_defined_value(state, def_state, "paddingBottom")
+			self.paddingRight: str = get_defined_value(state, def_state, "paddingRight")
+			self.paddingLeft: str = get_defined_value(state, def_state, "paddingLeft")
+			self.width: str = get_defined_value(state, def_state, "width")
+			self.height: str = get_defined_value(state, def_state, "height")
+			self.minWidth: str = get_defined_value(state, def_state, "minWidth")
+			self.minHeight: str = get_defined_value(state, def_state, "minHeight")
+			self.maxWidth: str = get_defined_value(state, def_state, "maxWidth")
+			self.maxHeight: str = get_defined_value(state, def_state, "maxHeight")
+			self.overflow: str = get_defined_value(state, def_state, "overflow")
+			self.fontFamily: str = get_defined_value(state, def_state, "fontFamily")
+			self.fontWeight: int = get_defined_value(state, def_state, "fontWeight")
+			self.fontSize: str = get_defined_value(state, def_state, "fontSize")
+			self.textAlign: str = get_defined_value(state, def_state, "textAlign")
+			self.color: str = get_defined_value(state, def_state, "color")
+			self.opacity: str = get_defined_value(state, def_state, "opacity")
+			self.borderRadius: str = get_defined_value(state, def_state, "borderRadius")
+			self.borderWidth: str = get_defined_value(state, def_state, "borderWidth")
+			self.borderStyle: str = get_defined_value(state, def_state, "borderStyle")
+			self.borderColor: str = get_defined_value(state, def_state, "borderColor")
+			self.backgroundImage: str = get_defined_value(state, def_state, "backgroundImage")
+			self.backgroundColor: str = get_defined_value(state, def_state, "backgroundColor")
+			self.position: str = get_defined_value(state, def_state, "position")
+			self.float: str = get_defined_value(state, def_state, "float")
+			self.clear: str = get_defined_value(state, def_state, "clear")
+			self.top: str = get_defined_value(state, def_state, "top")
+			self.left: str = get_defined_value(state, def_state, "left")
+			self.bottom: str = get_defined_value(state, def_state, "bottom")
+			self.right: str = get_defined_value(state, def_state, "right")
+			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+	class __previewClasscustomClass:
+		def __init__(self, state, def_state):
+
+			self.alt: str = get_defined_value(state, def_state, "alt")
+			self.src: str = get_defined_value(state, def_state, "src")
+	class __previewClass:
+		def __init__(self, state, def_state):
+			self.onClick = False
+			self.styles: Atri.__previewClassstylesClass = Atri._Atri__previewClassstylesClass(get_defined_value(state, def_state, "styles"), def_state["styles"])
+			self.custom: Atri.__previewClasscustomClass = Atri._Atri__previewClasscustomClass(get_defined_value(state, def_state, "custom"), def_state["custom"])
+	class __preview_wrapperClassstylesClass:
+		def __init__(self, state, def_state):
+
+			self.display: str = get_defined_value(state, def_state, "display")
+			self.flexDirection: str = get_defined_value(state, def_state, "flexDirection")
+			self.alignItems: str = get_defined_value(state, def_state, "alignItems")
+			self.justifyContent: str = get_defined_value(state, def_state, "justifyContent")
+			self.flexWrap: str = get_defined_value(state, def_state, "flexWrap")
+			self.alignContent: str = get_defined_value(state, def_state, "alignContent")
+			self.rowGap: str = get_defined_value(state, def_state, "rowGap")
+			self.columnGap: str = get_defined_value(state, def_state, "columnGap")
+			self.alignSelf: str = get_defined_value(state, def_state, "alignSelf")
+			self.flexGrow: str = get_defined_value(state, def_state, "flexGrow")
+			self.flexShrink: str = get_defined_value(state, def_state, "flexShrink")
+			self.order: str = get_defined_value(state, def_state, "order")
+			self.marginTop: str = get_defined_value(state, def_state, "marginTop")
+			self.marginBottom: str = get_defined_value(state, def_state, "marginBottom")
+			self.marginRight: str = get_defined_value(state, def_state, "marginRight")
+			self.marginLeft: str = get_defined_value(state, def_state, "marginLeft")
+			self.paddingTop: str = get_defined_value(state, def_state, "paddingTop")
+			self.paddingBottom: str = get_defined_value(state, def_state, "paddingBottom")
+			self.paddingRight: str = get_defined_value(state, def_state, "paddingRight")
+			self.paddingLeft: str = get_defined_value(state, def_state, "paddingLeft")
+			self.width: str = get_defined_value(state, def_state, "width")
+			self.height: str = get_defined_value(state, def_state, "height")
+			self.minWidth: str = get_defined_value(state, def_state, "minWidth")
+			self.minHeight: str = get_defined_value(state, def_state, "minHeight")
+			self.maxWidth: str = get_defined_value(state, def_state, "maxWidth")
+			self.maxHeight: str = get_defined_value(state, def_state, "maxHeight")
+			self.overflow: str = get_defined_value(state, def_state, "overflow")
+			self.fontFamily: str = get_defined_value(state, def_state, "fontFamily")
+			self.fontWeight: int = get_defined_value(state, def_state, "fontWeight")
+			self.fontSize: str = get_defined_value(state, def_state, "fontSize")
+			self.textAlign: str = get_defined_value(state, def_state, "textAlign")
+			self.color: str = get_defined_value(state, def_state, "color")
+			self.opacity: str = get_defined_value(state, def_state, "opacity")
+			self.borderRadius: str = get_defined_value(state, def_state, "borderRadius")
+			self.borderWidth: str = get_defined_value(state, def_state, "borderWidth")
+			self.borderStyle: str = get_defined_value(state, def_state, "borderStyle")
+			self.borderColor: str = get_defined_value(state, def_state, "borderColor")
+			self.backgroundImage: str = get_defined_value(state, def_state, "backgroundImage")
+			self.backgroundColor: str = get_defined_value(state, def_state, "backgroundColor")
+			self.position: str = get_defined_value(state, def_state, "position")
+			self.float: str = get_defined_value(state, def_state, "float")
+			self.clear: str = get_defined_value(state, def_state, "clear")
+			self.top: str = get_defined_value(state, def_state, "top")
+			self.left: str = get_defined_value(state, def_state, "left")
+			self.bottom: str = get_defined_value(state, def_state, "bottom")
+			self.right: str = get_defined_value(state, def_state, "right")
+			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+	class __preview_wrapperClass:
+		def __init__(self, state, def_state):
+			self.onClick = False
+			self.styles: Atri.__preview_wrapperClassstylesClass = Atri._Atri__preview_wrapperClassstylesClass(get_defined_value(state, def_state, "styles"), def_state["styles"])
+	class __filenameClassstylesClass:
+		def __init__(self, state, def_state):
+
+			self.alignSelf: str = get_defined_value(state, def_state, "alignSelf")
+			self.flexGrow: str = get_defined_value(state, def_state, "flexGrow")
+			self.flexShrink: str = get_defined_value(state, def_state, "flexShrink")
+			self.order: str = get_defined_value(state, def_state, "order")
+			self.marginTop: str = get_defined_value(state, def_state, "marginTop")
+			self.marginBottom: str = get_defined_value(state, def_state, "marginBottom")
+			self.marginRight: str = get_defined_value(state, def_state, "marginRight")
+			self.marginLeft: str = get_defined_value(state, def_state, "marginLeft")
+			self.paddingTop: str = get_defined_value(state, def_state, "paddingTop")
+			self.paddingBottom: str = get_defined_value(state, def_state, "paddingBottom")
+			self.paddingRight: str = get_defined_value(state, def_state, "paddingRight")
+			self.paddingLeft: str = get_defined_value(state, def_state, "paddingLeft")
+			self.width: str = get_defined_value(state, def_state, "width")
+			self.height: str = get_defined_value(state, def_state, "height")
+			self.minWidth: str = get_defined_value(state, def_state, "minWidth")
+			self.minHeight: str = get_defined_value(state, def_state, "minHeight")
+			self.maxWidth: str = get_defined_value(state, def_state, "maxWidth")
+			self.maxHeight: str = get_defined_value(state, def_state, "maxHeight")
+			self.overflow: str = get_defined_value(state, def_state, "overflow")
+			self.fontFamily: str = get_defined_value(state, def_state, "fontFamily")
+			self.fontWeight: int = get_defined_value(state, def_state, "fontWeight")
+			self.fontSize: str = get_defined_value(state, def_state, "fontSize")
+			self.textAlign: str = get_defined_value(state, def_state, "textAlign")
+			self.color: str = get_defined_value(state, def_state, "color")
+			self.opacity: str = get_defined_value(state, def_state, "opacity")
+			self.borderRadius: str = get_defined_value(state, def_state, "borderRadius")
+			self.borderWidth: str = get_defined_value(state, def_state, "borderWidth")
+			self.borderStyle: str = get_defined_value(state, def_state, "borderStyle")
+			self.borderColor: str = get_defined_value(state, def_state, "borderColor")
+			self.backgroundImage: str = get_defined_value(state, def_state, "backgroundImage")
+			self.backgroundColor: str = get_defined_value(state, def_state, "backgroundColor")
+			self.position: str = get_defined_value(state, def_state, "position")
+			self.float: str = get_defined_value(state, def_state, "float")
+			self.clear: str = get_defined_value(state, def_state, "clear")
+			self.top: str = get_defined_value(state, def_state, "top")
+			self.left: str = get_defined_value(state, def_state, "left")
+			self.bottom: str = get_defined_value(state, def_state, "bottom")
+			self.right: str = get_defined_value(state, def_state, "right")
+			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+	class __filenameClasscustomClass:
+		def __init__(self, state, def_state):
+
+			self.text: str = get_defined_value(state, def_state, "text")
+	class __filenameClass:
+		def __init__(self, state, def_state):
+
+			self.styles: Atri.__filenameClassstylesClass = Atri._Atri__filenameClassstylesClass(get_defined_value(state, def_state, "styles"), def_state["styles"])
+			self.custom: Atri.__filenameClasscustomClass = Atri._Atri__filenameClasscustomClass(get_defined_value(state, def_state, "custom"), def_state["custom"])
+	class __Flex370ClassstylesClass:
+		def __init__(self, state, def_state):
+
+			self.display: str = get_defined_value(state, def_state, "display")
+			self.flexDirection: str = get_defined_value(state, def_state, "flexDirection")
+			self.alignItems: str = get_defined_value(state, def_state, "alignItems")
+			self.justifyContent: str = get_defined_value(state, def_state, "justifyContent")
+			self.flexWrap: str = get_defined_value(state, def_state, "flexWrap")
+			self.alignContent: str = get_defined_value(state, def_state, "alignContent")
+			self.rowGap: str = get_defined_value(state, def_state, "rowGap")
+			self.columnGap: str = get_defined_value(state, def_state, "columnGap")
+			self.alignSelf: str = get_defined_value(state, def_state, "alignSelf")
+			self.flexGrow: str = get_defined_value(state, def_state, "flexGrow")
+			self.flexShrink: str = get_defined_value(state, def_state, "flexShrink")
+			self.order: str = get_defined_value(state, def_state, "order")
+			self.marginTop: str = get_defined_value(state, def_state, "marginTop")
+			self.marginBottom: str = get_defined_value(state, def_state, "marginBottom")
+			self.marginRight: str = get_defined_value(state, def_state, "marginRight")
+			self.marginLeft: str = get_defined_value(state, def_state, "marginLeft")
+			self.paddingTop: str = get_defined_value(state, def_state, "paddingTop")
+			self.paddingBottom: str = get_defined_value(state, def_state, "paddingBottom")
+			self.paddingRight: str = get_defined_value(state, def_state, "paddingRight")
+			self.paddingLeft: str = get_defined_value(state, def_state, "paddingLeft")
+			self.width: str = get_defined_value(state, def_state, "width")
+			self.height: str = get_defined_value(state, def_state, "height")
+			self.minWidth: str = get_defined_value(state, def_state, "minWidth")
+			self.minHeight: str = get_defined_value(state, def_state, "minHeight")
+			self.maxWidth: str = get_defined_value(state, def_state, "maxWidth")
+			self.maxHeight: str = get_defined_value(state, def_state, "maxHeight")
+			self.overflow: str = get_defined_value(state, def_state, "overflow")
+			self.fontFamily: str = get_defined_value(state, def_state, "fontFamily")
+			self.fontWeight: int = get_defined_value(state, def_state, "fontWeight")
+			self.fontSize: str = get_defined_value(state, def_state, "fontSize")
+			self.textAlign: str = get_defined_value(state, def_state, "textAlign")
+			self.color: str = get_defined_value(state, def_state, "color")
+			self.opacity: str = get_defined_value(state, def_state, "opacity")
+			self.borderRadius: str = get_defined_value(state, def_state, "borderRadius")
+			self.borderWidth: str = get_defined_value(state, def_state, "borderWidth")
+			self.borderStyle: str = get_defined_value(state, def_state, "borderStyle")
+			self.borderColor: str = get_defined_value(state, def_state, "borderColor")
+			self.backgroundImage: str = get_defined_value(state, def_state, "backgroundImage")
+			self.backgroundColor: str = get_defined_value(state, def_state, "backgroundColor")
+			self.position: str = get_defined_value(state, def_state, "position")
+			self.float: str = get_defined_value(state, def_state, "float")
+			self.clear: str = get_defined_value(state, def_state, "clear")
+			self.top: str = get_defined_value(state, def_state, "top")
+			self.left: str = get_defined_value(state, def_state, "left")
+			self.bottom: str = get_defined_value(state, def_state, "bottom")
+			self.right: str = get_defined_value(state, def_state, "right")
+			self.zIndex: str = get_defined_value(state, def_state, "zIndex")
+	class __Flex370Class:
+		def __init__(self, state, def_state):
+			self.onClick = False
+			self.styles: Atri.__Flex370ClassstylesClass = Atri._Atri__Flex370ClassstylesClass(get_defined_value(state, def_state, "styles"), def_state["styles"])

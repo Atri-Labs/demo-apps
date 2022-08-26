@@ -9,7 +9,7 @@ import { TextBox as TextBox2 } from "@atrilabs/react-component-manifests/src/man
 import { Image as Image2 } from "@atrilabs/react-component-manifests/src/manifests/Image/Image.tsx";
 import { Flex as Flex2 } from "@atrilabs/react-component-manifests/src/manifests/Flex/Flex.tsx";
 import { Upload } from "@atrilabs/react-component-manifests/src/manifests/Upload/Upload.tsx";
-import { useButton17Cb, useTextBox107Cb, useTextBox108Cb, useImage112Cb, useImage113Cb, useTextBox109Cb, useTextBox110Cb, useButton18Cb, useFlex231Cb, useFlex232Cb, useFlex233Cb, useFlex234Cb, useFlex235Cb, useFlex236Cb, useTextBox111Cb, useTextBox112Cb, useUpload1Cb, useFlex237Cb, useImage114Cb, useFlex238Cb, useFlex239Cb, useTextBox113Cb, useImage115Cb } from "../page-cbs/newtest";
+import { useButton17Cb, useTextBox107Cb, useTextBox108Cb, useImage112Cb, useImage113Cb, useTextBox109Cb, useTextBox110Cb, useButton18Cb, useFlex231Cb, useFlex232Cb, useFlex233Cb, useFlex234Cb, useFlex235Cb, useFlex236Cb, useTextBox111Cb, useTextBox112Cb, useUpload1Cb, useFlex237Cb, useImage114Cb, useimage_placeholderCb, useruntestCb, useTextBox113Cb, useImage115Cb, usepreviewCb, usepreview_wrapperCb, usefilenameCb, useFlex370Cb } from "../page-cbs/newtest";
 
 export default function Newtest() {
   const navigate = useNavigate();
@@ -98,18 +98,30 @@ const Flex237Cb = useFlex237Cb()
 const Image114Props = useStore((state)=>state["newtest"]["Image114"]);
 const Image114IoProps = useIoStore((state)=>state["newtest"]["Image114"]);
 const Image114Cb = useImage114Cb()
-const Flex238Props = useStore((state)=>state["newtest"]["Flex238"]);
-const Flex238IoProps = useIoStore((state)=>state["newtest"]["Flex238"]);
-const Flex238Cb = useFlex238Cb()
-const Flex239Props = useStore((state)=>state["newtest"]["Flex239"]);
-const Flex239IoProps = useIoStore((state)=>state["newtest"]["Flex239"]);
-const Flex239Cb = useFlex239Cb()
+const image_placeholderProps = useStore((state)=>state["newtest"]["image_placeholder"]);
+const image_placeholderIoProps = useIoStore((state)=>state["newtest"]["image_placeholder"]);
+const image_placeholderCb = useimage_placeholderCb()
+const runtestProps = useStore((state)=>state["newtest"]["runtest"]);
+const runtestIoProps = useIoStore((state)=>state["newtest"]["runtest"]);
+const runtestCb = useruntestCb()
 const TextBox113Props = useStore((state)=>state["newtest"]["TextBox113"]);
 const TextBox113IoProps = useIoStore((state)=>state["newtest"]["TextBox113"]);
 const TextBox113Cb = useTextBox113Cb()
 const Image115Props = useStore((state)=>state["newtest"]["Image115"]);
 const Image115IoProps = useIoStore((state)=>state["newtest"]["Image115"]);
 const Image115Cb = useImage115Cb()
+const previewProps = useStore((state)=>state["newtest"]["preview"]);
+const previewIoProps = useIoStore((state)=>state["newtest"]["preview"]);
+const previewCb = usepreviewCb()
+const preview_wrapperProps = useStore((state)=>state["newtest"]["preview_wrapper"]);
+const preview_wrapperIoProps = useIoStore((state)=>state["newtest"]["preview_wrapper"]);
+const preview_wrapperCb = usepreview_wrapperCb()
+const filenameProps = useStore((state)=>state["newtest"]["filename"]);
+const filenameIoProps = useIoStore((state)=>state["newtest"]["filename"]);
+const filenameCb = usefilenameCb()
+const Flex370Props = useStore((state)=>state["newtest"]["Flex370"]);
+const Flex370IoProps = useIoStore((state)=>state["newtest"]["Flex370"]);
+const Flex370Cb = useFlex370Cb()
 
   return (<>
   <Flex2 {...Flex235Props} {...Flex235Cb} {...Flex235IoProps}>
@@ -128,14 +140,20 @@ const Image115Cb = useImage115Cb()
 </Flex2>
 <Flex2 {...Flex236Props} {...Flex236Cb} {...Flex236IoProps}>
 <TextBox2 {...TextBox111Props} {...TextBox111Cb} {...TextBox111IoProps}/>
+<Flex2 {...Flex370Props} {...Flex370Cb} {...Flex370IoProps}>
 <TextBox2 {...TextBox112Props} {...TextBox112Cb} {...TextBox112IoProps}/>
-<Flex2 {...Flex238Props} {...Flex238Cb} {...Flex238IoProps}>
+<TextBox2 {...filenameProps} {...filenameCb} {...filenameIoProps}/>
+</Flex2>
+<Flex2 {...image_placeholderProps} {...image_placeholderCb} {...image_placeholderIoProps}>
 <Flex2 {...Flex237Props} {...Flex237Cb} {...Flex237IoProps}>
 <Image2 {...Image114Props} {...Image114Cb} {...Image114IoProps}/>
 <Upload {...Upload1Props} {...Upload1Cb} {...Upload1IoProps}/>
 </Flex2>
 </Flex2>
-<Flex2 {...Flex239Props} {...Flex239Cb} {...Flex239IoProps}>
+<Flex2 {...preview_wrapperProps} {...preview_wrapperCb} {...preview_wrapperIoProps}>
+<Image2 {...previewProps} {...previewCb} {...previewIoProps}/>
+</Flex2>
+<Flex2 {...runtestProps} {...runtestCb} {...runtestIoProps}>
 <Image2 {...Image115Props} {...Image115Cb} {...Image115IoProps}/>
 <TextBox2 {...TextBox113Props} {...TextBox113Cb} {...TextBox113IoProps}/>
 </Flex2>

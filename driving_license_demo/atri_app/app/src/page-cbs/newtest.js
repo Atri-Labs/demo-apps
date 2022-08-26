@@ -226,8 +226,8 @@ export function useImage114Cb() {
 }), [])
 	return { onClick }
 }
-export function useFlex238Cb() {
-	const onClick = useCallback(callbackFactory("Flex238", "newtest", "/newtest", "onClick", 
+export function useimage_placeholderCb() {
+	const onClick = useCallback(callbackFactory("image_placeholder", "newtest", "/newtest", "onClick", 
 			{
   "handlers": [],
   "actions": [
@@ -238,10 +238,14 @@ export function useFlex238Cb() {
 }), [])
 	return { onClick }
 }
-export function useFlex239Cb() {
-	const onClick = useCallback(callbackFactory("Flex239", "newtest", "/newtest", "onClick", 
+export function useruntestCb() {
+	const onClick = useCallback(callbackFactory("runtest", "newtest", "/newtest", "onClick", 
 			{
-  "handlers": [],
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
   "actions": [
     {
       "type": "do_nothing"
@@ -257,11 +261,51 @@ export function useTextBox113Cb() {
 export function useImage115Cb() {
 	const onClick = useCallback(callbackFactory("Image115", "newtest", "/newtest", "onClick", 
 			{
+  "handlers": [],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
+}
+export function usepreviewCb() {
+	const onClick = useCallback(callbackFactory("preview", "newtest", "/newtest", "onClick", 
+			{
   "handlers": [
     {
       "sendEventData": true
     }
   ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
+}
+export function usepreview_wrapperCb() {
+	const onClick = useCallback(callbackFactory("preview_wrapper", "newtest", "/newtest", "onClick", 
+			{
+  "handlers": [],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
+}
+export function usefilenameCb() {
+
+	return {  }
+}
+export function useFlex370Cb() {
+	const onClick = useCallback(callbackFactory("Flex370", "newtest", "/newtest", "onClick", 
+			{
+  "handlers": [],
   "actions": [
     {
       "type": "do_nothing"
