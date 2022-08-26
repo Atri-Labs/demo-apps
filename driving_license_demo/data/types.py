@@ -6,8 +6,8 @@ class TestOutput(TypedDict):
     license_no: str
 
 class TestStatus(Enum):
-    RIGHT = "right"
-    WRONG = "wrong"
+    CORRECT = "correct"
+    INCORRECT = "incorrect"
     EXCLAIM = "exclaim"
 
 class Test(TypedDict):
