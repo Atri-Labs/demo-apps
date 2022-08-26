@@ -704,7 +704,7 @@ const desktopModeProps = {
         "zIndex": ""
       },
       "custom": {
-        "text": "1-10"
+        "text": "0-0"
       }
     },
     "Flex12": {
@@ -1252,7 +1252,7 @@ const desktopModeProps = {
     "testitem_1": {
       "onClick": false,
       "styles": {
-        "display": "flex",
+        "display": "none",
         "flexDirection": "row",
         "alignItems": "stretch",
         "justifyContent": "space-between",
@@ -4860,7 +4860,7 @@ const desktopModeProps = {
     "testitem_2": {
       "onClick": false,
       "styles": {
-        "display": "flex",
+        "display": "none",
         "flexDirection": "row",
         "alignItems": "stretch",
         "justifyContent": "space-between",
@@ -5356,7 +5356,7 @@ const desktopModeProps = {
     "testitem_3": {
       "onClick": false,
       "styles": {
-        "display": "flex",
+        "display": "none",
         "flexDirection": "row",
         "alignItems": "stretch",
         "justifyContent": "space-between",
@@ -5852,7 +5852,7 @@ const desktopModeProps = {
     "testitem_4": {
       "onClick": false,
       "styles": {
-        "display": "flex",
+        "display": "none",
         "flexDirection": "row",
         "alignItems": "stretch",
         "justifyContent": "space-between",
@@ -6348,7 +6348,7 @@ const desktopModeProps = {
     "testitem_5": {
       "onClick": false,
       "styles": {
-        "display": "flex",
+        "display": "none",
         "flexDirection": "row",
         "alignItems": "stretch",
         "justifyContent": "space-between",
@@ -6844,7 +6844,7 @@ const desktopModeProps = {
     "testitem_6": {
       "onClick": false,
       "styles": {
-        "display": "flex",
+        "display": "none",
         "flexDirection": "row",
         "alignItems": "stretch",
         "justifyContent": "space-between",
@@ -7340,7 +7340,7 @@ const desktopModeProps = {
     "testitem_7": {
       "onClick": false,
       "styles": {
-        "display": "flex",
+        "display": "none",
         "flexDirection": "row",
         "alignItems": "stretch",
         "justifyContent": "space-between",
@@ -7836,7 +7836,7 @@ const desktopModeProps = {
     "testitem_8": {
       "onClick": false,
       "styles": {
-        "display": "flex",
+        "display": "none",
         "flexDirection": "row",
         "alignItems": "stretch",
         "justifyContent": "space-between",
@@ -8332,7 +8332,7 @@ const desktopModeProps = {
     "testitem_9": {
       "onClick": false,
       "styles": {
-        "display": "flex",
+        "display": "none",
         "flexDirection": "row",
         "alignItems": "stretch",
         "justifyContent": "space-between",
@@ -8828,7 +8828,7 @@ const desktopModeProps = {
     "testitem_10": {
       "onClick": false,
       "styles": {
-        "display": "flex",
+        "display": "none",
         "flexDirection": "row",
         "alignItems": "stretch",
         "justifyContent": "space-between",
@@ -9509,7 +9509,7 @@ const desktopModeProps = {
         "zIndex": ""
       },
       "custom": {
-        "text": "40"
+        "text": "-"
       }
     },
     "TextBox186": {
