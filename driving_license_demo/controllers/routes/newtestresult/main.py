@@ -31,11 +31,13 @@ def handle_page_request(at: Atri, req: Request, res: Response, query: str):
     exp = parse_qs(query[1:])["exp"][0]
     name = parse_qs(query[1:])["name"][0]
     lno = parse_qs(query[1:])["lno"][0]
+    sex = parse_qs(query[1:])["sex"][0]
     at.address.custom.text = address
     at.dob.custom.text = dob
     at.expiry.custom.text = exp
     at.driver_name.custom.text = name
     at.license.custom.text = lno
+    at.sex.custom.text = sex
 
 
 def handle_event(at: Atri, req: Request, res: Response):

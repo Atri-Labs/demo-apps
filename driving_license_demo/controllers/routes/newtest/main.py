@@ -100,13 +100,20 @@ def handle_event(at: Atri, req: Request, res: Response):
                 address = re.sub(r'[^\x00-\x7F]+',' ', fin["address"])
             else:
                 address = "N/A"
+
+            if "sex" in fin:   
+                sex = re.sub(r'[^\x00-\x7F]+',' ', fin["sex"])
+            else:
+                sex = "N/A"
+            
             query = {
                 "testname": final_filename,
                 "name": name,
                 "lno": lno,
                 "dob": dob,
                 "exp": exp,
-                "address": address
+                "address": address,
+                "sex": sex
                 }
             url = "/newtestresult?" + urllib.parse.urlencode(query)
             res.headers.append("location", url)

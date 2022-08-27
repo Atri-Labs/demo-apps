@@ -9,7 +9,7 @@ import { Image as Image3 } from "@atrilabs/react-component-manifests/src/manifes
 import { Button as Button3 } from "@atrilabs/react-component-manifests/src/manifests/Button/Button.tsx";
 import { Flex as Flex3 } from "@atrilabs/react-component-manifests/src/manifests/Flex/Flex.tsx";
 import { Input as Input1 } from "@atrilabs/react-component-manifests/src/manifests/Input/Input.tsx";
-import { useTextBox114Cb, useTextBox115Cb, useTextBox116Cb, useImage116Cb, useImage117Cb, useTextBox117Cb, useTextBox118Cb, useTextBox119Cb, useTextBox120Cb, useTextBox121Cb, useTextBox122Cb, useImage118Cb, useTextBox123Cb, useButton22Cb, useButton23Cb, useTextBox124Cb, useButton24Cb, useTextBox125Cb, useButton25Cb, useTextBox126Cb, useTextBox127Cb, useButton26Cb, useFlex240Cb, useFlex241Cb, useFlex242Cb, useFlex243Cb, useFlex244Cb, useFlex245Cb, useButton27Cb, useTextBox128Cb, useFlex246Cb, useTextBox129Cb, useFlex247Cb, useTextBox130Cb, useFlex248Cb, useTextBox131Cb, useFlex249Cb, useTextBox132Cb, useFlex250Cb, useImage119Cb, useTextBox133Cb, useImage120Cb, useTextBox134Cb, useImage121Cb, useButton28Cb, useFlex251Cb, useFlex252Cb, useFlex253Cb, useFlex254Cb, useInput2Cb, useFlex255Cb, useFlex256Cb, useFlex257Cb, useFlex258Cb, useFlex259Cb, useFlex260Cb, useTextBox135Cb, useTextBox136Cb, useFlex261Cb, useFlex262Cb, useFlex263Cb, useFlex265Cb, useButton29Cb, useImage122Cb, useImage123Cb, useImage124Cb, useFlex266Cb, useFlex267Cb, useFlex268Cb, useFlex269Cb, useImage125Cb, useTextBox139Cb, useTextBox140Cb, useButton30Cb, useImage126Cb, useTextBox141Cb, useTextBox142Cb, useButton31Cb, useImage127Cb, useTextBox143Cb, useTextBox144Cb, useButton32Cb, useImage128Cb, useTextBox145Cb, useTextBox146Cb, useButton33Cb, useImage129Cb, useTextBox147Cb, useTextBox148Cb, useButton34Cb, useImage130Cb, useTextBox149Cb, useButton35Cb, useFlex301Cb, useFlex302Cb, useFlex303Cb, useFlex304Cb, useFlex305Cb, useTextBox151Cb, useTextBox152Cb, useTextBox153Cb, useImage131Cb, useImage132Cb, useTextBox154Cb, useTextBox155Cb, useTextBox156Cb, useTextBox157Cb, useTextBox158Cb, useTextBox159Cb, useImage133Cb, useTextBox160Cb, useButton36Cb, useButton37Cb, useTextBox161Cb, useButton38Cb, useTextBox162Cb, useButton39Cb, useTextBox163Cb, useTextBox164Cb, useButton40Cb, useFlex306Cb, useFlex307Cb, useFlex308Cb, useFlex309Cb, useFlex310Cb, useFlex311Cb, useTextBox165Cb, useFlex312Cb, useTextBox166Cb, useFlex313Cb, useTextBox167Cb, useFlex314Cb, useTextBox168Cb, useFlex315Cb, useTextBox169Cb, useFlex316Cb, useImage134Cb, useTextBox170Cb, useImage135Cb, useTextBox171Cb, useImage136Cb, useButton42Cb, useFlex317Cb, useFlex318Cb, useFlex319Cb, usecomment_inputCb, useFlex321Cb, useFlex322Cb, useFlex323Cb, useFlex324Cb, useFlex325Cb, useFlex326Cb, usetestnameCb, usecomment_input_wrapperCb, usecomment_btnCb, useincorrectCb, useexclaimCb, usecorrectCb, useFlex334Cb, useFlex337Cb, useFlex338Cb, useFlex340Cb, useTextBox175Cb, useFlex341Cb, useImage141Cb, useTextBox177Cb, usesave_testCb, useFlex344Cb, useButton53Cb, useTextBox187Cb, useButton54Cb, useTextBox188Cb, useButton55Cb, useTextBox189Cb, useButton56Cb, useTextBox190Cb, useTextBox191Cb, useButton57Cb, useaddressCb, useFlex355Cb, useexpiryCb, useFlex356Cb, usedobCb, useFlex357Cb, uselicenseCb, useFlex358Cb, usedriver_nameCb, useFlex359Cb, useoutput_imgCb, useFlex360Cb, useFlex361Cb, useFlex362Cb, useFlex363Cb, useFlex364Cb, useFlex365Cb, useFlex366Cb, useFlex367Cb, useFlex368Cb, usecomment_btn_wrapperCb, useImage153Cb } from "../page-cbs/newtestresult";
+import { useTextBox114Cb, useTextBox115Cb, useTextBox116Cb, useImage116Cb, useImage117Cb, useTextBox117Cb, useTextBox118Cb, useTextBox119Cb, useTextBox120Cb, useTextBox121Cb, useTextBox122Cb, useImage118Cb, useTextBox123Cb, useButton22Cb, useButton23Cb, useTextBox124Cb, useButton24Cb, useTextBox125Cb, useButton25Cb, useTextBox126Cb, useTextBox127Cb, useButton26Cb, useFlex240Cb, useFlex241Cb, useFlex242Cb, useFlex243Cb, useFlex244Cb, useFlex245Cb, useButton27Cb, useTextBox128Cb, useFlex246Cb, useTextBox129Cb, useFlex247Cb, useTextBox130Cb, useFlex248Cb, useTextBox131Cb, useFlex249Cb, useTextBox132Cb, useFlex250Cb, useImage119Cb, useTextBox133Cb, useImage120Cb, useTextBox134Cb, useImage121Cb, useButton28Cb, useFlex251Cb, useFlex252Cb, useFlex253Cb, useFlex254Cb, useInput2Cb, useFlex255Cb, useFlex256Cb, useFlex257Cb, useFlex258Cb, useFlex259Cb, useFlex260Cb, useTextBox135Cb, useTextBox136Cb, useFlex261Cb, useFlex262Cb, useFlex263Cb, useFlex265Cb, useButton29Cb, useImage122Cb, useImage123Cb, useImage124Cb, useFlex266Cb, useFlex267Cb, useFlex268Cb, useFlex269Cb, useImage125Cb, useTextBox139Cb, useTextBox140Cb, useButton30Cb, useImage126Cb, useTextBox141Cb, useTextBox142Cb, useButton31Cb, useImage127Cb, useTextBox143Cb, useTextBox144Cb, useButton32Cb, useImage128Cb, useTextBox145Cb, useTextBox146Cb, useButton33Cb, useImage129Cb, useTextBox147Cb, useTextBox148Cb, useButton34Cb, useImage130Cb, useTextBox149Cb, useButton35Cb, useFlex301Cb, useFlex302Cb, useFlex303Cb, useFlex304Cb, useFlex305Cb, useTextBox151Cb, useTextBox152Cb, useTextBox153Cb, useImage131Cb, useImage132Cb, useTextBox154Cb, useTextBox155Cb, useTextBox156Cb, useTextBox157Cb, useTextBox158Cb, useTextBox159Cb, useImage133Cb, useTextBox160Cb, useButton36Cb, useButton37Cb, useTextBox161Cb, useButton38Cb, useTextBox162Cb, useButton39Cb, useTextBox163Cb, useTextBox164Cb, useButton40Cb, useFlex306Cb, useFlex307Cb, useFlex308Cb, useFlex309Cb, useFlex310Cb, useFlex311Cb, useTextBox165Cb, useFlex312Cb, useTextBox166Cb, useFlex313Cb, useTextBox167Cb, useFlex314Cb, useTextBox168Cb, useFlex315Cb, useTextBox169Cb, useFlex316Cb, useImage134Cb, useTextBox170Cb, useImage135Cb, useTextBox171Cb, useImage136Cb, useButton42Cb, useFlex317Cb, useFlex318Cb, useFlex319Cb, usecomment_inputCb, useFlex321Cb, useFlex322Cb, useFlex323Cb, useFlex324Cb, useFlex325Cb, useFlex326Cb, usetestnameCb, usecomment_input_wrapperCb, usecomment_btnCb, useincorrectCb, useexclaimCb, usecorrectCb, useFlex334Cb, useFlex337Cb, useFlex338Cb, useFlex340Cb, useTextBox175Cb, useFlex341Cb, useImage141Cb, useTextBox177Cb, usesave_testCb, useFlex344Cb, useButton53Cb, useTextBox187Cb, useButton54Cb, useTextBox188Cb, useButton55Cb, useTextBox189Cb, useButton56Cb, useTextBox190Cb, useTextBox191Cb, useButton57Cb, useaddressCb, useFlex355Cb, useexpiryCb, useFlex356Cb, usedobCb, useFlex357Cb, uselicenseCb, useFlex358Cb, usedriver_nameCb, useFlex359Cb, useoutput_imgCb, useFlex360Cb, useFlex361Cb, useFlex362Cb, useFlex363Cb, useFlex364Cb, useFlex365Cb, useFlex366Cb, useFlex367Cb, useFlex368Cb, usecomment_btn_wrapperCb, useTextBox220Cb, useButton70Cb, useFlex405Cb, usesexCb, useFlex406Cb } from "../page-cbs/newtestresult";
 
 export default function Newtestresult() {
   const navigate = useNavigate();
@@ -638,9 +638,21 @@ const Flex368Cb = useFlex368Cb()
 const comment_btn_wrapperProps = useStore((state)=>state["newtestresult"]["comment_btn_wrapper"]);
 const comment_btn_wrapperIoProps = useIoStore((state)=>state["newtestresult"]["comment_btn_wrapper"]);
 const comment_btn_wrapperCb = usecomment_btn_wrapperCb()
-const Image153Props = useStore((state)=>state["newtestresult"]["Image153"]);
-const Image153IoProps = useIoStore((state)=>state["newtestresult"]["Image153"]);
-const Image153Cb = useImage153Cb()
+const TextBox220Props = useStore((state)=>state["newtestresult"]["TextBox220"]);
+const TextBox220IoProps = useIoStore((state)=>state["newtestresult"]["TextBox220"]);
+const TextBox220Cb = useTextBox220Cb()
+const Button70Props = useStore((state)=>state["newtestresult"]["Button70"]);
+const Button70IoProps = useIoStore((state)=>state["newtestresult"]["Button70"]);
+const Button70Cb = useButton70Cb()
+const Flex405Props = useStore((state)=>state["newtestresult"]["Flex405"]);
+const Flex405IoProps = useIoStore((state)=>state["newtestresult"]["Flex405"]);
+const Flex405Cb = useFlex405Cb()
+const sexProps = useStore((state)=>state["newtestresult"]["sex"]);
+const sexIoProps = useIoStore((state)=>state["newtestresult"]["sex"]);
+const sexCb = usesexCb()
+const Flex406Props = useStore((state)=>state["newtestresult"]["Flex406"]);
+const Flex406IoProps = useIoStore((state)=>state["newtestresult"]["Flex406"]);
+const Flex406Cb = useFlex406Cb()
 
   return (<>
   <Flex3 {...Flex305Props} {...Flex305Cb} {...Flex305IoProps}>
@@ -653,7 +665,6 @@ const Image153Cb = useImage153Cb()
 </Flex3>
 <Flex3 {...Flex303Props} {...Flex303Cb} {...Flex303IoProps}>
 <Button3 {...Button35Props} {...Button35Cb} {...Button35IoProps}/>
-<Image3 {...Image153Props} {...Image153Cb} {...Image153IoProps}/>
 </Flex3>
 </Flex3>
 </Flex3>
@@ -705,6 +716,13 @@ const Image153Cb = useImage153Cb()
 <TextBox3 {...TextBox187Props} {...TextBox187Cb} {...TextBox187IoProps}/>
 </Flex3>
 <TextBox3 {...addressProps} {...addressCb} {...addressIoProps}/>
+</Flex3>
+<Flex3 {...Flex406Props} {...Flex406Cb} {...Flex406IoProps}>
+<Flex3 {...Flex405Props} {...Flex405Cb} {...Flex405IoProps}>
+<Button3 {...Button70Props} {...Button70Cb} {...Button70IoProps}/>
+<TextBox3 {...TextBox220Props} {...TextBox220Cb} {...TextBox220IoProps}/>
+</Flex3>
+<TextBox3 {...sexProps} {...sexCb} {...sexIoProps}/>
 </Flex3>
 </Flex3>
 </Flex3>

@@ -2902,14 +2902,70 @@ export function usecomment_btn_wrapperCb() {
 }), [])
 	return { onClick }
 }
-export function useImage153Cb() {
-	const onClick = useCallback(callbackFactory("Image153", "newtestresult", "/newtestresult", "onClick", 
+export function useTextBox220Cb() {
+	const onClick = useCallback(callbackFactory("TextBox220", "newtestresult", "/newtestresult", "onClick", 
 			{
   "handlers": [
     {
       "sendEventData": true
     }
   ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
+}
+export function useButton70Cb() {
+	const onClick = useCallback(callbackFactory("Button70", "newtestresult", "/newtestresult", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
+}
+export function useFlex405Cb() {
+	const onClick = useCallback(callbackFactory("Flex405", "newtestresult", "/newtestresult", "onClick", 
+			{
+  "handlers": [],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
+}
+export function usesexCb() {
+	const onClick = useCallback(callbackFactory("sex", "newtestresult", "/newtestresult", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
+}
+export function useFlex406Cb() {
+	const onClick = useCallback(callbackFactory("Flex406", "newtestresult", "/newtestresult", "onClick", 
+			{
+  "handlers": [],
   "actions": [
     {
       "type": "do_nothing"

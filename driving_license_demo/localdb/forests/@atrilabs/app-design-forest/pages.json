@@ -18,5 +18,9 @@
   "8a546e2e-7a47-47ff-be1a-6b399e6f2ec6": {
     "name": "login",
     "route": "/login"
+  },
+  "a656c1fc-06c6-43fa-8d3f-269c9cb5dc89": {
+    "name": "guides",
+    "route": "/guides"
   }
 }
