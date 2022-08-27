@@ -10528,6 +10528,59 @@ const desktopModeProps = {
       "custom": {
         "text": "of"
       }
+    },
+    "Image150": {
+      "onClick": false,
+      "styles": {
+        "alignSelf": "",
+        "flexGrow": "",
+        "flexShrink": "",
+        "order": "",
+        "marginTop": "",
+        "marginBottom": "",
+        "marginRight": "",
+        "marginLeft": "",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "paddingRight": "",
+        "paddingLeft": "",
+        "width": "",
+        "height": "",
+        "minWidth": "",
+        "minHeight": "",
+        "maxWidth": "",
+        "maxHeight": "",
+        "overflow": "",
+        "fontFamily": "",
+        "fontWeight": 400,
+        "fontSize": "",
+        "textAlign": "left",
+        "color": "",
+        "opacity": "",
+        "borderRadius": "",
+        "borderWidth": "",
+        "borderStyle": "",
+        "borderColor": "",
+        "backgroundImage": "",
+        "backgroundColor": "",
+        "position": "static",
+        "float": "none",
+        "clear": "none",
+        "top": "",
+        "left": "",
+        "bottom": "",
+        "right": "",
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
+      },
+      "custom": {
+        "alt": "No preview available",
+        "src": "/app-assets/account_circle.svg"
+      }
     }
   },
   "viewtest": {

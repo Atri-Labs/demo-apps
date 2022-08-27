@@ -2747,3 +2747,19 @@ export function useTextBox186Cb() {
 }), [])
 	return { onClick }
 }
+export function useImage150Cb() {
+	const onClick = useCallback(callbackFactory("Image150", "Home", "/", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
+}

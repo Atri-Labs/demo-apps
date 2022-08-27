@@ -67,5 +67,8 @@
   },
   "gray_circle.svg": {
     "mime": "image/svg+xml"
+  },
+  "account_circle.svg": {
+    "mime": "image/svg+xml"
   }
 }
