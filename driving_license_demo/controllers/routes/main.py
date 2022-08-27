@@ -2,7 +2,7 @@ import json
 from typing import Callable, KeysView, Tuple, List
 
 from data.types import Test, TestRegistry
-from utils.utils import get_comments, sort_by_date
+from utils.utils import get_comments, sort_by_date, status_src
 from .atri import Atri
 from fastapi import Request, Response
 from atri_utils import *
@@ -13,12 +13,6 @@ def iterate_alias(at: Atri, alias_prefix: str, limits: Tuple[int, int], arr: Lis
 
     for curr in range(start_index, end_index):
         cb(at, curr, alias_prefix + str(curr), arr, reg)
-
-status_src = {
-    "correct": "/app-assets/exclaim.svg",
-    "incorrect": "/app-assets/wrong.svg",
-    "exclaim": "/app-assets/exclaim.svg"
-    }
 
 def hide_testitems(at: Atri, index: int, alias: str, arr: List[str], reg: TestRegistry):
     testitem: at.testitem_1.__class__ = getattr(at, alias)
@@ -58,7 +52,7 @@ def set_testitems(at: Atri, index: int, alias: str, arr: List[str], reg: TestReg
         test = reg[testname]
         # status picture
         status: at.status_1.__class__ = getattr(at, "status_" + str(index))
-        status.custom.src = status_src[test.get("status")]
+        status.custom.src = status_src[test.get("status")] if test.get("status") in status_src else "/app-assets/gray_circle.svg"
         # testname/filename
         testname_comp: at.testname_1.__class__ = getattr(at, "testname_" + str(index))
         testname_comp.custom.text = testname

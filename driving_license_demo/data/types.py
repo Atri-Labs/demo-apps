@@ -3,7 +3,10 @@ from enum import Enum
 
 class TestOutput(TypedDict):
     name: str
-    license_no: str
+    lno: str
+    dob: str
+    address: str
+    exp: str
 
 class TestStatus(Enum):
     CORRECT = "correct"
@@ -19,5 +22,9 @@ class Test(TypedDict):
 
 TestRegistry = Dict[str, Test]
 
+class Comment(TypedDict):
+    time: str
+    text: str
+
 # map of test name & comments
-CommentRegistry = Dict[str, List[str]]
+CommentRegistry = Dict[str, List[Comment]]

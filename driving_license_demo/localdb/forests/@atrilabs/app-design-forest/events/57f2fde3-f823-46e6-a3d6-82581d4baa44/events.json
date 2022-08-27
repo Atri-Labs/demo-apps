@@ -11676,9 +11676,9 @@
           "paddingLeft": "",
           "paddingBottom": "",
           "paddingRight": "",
-          "width": "20px",
-          "height": "20px",
-          "borderRadius": "10px",
+          "width": "15px",
+          "height": "16px",
+          "borderRadius": "8px",
           "borderWidth": "",
           "borderStyle": "none",
           "backgroundColor": "#FB923C"
@@ -14298,9 +14298,10 @@
         "styles": {
           "flexDirection": "column",
           "columnGap": "",
-          "rowGap": "10px",
+          "rowGap": "24px",
           "paddingTop": "20px",
-          "paddingBottom": "20px"
+          "paddingBottom": "20px",
+          "justifyContent": "flex-start"
         }
       }
     },
@@ -15973,9 +15974,10 @@
     "slice": {
       "property": {
         "styles": {
-          "justifyContent": "space-between",
+          "justifyContent": "flex-start",
           "marginTop": "20px",
-          "display": "flex"
+          "display": "flex",
+          "columnGap": "40px"
         }
       }
     },
@@ -21636,7 +21638,7 @@
     "slice": {
       "property": {
         "styles": {
-          "width": "6px"
+          "width": "600px"
         }
       }
     },
@@ -22503,7 +22505,7 @@
     "slice": {
       "property": {
         "custom": {
-          "text": "t"
+          "text": "testname"
         }
       }
     },
@@ -22662,5 +22664,49 @@
       }
     },
     "id": "0581ba19-dd71-4eca-a0f2-e7976631b6e8"
+  },
+  {
+    "type": "PATCH$$@atrilabs/app-design-forest/lib/cssTree.js",
+    "slice": {
+      "property": {
+        "styles": {
+          "cursor": "pointer"
+        }
+      }
+    },
+    "id": "8fbb9e6a-77ac-4fe8-9ffd-1caa0fe3ac70"
+  },
+  {
+    "type": "PATCH$$@atrilabs/app-design-forest/lib/cssTree.js",
+    "slice": {
+      "property": {
+        "styles": {
+          "cursor": "pointer"
+        }
+      }
+    },
+    "id": "dc65c0cf-637a-4a49-a610-164b272f531e"
+  },
+  {
+    "type": "PATCH$$@atrilabs/app-design-forest/lib/cssTree.js",
+    "slice": {
+      "property": {
+        "styles": {
+          "color": "#"
+        }
+      }
+    },
+    "id": "8fbb9e6a-77ac-4fe8-9ffd-1caa0fe3ac70"
+  },
+  {
+    "type": "PATCH$$@atrilabs/app-design-forest/lib/cssTree.js",
+    "slice": {
+      "property": {
+        "styles": {
+          "color": ""
+        }
+      }
+    },
+    "id": "8fbb9e6a-77ac-4fe8-9ffd-1caa0fe3ac70"
   }
 ]

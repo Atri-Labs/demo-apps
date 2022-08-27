@@ -72,8 +72,22 @@ def handle_event(at: Atri, req: Request, res: Response):
         if Path.exists(final_input_path):
             with open(str(final_output_path), "wb") as f:
                 # TODO: get data from test result
-                f.write(b'img_bytes')
+                with open(str(final_input_path), "rb") as i:
+                    f.write(i.read())
+                # write output fields
+                name = "Jane Doe"
+                lno = "123456"
+                dob = "11/11/11"
+                exp = "11/11/11"
+                address = "NYC"
                 # TODO: navigate after output is written
-                res.headers.append("location", "/newtestresult?testname=" + final_filename)
+                res.headers.append("location",
+                "/newtestresult?testname=" + final_filename +
+                "&name=" + name +
+                "&lno=" + lno +
+                "&dob=" + dob +
+                "&exp=" + exp +
+                "&address=" + address
+                )
 
 

@@ -64,5 +64,8 @@
   },
   "example_driving_license.png": {
     "mime": "image/png"
+  },
+  "gray_circle.svg": {
+    "mime": "image/svg+xml"
   }
 }

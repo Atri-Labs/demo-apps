@@ -1,1 +1,15 @@
-{}
+{
+    "example_driving_license22.png": [
+        {
+            "time": "27/08/22 06:15:10",
+            "comment": "some comment"
+        }
+    ],
+    "example_driving_license23.png": [],
+    "example_driving_license24.png": [
+        {
+            "time": "27/08/22 06:27:38",
+            "comment": "a comment"
+        }
+    ]
+}

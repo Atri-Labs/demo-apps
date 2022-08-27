@@ -63,7 +63,7 @@ const desktopModeProps = {
         "outlineColor": "",
         "outlineOffset": "",
         "outlineWidth": "",
-        "cursor": ""
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Docs"
@@ -1214,7 +1214,7 @@ const desktopModeProps = {
         "outlineColor": "",
         "outlineOffset": "",
         "outlineWidth": "",
-        "cursor": ""
+        "cursor": "pointer"
       },
       "custom": {
         "alt": "No preview available",
@@ -5102,7 +5102,7 @@ const desktopModeProps = {
         "outlineColor": "",
         "outlineOffset": "",
         "outlineWidth": "",
-        "cursor": ""
+        "cursor": "pointer"
       },
       "custom": {
         "alt": "No preview available",
@@ -5650,7 +5650,7 @@ const desktopModeProps = {
         "outlineColor": "",
         "outlineOffset": "",
         "outlineWidth": "",
-        "cursor": ""
+        "cursor": "pointer"
       },
       "custom": {
         "alt": "No preview available",
@@ -6198,7 +6198,7 @@ const desktopModeProps = {
         "outlineColor": "",
         "outlineOffset": "",
         "outlineWidth": "",
-        "cursor": ""
+        "cursor": "pointer"
       },
       "custom": {
         "alt": "No preview available",
@@ -6746,7 +6746,7 @@ const desktopModeProps = {
         "outlineColor": "",
         "outlineOffset": "",
         "outlineWidth": "",
-        "cursor": ""
+        "cursor": "pointer"
       },
       "custom": {
         "alt": "No preview available",
@@ -7294,7 +7294,7 @@ const desktopModeProps = {
         "outlineColor": "",
         "outlineOffset": "",
         "outlineWidth": "",
-        "cursor": ""
+        "cursor": "pointer"
       },
       "custom": {
         "alt": "No preview available",
@@ -7842,7 +7842,7 @@ const desktopModeProps = {
         "outlineColor": "",
         "outlineOffset": "",
         "outlineWidth": "",
-        "cursor": ""
+        "cursor": "pointer"
       },
       "custom": {
         "alt": "No preview available",
@@ -8390,7 +8390,7 @@ const desktopModeProps = {
         "outlineColor": "",
         "outlineOffset": "",
         "outlineWidth": "",
-        "cursor": ""
+        "cursor": "pointer"
       },
       "custom": {
         "alt": "No preview available",
@@ -8938,7 +8938,7 @@ const desktopModeProps = {
         "outlineColor": "",
         "outlineOffset": "",
         "outlineWidth": "",
-        "cursor": ""
+        "cursor": "pointer"
       },
       "custom": {
         "alt": "No preview available",
@@ -9486,7 +9486,7 @@ const desktopModeProps = {
         "outlineColor": "",
         "outlineOffset": "",
         "outlineWidth": "",
-        "cursor": ""
+        "cursor": "pointer"
       },
       "custom": {
         "alt": "No preview available",
@@ -17002,7 +17002,7 @@ const desktopModeProps = {
         "fontWeight": 400,
         "fontSize": "16px",
         "textAlign": "left",
-        "color": "#1E40AF",
+        "color": "",
         "opacity": "",
         "borderRadius": "",
         "borderWidth": "",
@@ -17022,7 +17022,7 @@ const desktopModeProps = {
         "outlineColor": "",
         "outlineOffset": "",
         "outlineWidth": "",
-        "cursor": ""
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Gallery"
@@ -17074,7 +17074,7 @@ const desktopModeProps = {
         "outlineColor": "",
         "outlineOffset": "",
         "outlineWidth": "",
-        "cursor": ""
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Docs"
@@ -22059,7 +22059,7 @@ const desktopModeProps = {
         "fontWeight": 400,
         "fontSize": "16px",
         "textAlign": "left",
-        "color": "#1E40AF",
+        "color": "",
         "opacity": "",
         "borderRadius": "",
         "borderWidth": "",
@@ -22079,7 +22079,7 @@ const desktopModeProps = {
         "outlineColor": "",
         "outlineOffset": "",
         "outlineWidth": "",
-        "cursor": ""
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Gallery"
@@ -22131,7 +22131,7 @@ const desktopModeProps = {
         "outlineColor": "",
         "outlineOffset": "",
         "outlineWidth": "",
-        "cursor": ""
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Docs"
@@ -28173,7 +28173,7 @@ const desktopModeProps = {
         "fontWeight": 400,
         "fontSize": "16px",
         "textAlign": "left",
-        "color": "#1E40AF",
+        "color": "",
         "opacity": "",
         "borderRadius": "",
         "borderWidth": "",
@@ -28193,7 +28193,7 @@ const desktopModeProps = {
         "outlineColor": "",
         "outlineOffset": "",
         "outlineWidth": "",
-        "cursor": ""
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Gallery"
@@ -28245,7 +28245,7 @@ const desktopModeProps = {
         "outlineColor": "",
         "outlineOffset": "",
         "outlineWidth": "",
-        "cursor": ""
+        "cursor": "pointer"
       },
       "custom": {
         "text": "Docs"
@@ -31108,64 +31108,7 @@ const desktopModeProps = {
         "cursor": ""
       }
     },
-    "Flex320": {
-      "onClick": false,
-      "styles": {
-        "display": "flex",
-        "flexDirection": "row",
-        "alignItems": "stretch",
-        "justifyContent": "flex-end",
-        "flexWrap": "nowrap",
-        "alignContent": "stretch",
-        "rowGap": "",
-        "columnGap": "",
-        "alignSelf": "",
-        "flexGrow": "",
-        "flexShrink": "",
-        "order": "",
-        "marginTop": "",
-        "marginBottom": "",
-        "marginRight": "",
-        "marginLeft": "",
-        "paddingTop": "",
-        "paddingBottom": "",
-        "paddingRight": "",
-        "paddingLeft": "",
-        "width": "",
-        "height": "",
-        "minWidth": "",
-        "minHeight": "",
-        "maxWidth": "",
-        "maxHeight": "",
-        "overflow": "",
-        "fontFamily": "",
-        "fontWeight": 400,
-        "fontSize": "",
-        "textAlign": "left",
-        "color": "",
-        "opacity": "",
-        "borderRadius": "",
-        "borderWidth": "",
-        "borderStyle": "",
-        "borderColor": "",
-        "backgroundImage": "",
-        "backgroundColor": "",
-        "position": "static",
-        "float": "none",
-        "clear": "none",
-        "top": "",
-        "left": "",
-        "bottom": "",
-        "right": "",
-        "zIndex": "",
-        "outlineStyle": "",
-        "outlineColor": "",
-        "outlineOffset": "",
-        "outlineWidth": "",
-        "cursor": ""
-      }
-    },
-    "Input3": {
+    "comment_input": {
       "onChange": false,
       "onPressEnter": false,
       "styles": {
@@ -31562,7 +31505,7 @@ const desktopModeProps = {
         "cursor": ""
       }
     },
-    "TextBox172": {
+    "testname": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -31614,181 +31557,10 @@ const desktopModeProps = {
         "text": "testname"
       }
     },
-    "Flex327": {
+    "comment_input_wrapper": {
       "onClick": false,
       "styles": {
-        "display": "flex",
-        "flexDirection": "row",
-        "alignItems": "stretch",
-        "justifyContent": "flex-start",
-        "flexWrap": "nowrap",
-        "alignContent": "stretch",
-        "rowGap": "",
-        "columnGap": "10px",
-        "alignSelf": "",
-        "flexGrow": "",
-        "flexShrink": "",
-        "order": "",
-        "marginTop": "",
-        "marginBottom": "",
-        "marginRight": "",
-        "marginLeft": "",
-        "paddingTop": "",
-        "paddingBottom": "",
-        "paddingRight": "",
-        "paddingLeft": "",
-        "width": "",
-        "height": "",
-        "minWidth": "",
-        "minHeight": "",
-        "maxWidth": "",
-        "maxHeight": "",
-        "overflow": "",
-        "fontFamily": "",
-        "fontWeight": 400,
-        "fontSize": "",
-        "textAlign": "left",
-        "color": "",
-        "opacity": "",
-        "borderRadius": "",
-        "borderWidth": "",
-        "borderStyle": "",
-        "borderColor": "",
-        "backgroundImage": "",
-        "backgroundColor": "",
-        "position": "static",
-        "float": "none",
-        "clear": "none",
-        "top": "",
-        "left": "",
-        "bottom": "",
-        "right": "",
-        "zIndex": "",
-        "outlineStyle": "",
-        "outlineColor": "",
-        "outlineOffset": "",
-        "outlineWidth": "",
-        "cursor": ""
-      }
-    },
-    "Flex328": {
-      "onClick": false,
-      "styles": {
-        "display": "flex",
-        "flexDirection": "row",
-        "alignItems": "stretch",
-        "justifyContent": "flex-start",
-        "flexWrap": "nowrap",
-        "alignContent": "stretch",
-        "rowGap": "",
-        "columnGap": "10px",
-        "alignSelf": "",
-        "flexGrow": "",
-        "flexShrink": "",
-        "order": "",
-        "marginTop": "",
-        "marginBottom": "",
-        "marginRight": "",
-        "marginLeft": "",
-        "paddingTop": "",
-        "paddingBottom": "",
-        "paddingRight": "",
-        "paddingLeft": "",
-        "width": "",
-        "height": "",
-        "minWidth": "",
-        "minHeight": "",
-        "maxWidth": "",
-        "maxHeight": "",
-        "overflow": "",
-        "fontFamily": "",
-        "fontWeight": 400,
-        "fontSize": "",
-        "textAlign": "left",
-        "color": "",
-        "opacity": "",
-        "borderRadius": "",
-        "borderWidth": "",
-        "borderStyle": "",
-        "borderColor": "",
-        "backgroundImage": "",
-        "backgroundColor": "",
-        "position": "static",
-        "float": "none",
-        "clear": "none",
-        "top": "",
-        "left": "",
-        "bottom": "",
-        "right": "",
-        "zIndex": "",
-        "outlineStyle": "",
-        "outlineColor": "",
-        "outlineOffset": "",
-        "outlineWidth": "",
-        "cursor": ""
-      }
-    },
-    "Flex329": {
-      "onClick": false,
-      "styles": {
-        "display": "flex",
-        "flexDirection": "row",
-        "alignItems": "stretch",
-        "justifyContent": "flex-start",
-        "flexWrap": "nowrap",
-        "alignContent": "stretch",
-        "rowGap": "",
-        "columnGap": "",
-        "alignSelf": "",
-        "flexGrow": "",
-        "flexShrink": "",
-        "order": "",
-        "marginTop": "",
-        "marginBottom": "",
-        "marginRight": "",
-        "marginLeft": "",
-        "paddingTop": "",
-        "paddingBottom": "",
-        "paddingRight": "",
-        "paddingLeft": "",
-        "width": "1px",
-        "height": "100%",
-        "minWidth": "",
-        "minHeight": "",
-        "maxWidth": "",
-        "maxHeight": "",
-        "overflow": "",
-        "fontFamily": "",
-        "fontWeight": 400,
-        "fontSize": "",
-        "textAlign": "left",
-        "color": "",
-        "opacity": "",
-        "borderRadius": "",
-        "borderWidth": "",
-        "borderStyle": "",
-        "borderColor": "",
-        "backgroundImage": "",
-        "backgroundColor": "#6B7280",
-        "position": "static",
-        "float": "none",
-        "clear": "none",
-        "top": "",
-        "left": "",
-        "bottom": "",
-        "right": "",
-        "zIndex": "",
-        "outlineStyle": "",
-        "outlineColor": "",
-        "outlineOffset": "",
-        "outlineWidth": "",
-        "cursor": ""
-      }
-    },
-    "Flex331": {
-      "onClick": false,
-      "styles": {
-        "display": "flex",
+        "display": "none",
         "flexDirection": "column",
         "alignItems": "stretch",
         "justifyContent": "flex-start",
@@ -31842,7 +31614,7 @@ const desktopModeProps = {
         "cursor": ""
       }
     },
-    "Button43": {
+    "comment_btn": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -31894,7 +31666,7 @@ const desktopModeProps = {
         "text": "Leave a comment"
       }
     },
-    "Image137": {
+    "incorrect": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -31940,14 +31712,14 @@ const desktopModeProps = {
         "outlineColor": "",
         "outlineOffset": "",
         "outlineWidth": "",
-        "cursor": ""
+        "cursor": "pointer"
       },
       "custom": {
         "alt": "No preview available",
         "src": "/app-assets/wrong-disabled.svg"
       }
     },
-    "Image138": {
+    "exclaim": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -31993,14 +31765,14 @@ const desktopModeProps = {
         "outlineColor": "",
         "outlineOffset": "",
         "outlineWidth": "",
-        "cursor": ""
+        "cursor": "pointer"
       },
       "custom": {
         "alt": "No preview available",
         "src": "/app-assets/warning_disabled.svg"
       }
     },
-    "Image139": {
+    "correct": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -32046,7 +31818,7 @@ const desktopModeProps = {
         "outlineColor": "",
         "outlineOffset": "",
         "outlineWidth": "",
-        "cursor": ""
+        "cursor": "pointer"
       },
       "custom": {
         "alt": "No preview available",
@@ -32093,63 +31865,6 @@ const desktopModeProps = {
         "borderWidth": "",
         "borderStyle": "",
         "borderColor": "",
-        "backgroundImage": "",
-        "backgroundColor": "",
-        "position": "static",
-        "float": "none",
-        "clear": "none",
-        "top": "",
-        "left": "",
-        "bottom": "",
-        "right": "",
-        "zIndex": "",
-        "outlineStyle": "",
-        "outlineColor": "",
-        "outlineOffset": "",
-        "outlineWidth": "",
-        "cursor": ""
-      }
-    },
-    "Flex335": {
-      "onClick": false,
-      "styles": {
-        "display": "flex",
-        "flexDirection": "row",
-        "alignItems": "stretch",
-        "justifyContent": "flex-start",
-        "flexWrap": "nowrap",
-        "alignContent": "stretch",
-        "rowGap": "",
-        "columnGap": "20px",
-        "alignSelf": "",
-        "flexGrow": "",
-        "flexShrink": "",
-        "order": "",
-        "marginTop": "",
-        "marginBottom": "",
-        "marginRight": "",
-        "marginLeft": "",
-        "paddingTop": "2px",
-        "paddingBottom": "2px",
-        "paddingRight": "4px",
-        "paddingLeft": "4px",
-        "width": "",
-        "height": "",
-        "minWidth": "",
-        "minHeight": "",
-        "maxWidth": "",
-        "maxHeight": "",
-        "overflow": "",
-        "fontFamily": "IBM Plex Sans",
-        "fontWeight": 400,
-        "fontSize": "14px",
-        "textAlign": "left",
-        "color": "#6B7280",
-        "opacity": "",
-        "borderRadius": "2px",
-        "borderWidth": "1px",
-        "borderStyle": "solid",
-        "borderColor": "#6B7280",
         "backgroundImage": "",
         "backgroundColor": "",
         "position": "static",
@@ -32552,7 +32267,7 @@ const desktopModeProps = {
         "text": "Save Test"
       }
     },
-    "Flex343": {
+    "save_test": {
       "onClick": false,
       "styles": {
         "display": "flex",
@@ -32606,7 +32321,7 @@ const desktopModeProps = {
         "outlineColor": "",
         "outlineOffset": "",
         "outlineWidth": "",
-        "cursor": ""
+        "cursor": "pointer"
       }
     },
     "Flex344": {
@@ -32664,58 +32379,6 @@ const desktopModeProps = {
         "outlineOffset": "",
         "outlineWidth": "",
         "cursor": ""
-      }
-    },
-    "Button46": {
-      "onClick": false,
-      "styles": {
-        "alignSelf": "",
-        "flexGrow": "",
-        "flexShrink": "",
-        "order": "",
-        "marginTop": "",
-        "marginBottom": "",
-        "marginRight": "",
-        "marginLeft": "",
-        "paddingTop": "6px",
-        "paddingBottom": "6px",
-        "paddingRight": "10px",
-        "paddingLeft": "10px",
-        "width": "",
-        "height": "",
-        "minWidth": "",
-        "minHeight": "",
-        "maxWidth": "",
-        "maxHeight": "",
-        "overflow": "",
-        "fontFamily": "IBM Plex Sans",
-        "fontWeight": 700,
-        "fontSize": "16px",
-        "textAlign": "center",
-        "color": "#fff",
-        "opacity": "",
-        "borderRadius": "4px",
-        "borderWidth": "1px",
-        "borderStyle": "none",
-        "borderColor": "",
-        "backgroundImage": "",
-        "backgroundColor": "#1E293B",
-        "position": "static",
-        "float": "none",
-        "clear": "none",
-        "top": "",
-        "left": "",
-        "bottom": "",
-        "right": "",
-        "zIndex": "",
-        "outlineStyle": "none",
-        "outlineColor": "",
-        "outlineOffset": "",
-        "outlineWidth": "",
-        "cursor": "pointer"
-      },
-      "custom": {
-        "text": "Submit"
       }
     },
     "Button53": {
@@ -32819,7 +32482,7 @@ const desktopModeProps = {
         "cursor": ""
       },
       "custom": {
-        "text": "Nationality"
+        "text": "Address"
       }
     },
     "Button54": {
@@ -32923,7 +32586,7 @@ const desktopModeProps = {
         "cursor": ""
       },
       "custom": {
-        "text": "Place of Birth"
+        "text": "Expiry Date"
       }
     },
     "Button55": {
@@ -33131,7 +32794,7 @@ const desktopModeProps = {
         "cursor": ""
       },
       "custom": {
-        "text": "Passport no."
+        "text": "License no."
       }
     },
     "TextBox191": {
@@ -33238,7 +32901,7 @@ const desktopModeProps = {
         "text": ""
       }
     },
-    "TextBox192": {
+    "address": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -33347,7 +33010,7 @@ const desktopModeProps = {
         "cursor": ""
       }
     },
-    "TextBox193": {
+    "expiry": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -33456,7 +33119,7 @@ const desktopModeProps = {
         "cursor": ""
       }
     },
-    "TextBox194": {
+    "dob": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -33565,7 +33228,7 @@ const desktopModeProps = {
         "cursor": ""
       }
     },
-    "TextBox195": {
+    "license": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -33674,7 +33337,7 @@ const desktopModeProps = {
         "cursor": ""
       }
     },
-    "TextBox196": {
+    "driver_name": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -33783,7 +33446,7 @@ const desktopModeProps = {
         "cursor": ""
       }
     },
-    "Image146": {
+    "output_img": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -33833,7 +33496,7 @@ const desktopModeProps = {
       },
       "custom": {
         "alt": "No preview available",
-        "src": "/app-assets/example_driving_license.png"
+        "src": ""
       }
     },
     "Flex360": {
@@ -34308,6 +33971,63 @@ const desktopModeProps = {
         "flexShrink": "",
         "order": "",
         "marginTop": "20px",
+        "marginBottom": "",
+        "marginRight": "",
+        "marginLeft": "",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "paddingRight": "",
+        "paddingLeft": "",
+        "width": "",
+        "height": "",
+        "minWidth": "",
+        "minHeight": "",
+        "maxWidth": "",
+        "maxHeight": "",
+        "overflow": "",
+        "fontFamily": "",
+        "fontWeight": 400,
+        "fontSize": "",
+        "textAlign": "left",
+        "color": "",
+        "opacity": "",
+        "borderRadius": "",
+        "borderWidth": "",
+        "borderStyle": "",
+        "borderColor": "",
+        "backgroundImage": "",
+        "backgroundColor": "",
+        "position": "static",
+        "float": "none",
+        "clear": "none",
+        "top": "",
+        "left": "",
+        "bottom": "",
+        "right": "",
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
+      }
+    },
+    "comment_btn_wrapper": {
+      "onClick": false,
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "stretch",
+        "justifyContent": "flex-start",
+        "flexWrap": "nowrap",
+        "alignContent": "stretch",
+        "rowGap": "",
+        "columnGap": "",
+        "alignSelf": "",
+        "flexGrow": "",
+        "flexShrink": "",
+        "order": "",
+        "marginTop": "",
         "marginBottom": "",
         "marginRight": "",
         "marginLeft": "",
