@@ -10,5 +10,11 @@
 	},
 	"maintainer": {
 		"passwd": "maintainer"
+	},
+	"darshita": {
+		"passwd": "darshita"
+	},
+	"shyam": {
+		"passwd": "shyam"
 	}
 }
