@@ -17907,7 +17907,7 @@ const desktopModeProps = {
         "cursor": ""
       }
     },
-    "TextBox80": {
+    "testname": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -19543,7 +19543,7 @@ const desktopModeProps = {
         "cursor": ""
       }
     },
-    "Image106": {
+    "correct": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -19596,7 +19596,7 @@ const desktopModeProps = {
         "src": "/app-assets/right_disabled.svg"
       }
     },
-    "Image107": {
+    "exclaim": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -19649,7 +19649,7 @@ const desktopModeProps = {
         "src": "/app-assets/warning_disabled.svg"
       }
     },
-    "Image108": {
+    "incorrect": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -19702,7 +19702,7 @@ const desktopModeProps = {
         "src": "/app-assets/wrong-disabled.svg"
       }
     },
-    "Button15": {
+    "comment_btn": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -19920,10 +19920,10 @@ const desktopModeProps = {
         "text": "All comments"
       }
     },
-    "Flex214": {
+    "comment_wrapper_1": {
       "onClick": false,
       "styles": {
-        "display": "flex",
+        "display": "none",
         "flexDirection": "row",
         "alignItems": "stretch",
         "justifyContent": "flex-start",
@@ -20144,7 +20144,7 @@ const desktopModeProps = {
         "src": "/app-assets/profile_pic_3.png"
       }
     },
-    "TextBox98": {
+    "username_1": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -20196,7 +20196,7 @@ const desktopModeProps = {
         "text": "username"
       }
     },
-    "TextBox99": {
+    "time_1": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -20248,7 +20248,7 @@ const desktopModeProps = {
         "text": "3h"
       }
     },
-    "TextBox100": {
+    "comment_1": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -20357,7 +20357,7 @@ const desktopModeProps = {
         "cursor": ""
       }
     },
-    "TextBox101": {
+    "comment_2": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -20409,7 +20409,7 @@ const desktopModeProps = {
         "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
       }
     },
-    "TextBox102": {
+    "time_2": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -20461,7 +20461,7 @@ const desktopModeProps = {
         "text": "3h"
       }
     },
-    "TextBox103": {
+    "username_2": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -20680,10 +20680,10 @@ const desktopModeProps = {
         "cursor": ""
       }
     },
-    "Flex221": {
+    "comment_wrapper_2": {
       "onClick": false,
       "styles": {
-        "display": "flex",
+        "display": "none",
         "flexDirection": "row",
         "alignItems": "stretch",
         "justifyContent": "flex-start",
@@ -20790,7 +20790,7 @@ const desktopModeProps = {
         "src": "/app-assets/propfile_pic_2.png"
       }
     },
-    "TextBox104": {
+    "username_3": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -20842,7 +20842,7 @@ const desktopModeProps = {
         "text": "username"
       }
     },
-    "TextBox105": {
+    "time_3": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -20894,7 +20894,7 @@ const desktopModeProps = {
         "text": "3h"
       }
     },
-    "TextBox106": {
+    "comment_3": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -21060,10 +21060,10 @@ const desktopModeProps = {
         "cursor": ""
       }
     },
-    "Flex224": {
+    "comment_wrapper_3": {
       "onClick": false,
       "styles": {
-        "display": "flex",
+        "display": "none",
         "flexDirection": "row",
         "alignItems": "stretch",
         "justifyContent": "flex-start",
@@ -21117,10 +21117,10 @@ const desktopModeProps = {
         "cursor": ""
       }
     },
-    "Flex225": {
+    "comment_input_wrapper": {
       "onClick": false,
       "styles": {
-        "display": "flex",
+        "display": "none",
         "flexDirection": "column",
         "alignItems": "stretch",
         "justifyContent": "flex-start",
@@ -21174,7 +21174,7 @@ const desktopModeProps = {
         "cursor": ""
       }
     },
-    "Input1": {
+    "comment_input": {
       "onChange": false,
       "onPressEnter": false,
       "styles": {
@@ -23526,7 +23526,7 @@ const desktopModeProps = {
         "text": ""
       }
     },
-    "Image149": {
+    "output_img": {
       "onClick": false,
       "styles": {
         "alignSelf": "",
@@ -24124,7 +24124,7 @@ const desktopModeProps = {
         "text": "Jane Doe"
       }
     },
-    "Flex392": {
+    "output_img_wrapper": {
       "onClick": false,
       "styles": {
         "display": "inline-flex",
@@ -24596,6 +24596,172 @@ const desktopModeProps = {
         "flexShrink": "",
         "order": "",
         "marginTop": "20px",
+        "marginBottom": "",
+        "marginRight": "",
+        "marginLeft": "",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "paddingRight": "",
+        "paddingLeft": "",
+        "width": "",
+        "height": "",
+        "minWidth": "",
+        "minHeight": "",
+        "maxWidth": "",
+        "maxHeight": "",
+        "overflow": "",
+        "fontFamily": "",
+        "fontWeight": 400,
+        "fontSize": "",
+        "textAlign": "left",
+        "color": "",
+        "opacity": "",
+        "borderRadius": "",
+        "borderWidth": "",
+        "borderStyle": "",
+        "borderColor": "",
+        "backgroundImage": "",
+        "backgroundColor": "",
+        "position": "static",
+        "float": "none",
+        "clear": "none",
+        "top": "",
+        "left": "",
+        "bottom": "",
+        "right": "",
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
+      }
+    },
+    "Flex401": {
+      "onClick": false,
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "stretch",
+        "justifyContent": "flex-end",
+        "flexWrap": "nowrap",
+        "alignContent": "stretch",
+        "rowGap": "",
+        "columnGap": "",
+        "alignSelf": "",
+        "flexGrow": "",
+        "flexShrink": "",
+        "order": "",
+        "marginTop": "",
+        "marginBottom": "",
+        "marginRight": "",
+        "marginLeft": "",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "paddingRight": "",
+        "paddingLeft": "",
+        "width": "",
+        "height": "",
+        "minWidth": "",
+        "minHeight": "",
+        "maxWidth": "",
+        "maxHeight": "",
+        "overflow": "",
+        "fontFamily": "",
+        "fontWeight": 400,
+        "fontSize": "",
+        "textAlign": "left",
+        "color": "",
+        "opacity": "",
+        "borderRadius": "",
+        "borderWidth": "",
+        "borderStyle": "",
+        "borderColor": "",
+        "backgroundImage": "",
+        "backgroundColor": "",
+        "position": "static",
+        "float": "none",
+        "clear": "none",
+        "top": "",
+        "left": "",
+        "bottom": "",
+        "right": "",
+        "zIndex": "",
+        "outlineStyle": "",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": ""
+      }
+    },
+    "submit": {
+      "onClick": false,
+      "styles": {
+        "alignSelf": "",
+        "flexGrow": "",
+        "flexShrink": "",
+        "order": "",
+        "marginTop": "",
+        "marginBottom": "",
+        "marginRight": "",
+        "marginLeft": "",
+        "paddingTop": "6px",
+        "paddingBottom": "6px",
+        "paddingRight": "10px",
+        "paddingLeft": "10px",
+        "width": "",
+        "height": "",
+        "minWidth": "",
+        "minHeight": "",
+        "maxWidth": "",
+        "maxHeight": "",
+        "overflow": "",
+        "fontFamily": "IBM Plex Sans",
+        "fontWeight": 700,
+        "fontSize": "16px",
+        "textAlign": "center",
+        "color": "#fff",
+        "opacity": "",
+        "borderRadius": "4px",
+        "borderWidth": "1px",
+        "borderStyle": "none",
+        "borderColor": "",
+        "backgroundImage": "",
+        "backgroundColor": "#1E293B",
+        "position": "static",
+        "float": "none",
+        "clear": "none",
+        "top": "",
+        "left": "",
+        "bottom": "",
+        "right": "",
+        "zIndex": "",
+        "outlineStyle": "none",
+        "outlineColor": "",
+        "outlineOffset": "",
+        "outlineWidth": "",
+        "cursor": "pointer"
+      },
+      "custom": {
+        "text": "Submit"
+      }
+    },
+    "comment_btn_wrapper": {
+      "onClick": false,
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "stretch",
+        "justifyContent": "flex-start",
+        "flexWrap": "nowrap",
+        "alignContent": "stretch",
+        "rowGap": "",
+        "columnGap": "",
+        "alignSelf": "",
+        "flexGrow": "",
+        "flexShrink": "",
+        "order": "",
+        "marginTop": "",
         "marginBottom": "",
         "marginRight": "",
         "marginLeft": "",

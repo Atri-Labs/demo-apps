@@ -1,6 +1,7 @@
-from data.types import CommentRegistry, TestRegistry
+from data.types import Comment, CommentRegistry, TestRegistry
 from datetime import datetime
 import json
+from typing import List
 
 TESTS_IMAGES_DIR = "data/test_images"
 TESTS_OUTPUT_DIR = "data/test_outputs"
@@ -23,6 +24,14 @@ def sort_by_date(reg: TestRegistry):
         return diff
 
     return sort_fn
+
+def sort_comments_by_date(comments: List[Comment]):
+    def sort_fn(comment: Comment):
+        time = datetime.strptime(comment.get("time"), DATE_FORMAT)
+        diff = (time - epoch_base).total_seconds()
+        return diff
+        
+    comments.sort(reverse=True, key=sort_fn)
 
 def get_comments(testname: str):
     with open("data/comments.json") as f:

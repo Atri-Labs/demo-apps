@@ -78,7 +78,7 @@ def handle_event(at: Atri, req: Request, res: Response):
             username = req.cookies.get("username")
             comments[testname] = [{
                 "time": date_to_str(now),
-                "comment": comment,
+                "text": comment,
                 "username": username
                 }] if len(comment) > 0 else []
         

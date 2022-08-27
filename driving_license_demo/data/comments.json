@@ -7,8 +7,23 @@
     "example_driving_license26.png": [
         {
             "time": "27/08/22 06:53:04",
-            "comment": "new comment",
+            "text": "new comment",
             "username": "guest"
+        },
+        {
+            "username": "guest",
+            "text": "comment 2",
+            "time": "27/08/22 07:35:43"
+        },
+        {
+            "username": "guest",
+            "text": "comment 3",
+            "time": "27/08/22 07:37:13"
+        },
+        {
+            "username": "guest",
+            "text": "comment 4",
+            "time": "27/08/22 07:54:23"
         }
     ]
 }
