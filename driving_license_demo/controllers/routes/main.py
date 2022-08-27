@@ -133,3 +133,11 @@ def handle_event(at: Atri, req: Request, res: Response):
             # sort in reverse time
             keys.sort(reverse=True, key=sort_by_date(reg))
             iterate_alias(at, "testitem_", [1, 10], keys, reg, set_testitems)
+
+    for i in range(1, 11):
+        navtest = getattr(at, "navtest_" + str(i))
+        if navtest.onClick:
+            testnamebox = getattr(at, "testname_" + str(i))
+            testname = testnamebox.custom.text
+            res.headers.append("location", "/viewtest?testname=" + testname)
+            break
