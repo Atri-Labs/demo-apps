@@ -66,7 +66,8 @@
     "slice": {
       "property": {
         "styles": {
-          "height": "100%"
+          "height": "100%",
+          "flexWrap": "wrap"
         }
       }
     },
@@ -1871,7 +1872,8 @@
           "fontSize": "16px",
           "fontFamily": "IBM Plex Sans",
           "fontWeight": 400,
-          "color": "#9CA3AF"
+          "color": "#9CA3AF",
+          "paddingBottom": "40px"
         }
       }
     },
@@ -2381,7 +2383,7 @@
     "slice": {
       "property": {
         "custom": {
-          "text": "Email"
+          "text": "Username"
         }
       }
     },
@@ -3016,7 +3018,7 @@
     "slice": {
       "property": {
         "custom": {
-          "placeholder": "abc@atrilabs.com"
+          "placeholder": "john_doe"
         }
       }
     },
@@ -3810,7 +3812,7 @@
         "styles": {
           "width": "",
           "justifyContent": "center",
-          "paddingTop": "40px",
+          "paddingTop": "",
           "columnGap": "",
           "flexDirection": "column",
           "alignItems": "center",
@@ -4790,7 +4792,8 @@
     "slice": {
       "property": {
         "custom": {
-          "placeholder": "*********"
+          "placeholder": "",
+          "isPasswordField": true
         }
       }
     },
@@ -5344,7 +5347,7 @@
     "type": "PATCH$$@atrilabs/app-design-forest/lib/componentTree.js",
     "id": "8b13db34-a909-4c7a-b8f0-78f1cd070455",
     "slice": {
-      "alias": "e"
+      "alias": "username"
     }
   },
   {
@@ -5379,7 +5382,7 @@
     "type": "PATCH$$@atrilabs/app-design-forest/lib/componentTree.js",
     "id": "89fd7513-e903-4885-9009-62da835467f3",
     "slice": {
-      "alias": "p"
+      "alias": "password"
     }
   },
   {
@@ -5748,9 +5751,6 @@
           "onClick": [
             {
               "sendEventData": true
-            },
-            {
-              "sendEventData": true
             }
           ]
         }
@@ -5908,7 +5908,11 @@
     "id": "81a05166-23dd-4761-8d35-a8d0cbc06aa8",
     "type": "PATCH$$@atrilabs/app-design-forest/lib/componentTree.js",
     "slice": {
-      "alias": "TextBox184"
+      "alias": "errorbox",
+      "parent": {
+        "id": "e97582e2-6b99-4c96-826c-3503db491233",
+        "index": 1
+      }
     }
   },
   {
@@ -5916,7 +5920,18 @@
     "slice": {
       "property": {
         "styles": {
-          "backgroundColor": "#ef4848"
+          "backgroundColor": "#FEE2E2",
+          "height": "",
+          "alignSelf": "center",
+          "paddingTop": "6px",
+          "paddingBottom": "6px",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
+          "borderRadius": "2px",
+          "fontFamily": "IBM Plex Sans",
+          "fontWeight": 500,
+          "fontSize": "16px",
+          "color": "#991B1B"
         }
       }
     },
@@ -5949,7 +5964,7 @@
     "slice": {
       "property": {
         "custom": {
-          "text": "W"
+          "text": "Incorrect login credentials. Please try again. "
         }
       }
     },
@@ -7015,7 +7030,11 @@
     "id": "e97582e2-6b99-4c96-826c-3503db491233",
     "type": "PATCH$$@atrilabs/app-design-forest/lib/componentTree.js",
     "slice": {
-      "alias": "Flex354"
+      "alias": "errorwrapper",
+      "parent": {
+        "id": "02c3ef58-2f2e-4fea-a6b5-27eae2d9a155",
+        "index": 3
+      }
     }
   },
   {
@@ -7043,7 +7062,9 @@
     "slice": {
       "property": {
         "styles": {
-          "height": "2px"
+          "height": "4rem",
+          "alignItems": "center",
+          "paddingTop": ""
         }
       }
     },
@@ -7819,5 +7840,38 @@
       }
     },
     "id": "2300eaea-a8c3-4a15-9031-389610d1f993"
+  },
+  {
+    "type": "PATCH$$@atrilabs/app-design-forest/lib/customPropsTree.js",
+    "slice": {
+      "property": {
+        "custom": {
+          "placeholder": ""
+        }
+      }
+    },
+    "id": "e4584e09-875c-4463-b07a-743a22351143"
+  },
+  {
+    "type": "PATCH$$@atrilabs/app-design-forest/lib/customPropsTree.js",
+    "slice": {
+      "property": {
+        "custom": {
+          "isPasswordField": true
+        }
+      }
+    },
+    "id": "e4584e09-875c-4463-b07a-743a22351143"
+  },
+  {
+    "type": "PATCH$$@atrilabs/app-design-forest/lib/customPropsTree.js",
+    "slice": {
+      "property": {
+        "custom": {
+          "placeholder": ""
+        }
+      }
+    },
+    "id": "9d2457ff-1a63-44f7-974d-cace72cdcbad"
   }
 ]

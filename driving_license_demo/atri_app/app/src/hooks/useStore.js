@@ -37646,7 +37646,7 @@ const desktopModeProps = {
       },
       "custom": {
         "value": "",
-        "placeholder": "john_doe",
+        "placeholder": "",
         "isPasswordField": false
       }
     },
@@ -37758,8 +37758,8 @@ const desktopModeProps = {
       },
       "custom": {
         "value": "",
-        "placeholder": "*********",
-        "isPasswordField": false
+        "placeholder": "",
+        "isPasswordField": true
       }
     },
     "TextBox183": {

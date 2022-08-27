@@ -173,5 +173,18 @@
             "exp": "N/A"
         },
         "status": "correct"
+    },
+    "example_driving_license37.png": {
+        "name": "example_driving_license37.png",
+        "time": "27/08/22 16:24:52",
+        "input_file": "example_driving_license37.png",
+        "output": {
+            "name": "1,2DOE IAN",
+            "lno": "license number0.85 AnN0 4R123456 ata -",
+            "dob": "09-16-1990",
+            "address": "Lawc< C<   ANY HERE ST ANVTOIIN OH 12345",
+            "exp": "N/A"
+        },
+        "status": "exclaim"
     }
 }

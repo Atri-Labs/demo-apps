@@ -33,9 +33,9 @@ def handle_event(at: Atri, req: Request, res: Response):
         if username in users:
             if users[username]["passwd"] == password:
                 res.set_cookie("username", username)
-                res.status_code = 303
-                res.headers.append("Location", "http://localhost:4005")
+                res.headers.append("location", "http://localhost:4005")
             else:
                 at.errorwrapper.styles.display = "flex"
+            
         else:
             at.errorwrapper.styles.display = "flex"          
