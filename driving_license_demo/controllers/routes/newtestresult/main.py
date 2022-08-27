@@ -1,11 +1,11 @@
 from datetime import datetime
-from utils.utils import TESTS_IMAGES_DIR, TESTS_OUTPUT_DIR
+from mutils.utils import TESTS_IMAGES_DIR, TESTS_OUTPUT_DIR
 from .atri import Atri
 from fastapi import Request, Response
 from atri_utils import *
 from urllib.parse import parse_qs
 from pathlib import Path
-from utils.utils import status_src, date_to_str
+from mutils.utils import status_src, date_to_str
 import json
 
 def init_state(at: Atri):
@@ -54,7 +54,6 @@ def handle_event(at: Atri, req: Request, res: Response):
         at.comment_btn_wrapper.styles.display = "none"
     
     if at.save_test.onClick:
-        print("save_test clicked")
         # TODO: save test result in comments.json
         testname = at.testname.custom.text
         address = at.address.custom.text

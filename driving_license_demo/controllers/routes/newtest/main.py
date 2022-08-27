@@ -1,8 +1,10 @@
-from utils.utils import TESTS_IMAGES_DIR, TESTS_OUTPUT_DIR
+from mutils.utils import TESTS_IMAGES_DIR, TESTS_OUTPUT_DIR
 from .atri import Atri
 from fastapi import Request, Response
 from atri_utils import *
 from pathlib import Path
+from cv_transformations.data_field_detection.data_field_detection import run_driving_detection
+import re
 
 Path(TESTS_IMAGES_DIR).mkdir(parents=True, exist_ok=True)
 Path(TESTS_OUTPUT_DIR).mkdir(parents=True, exist_ok=True)
@@ -67,27 +69,44 @@ def handle_event(at: Atri, req: Request, res: Response):
     if at.runtest.onClick:
         # TODO: run test
         final_filename = at.filename.custom.text
-        final_input_path = Path(TESTS_IMAGES_DIR) / final_filename
-        final_output_path = Path(TESTS_OUTPUT_DIR) / final_filename
+        final_input_path = Path.joinpath(Path.cwd(), Path(TESTS_IMAGES_DIR) / final_filename)
+        final_output_path = Path.joinpath(Path.cwd(), Path(TESTS_OUTPUT_DIR) / final_filename)
         if Path.exists(final_input_path):
-            with open(str(final_output_path), "wb") as f:
-                # TODO: get data from test result
-                with open(str(final_input_path), "rb") as i:
-                    f.write(i.read())
-                # write output fields
-                name = "Jane Doe"
-                lno = "123456"
-                dob = "11/11/11"
-                exp = "11/11/11"
-                address = "NYC"
-                # TODO: navigate after output is written
-                res.headers.append("location",
-                "/newtestresult?testname=" + final_filename +
-                "&name=" + name +
-                "&lno=" + lno +
-                "&dob=" + dob +
-                "&exp=" + exp +
-                "&address=" + address
-                )
+            # TODO: get data from test result
+            fin = run_driving_detection(str(final_input_path))
+            # write output fields
+            if "name" in fin:
+                name = re.sub(r'[^\x00-\x7F]+',' ', fin["name"])
+            else:
+                name = "N/A"
+
+            if "license_number" in fin:
+                lno = re.sub(r'[^\x00-\x7F]+',' ', fin["license_number"])
+            else:
+                lno = "N/A"
+
+            if "date_of_birth" in fin:
+                dob = re.sub(r'[^\x00-\x7F]+',' ', fin["date_of_birth"])
+            else:
+                dob = "N/A"
+
+            if "expiry_date" in fin:
+                exp = re.sub(r'[^\x00-\x7F]+',' ', fin["expiry_date"])
+            else:
+                exp = "N/A"
+
+            if "address" in fin:   
+                address = re.sub(r'[^\x00-\x7F]+',' ', fin["address"])
+            else:
+                address = "N/A"
+
+            res.headers.append("location",
+            "/newtestresult?testname=" + final_filename +
+            "&name=" + name +
+            "&lno=" + lno +
+            "&dob=" + dob +
+            "&exp=" + exp +
+            "&address=" + address
+            )
 
 

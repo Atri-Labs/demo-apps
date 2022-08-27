@@ -5,7 +5,7 @@ from fastapi import Request, Response
 from atri_utils import *
 from urllib.parse import parse_qs
 from pathlib import Path
-from utils.utils import TESTS_OUTPUT_DIR, date_to_str, sort_comments_by_date, status_src
+from mutils.utils import TESTS_OUTPUT_DIR, date_to_str, sort_comments_by_date, status_src
 import json
 
 def set_status(testname, status):
