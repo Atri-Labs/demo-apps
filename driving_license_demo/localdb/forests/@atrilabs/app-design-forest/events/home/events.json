@@ -1524,7 +1524,8 @@
         "styles": {
           "fontFamily": "IBM Plex Sans",
           "fontSize": "16px",
-          "fontWeight": 400
+          "fontWeight": 400,
+          "cursor": "pointer"
         }
       }
     },
@@ -23663,5 +23664,38 @@
       }
     },
     "id": "f9af4a42-77a0-43bc-8385-ce2b6912bf46"
+  },
+  {
+    "type": "PATCH$$@atrilabs/app-design-forest/lib/cssTree.js",
+    "slice": {
+      "property": {
+        "styles": {
+          "boxSizing": "border-box"
+        }
+      }
+    },
+    "id": "da0f2c9f-5933-4a82-a012-d4c53bc2f8cc"
+  },
+  {
+    "type": "PATCH$$@atrilabs/app-design-forest/lib/cssTree.js",
+    "slice": {
+      "property": {
+        "styles": {
+          "boxSizing": "border-box"
+        }
+      }
+    },
+    "id": "ad0475e6-f86d-453c-8e33-93b8246312f4"
+  },
+  {
+    "type": "PATCH$$@atrilabs/app-design-forest/lib/cssTree.js",
+    "slice": {
+      "property": {
+        "styles": {
+          "boxSizing": "border-box"
+        }
+      }
+    },
+    "id": "c245cce7-d62d-410e-b52d-96d152712195"
   }
 ]
