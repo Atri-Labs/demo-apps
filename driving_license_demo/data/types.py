@@ -25,6 +25,7 @@ TestRegistry = Dict[str, Test]
 class Comment(TypedDict):
     time: str
     text: str
+    username: str
 
 # map of test name & comments
 CommentRegistry = Dict[str, List[Comment]]

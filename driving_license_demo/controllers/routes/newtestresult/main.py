@@ -75,7 +75,12 @@ def handle_event(at: Atri, req: Request, res: Response):
 
         with open("data/comments.json") as f:
             comments = json.load(f)
-            comments[testname] = [{"time": date_to_str(now), "comment": comment}] if len(comment) > 0 else []
+            username = req.cookies.get("username")
+            comments[testname] = [{
+                "time": date_to_str(now),
+                "comment": comment,
+                "username": username
+                }] if len(comment) > 0 else []
         
         with open("data/comments.json", "w") as f:
             json.dump(comments, f, indent=4)

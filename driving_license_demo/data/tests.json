@@ -147,5 +147,18 @@
             "exp": "11/11/11"
         },
         "status": "correct"
+    },
+    "example_driving_license26.png": {
+        "name": "example_driving_license26.png",
+        "time": "27/08/22 06:53:04",
+        "input_file": "example_driving_license26.png",
+        "output": {
+            "name": "Jane Doe",
+            "lno": "123456",
+            "dob": "11/11/11",
+            "address": "NYC",
+            "exp": "11/11/11"
+        },
+        "status": "correct"
     }
 }
