@@ -2902,3 +2902,19 @@ export function usecomment_btn_wrapperCb() {
 }), [])
 	return { onClick }
 }
+export function useImage153Cb() {
+	const onClick = useCallback(callbackFactory("Image153", "newtestresult", "/newtestresult", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
+}

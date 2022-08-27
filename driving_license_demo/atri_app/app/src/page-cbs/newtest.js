@@ -393,3 +393,19 @@ export function useFlex370Cb() {
 }), [])
 	return { onClick }
 }
+export function useImage152Cb() {
+	const onClick = useCallback(callbackFactory("Image152", "newtest", "/newtest", "onClick", 
+			{
+  "handlers": [
+    {
+      "sendEventData": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "do_nothing"
+    }
+  ]
+}), [])
+	return { onClick }
+}

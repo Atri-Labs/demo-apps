@@ -5,6 +5,7 @@ from atri_utils import *
 from pathlib import Path
 from cv_transformations.data_field_detection.data_field_detection import run_driving_detection
 import re
+import urllib.parse
 
 Path(TESTS_IMAGES_DIR).mkdir(parents=True, exist_ok=True)
 Path(TESTS_OUTPUT_DIR).mkdir(parents=True, exist_ok=True)
@@ -99,14 +100,15 @@ def handle_event(at: Atri, req: Request, res: Response):
                 address = re.sub(r'[^\x00-\x7F]+',' ', fin["address"])
             else:
                 address = "N/A"
-
-            res.headers.append("location",
-            "/newtestresult?testname=" + final_filename +
-            "&name=" + name +
-            "&lno=" + lno +
-            "&dob=" + dob +
-            "&exp=" + exp +
-            "&address=" + address
-            )
+            query = {
+                "testname": final_filename,
+                "name": name,
+                "lno": lno,
+                "dob": dob,
+                "exp": exp,
+                "address": address
+                }
+            url = "/newtestresult?" + urllib.parse.urlencode(query)
+            res.headers.append("location", url)
 
 

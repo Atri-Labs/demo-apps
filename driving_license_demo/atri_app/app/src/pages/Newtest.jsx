@@ -9,7 +9,7 @@ import { TextBox as TextBox2 } from "@atrilabs/react-component-manifests/src/man
 import { Image as Image2 } from "@atrilabs/react-component-manifests/src/manifests/Image/Image.tsx";
 import { Flex as Flex2 } from "@atrilabs/react-component-manifests/src/manifests/Flex/Flex.tsx";
 import { Upload } from "@atrilabs/react-component-manifests/src/manifests/Upload/Upload.tsx";
-import { useButton17Cb, useTextBox107Cb, useTextBox108Cb, useImage112Cb, useImage113Cb, useTextBox109Cb, useButton18Cb, useFlex231Cb, useFlex232Cb, useFlex233Cb, useFlex234Cb, useFlex235Cb, useFlex236Cb, useTextBox111Cb, useTextBox112Cb, useUpload1Cb, useFlex237Cb, useImage114Cb, useimage_placeholderCb, useruntestCb, useTextBox113Cb, useImage115Cb, usepreviewCb, usepreview_wrapperCb, usefilenameCb, useFlex370Cb } from "../page-cbs/newtest";
+import { useButton17Cb, useTextBox107Cb, useTextBox108Cb, useImage112Cb, useImage113Cb, useTextBox109Cb, useButton18Cb, useFlex231Cb, useFlex232Cb, useFlex233Cb, useFlex234Cb, useFlex235Cb, useFlex236Cb, useTextBox111Cb, useTextBox112Cb, useUpload1Cb, useFlex237Cb, useImage114Cb, useimage_placeholderCb, useruntestCb, useTextBox113Cb, useImage115Cb, usepreviewCb, usepreview_wrapperCb, usefilenameCb, useFlex370Cb, useImage152Cb } from "../page-cbs/newtest";
 
 export default function Newtest() {
   const navigate = useNavigate();
@@ -119,6 +119,9 @@ const filenameCb = usefilenameCb()
 const Flex370Props = useStore((state)=>state["newtest"]["Flex370"]);
 const Flex370IoProps = useIoStore((state)=>state["newtest"]["Flex370"]);
 const Flex370Cb = useFlex370Cb()
+const Image152Props = useStore((state)=>state["newtest"]["Image152"]);
+const Image152IoProps = useIoStore((state)=>state["newtest"]["Image152"]);
+const Image152Cb = useImage152Cb()
 
   return (<>
   <Flex2 {...Flex235Props} {...Flex235Cb} {...Flex235IoProps}>
@@ -131,6 +134,7 @@ const Flex370Cb = useFlex370Cb()
 </Flex2>
 <Flex2 {...Flex233Props} {...Flex233Cb} {...Flex233IoProps}>
 <Button2 {...Button18Props} {...Button18Cb} {...Button18IoProps}/>
+<Image2 {...Image152Props} {...Image152Cb} {...Image152IoProps}/>
 </Flex2>
 </Flex2>
 </Flex2>
