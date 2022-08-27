@@ -121,5 +121,31 @@
             "exp": "11/11/11"
         },
         "status": "exclaim"
+    },
+    "example_driving_license25.png": {
+        "name": "example_driving_license25.png",
+        "time": "27/08/22 06:29:48",
+        "input_file": "example_driving_license25.png",
+        "output": {
+            "name": "Jane Doe",
+            "lno": "123456",
+            "dob": "11/11/11",
+            "address": "NYC",
+            "exp": "11/11/11"
+        },
+        "status": "incorrect"
+    },
+    "login_wallpaper.png": {
+        "name": "login_wallpaper.png",
+        "time": "27/08/22 06:30:17",
+        "input_file": "login_wallpaper.png",
+        "output": {
+            "name": "Jane Doe",
+            "lno": "123456",
+            "dob": "11/11/11",
+            "address": "NYC",
+            "exp": "11/11/11"
+        },
+        "status": "correct"
     }
 }

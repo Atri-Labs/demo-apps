@@ -1,5 +1,5 @@
 from datetime import datetime
-from utils.utils import TESTS_IMAGES_DIR
+from utils.utils import TESTS_IMAGES_DIR, TESTS_OUTPUT_DIR
 from .atri import Atri
 from fastapi import Request, Response
 from atri_utils import *
@@ -23,7 +23,7 @@ def handle_page_request(at: Atri, req: Request, res: Response, query: str):
     testname = parse_qs(query[1:])["testname"][0]
     
     # TODO: send output image instead of input image
-    at.output_img.custom.src = create_media_response(Path.cwd() / TESTS_IMAGES_DIR / testname)
+    at.output_img.custom.src = create_media_response(Path.cwd() / TESTS_OUTPUT_DIR / testname)
     at.testname.custom.text = testname
 
     address = parse_qs(query[1:])["address"][0]
