@@ -99,22 +99,6 @@ export function useTextBox109Cb() {
 }), [])
 	return { onClick }
 }
-export function useTextBox110Cb() {
-	const onClick = useCallback(callbackFactory("TextBox110", "newtest", "/newtest", "onClick", 
-			{
-  "handlers": [
-    {
-      "sendEventData": true
-    }
-  ],
-  "actions": [
-    {
-      "type": "do_nothing"
-    }
-  ]
-}), [])
-	return { onClick }
-}
 export function useButton18Cb() {
 	const onClick = useCallback(callbackFactory("Button18", "newtest", "/newtest", "onClick", 
 			{

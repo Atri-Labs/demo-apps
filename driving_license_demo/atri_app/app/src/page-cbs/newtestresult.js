@@ -1368,22 +1368,6 @@ export function useTextBox149Cb() {
 }), [])
 	return { onClick }
 }
-export function useTextBox150Cb() {
-	const onClick = useCallback(callbackFactory("TextBox150", "newtestresult", "/newtestresult", "onClick", 
-			{
-  "handlers": [
-    {
-      "sendEventData": true
-    }
-  ],
-  "actions": [
-    {
-      "type": "do_nothing"
-    }
-  ]
-}), [])
-	return { onClick }
-}
 export function useButton35Cb() {
 	const onClick = useCallback(callbackFactory("Button35", "newtestresult", "/newtestresult", "onClick", 
 			{

@@ -16588,7 +16588,8 @@
       "property": {
         "styles": {
           "backgroundColor": "#0F766E",
-          "marginTop": ""
+          "marginTop": "",
+          "cursor": "pointer"
         }
       }
     },
@@ -21754,6 +21755,12 @@
           "onClick": [
             {
               "sendEventData": true
+            },
+            {
+              "navigate": {
+                "type": "internal",
+                "url": "/"
+              }
             }
           ]
         }
@@ -21766,7 +21773,8 @@
     "slice": {
       "property": {
         "styles": {
-          "color": "#"
+          "color": "",
+          "cursor": "pointer"
         }
       }
     },
@@ -21854,5 +21862,64 @@
       }
     },
     "id": "e0537628-9bcc-4943-9c42-342f4d0580bb"
+  },
+  {
+    "type": "DELETE$$@atrilabs/app-design-forest/lib/componentTree.js",
+    "id": "6853049c-0d6c-43ed-abfd-36aa2b0b181f"
+  },
+  {
+    "type": "PATCH$$@atrilabs/app-design-forest/lib/customPropsTree.js",
+    "slice": {
+      "property": {
+        "custom": {
+          "text": "T"
+        }
+      }
+    },
+    "id": "e68a670c-4b52-4e75-9367-74c64de73b71"
+  },
+  {
+    "type": "PATCH$$@atrilabs/app-design-forest/lib/customPropsTree.js",
+    "slice": {
+      "property": {
+        "custom": {
+          "text": "Te"
+        }
+      }
+    },
+    "id": "e68a670c-4b52-4e75-9367-74c64de73b71"
+  },
+  {
+    "type": "PATCH$$@atrilabs/app-design-forest/lib/customPropsTree.js",
+    "slice": {
+      "property": {
+        "custom": {
+          "text": "Tes"
+        }
+      }
+    },
+    "id": "e68a670c-4b52-4e75-9367-74c64de73b71"
+  },
+  {
+    "type": "PATCH$$@atrilabs/app-design-forest/lib/customPropsTree.js",
+    "slice": {
+      "property": {
+        "custom": {
+          "text": "Test"
+        }
+      }
+    },
+    "id": "e68a670c-4b52-4e75-9367-74c64de73b71"
+  },
+  {
+    "type": "PATCH$$@atrilabs/app-design-forest/lib/customPropsTree.js",
+    "slice": {
+      "property": {
+        "custom": {
+          "text": "Tests"
+        }
+      }
+    },
+    "id": "e68a670c-4b52-4e75-9367-74c64de73b71"
   }
 ]

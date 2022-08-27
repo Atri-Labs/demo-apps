@@ -5855,7 +5855,8 @@
     "slice": {
       "property": {
         "styles": {
-          "cursor": "pointer"
+          "cursor": "pointer",
+          "color": ""
         }
       }
     },
@@ -5893,5 +5894,64 @@
       }
     },
     "id": "2fa7f7d3-694c-47ed-b6dc-e4dc396ae1fb"
+  },
+  {
+    "type": "DELETE$$@atrilabs/app-design-forest/lib/componentTree.js",
+    "id": "1d0d88e2-9d01-41ce-926c-a0f8ee4c58fa"
+  },
+  {
+    "type": "PATCH$$@atrilabs/app-design-forest/lib/customPropsTree.js",
+    "slice": {
+      "property": {
+        "custom": {
+          "text": "T"
+        }
+      }
+    },
+    "id": "de238c2a-65d0-4c95-a5f4-83d25f742d4c"
+  },
+  {
+    "type": "PATCH$$@atrilabs/app-design-forest/lib/customPropsTree.js",
+    "slice": {
+      "property": {
+        "custom": {
+          "text": "Te"
+        }
+      }
+    },
+    "id": "de238c2a-65d0-4c95-a5f4-83d25f742d4c"
+  },
+  {
+    "type": "PATCH$$@atrilabs/app-design-forest/lib/customPropsTree.js",
+    "slice": {
+      "property": {
+        "custom": {
+          "text": "Tes"
+        }
+      }
+    },
+    "id": "de238c2a-65d0-4c95-a5f4-83d25f742d4c"
+  },
+  {
+    "type": "PATCH$$@atrilabs/app-design-forest/lib/customPropsTree.js",
+    "slice": {
+      "property": {
+        "custom": {
+          "text": "Test"
+        }
+      }
+    },
+    "id": "de238c2a-65d0-4c95-a5f4-83d25f742d4c"
+  },
+  {
+    "type": "PATCH$$@atrilabs/app-design-forest/lib/customPropsTree.js",
+    "slice": {
+      "property": {
+        "custom": {
+          "text": "Tests"
+        }
+      }
+    },
+    "id": "de238c2a-65d0-4c95-a5f4-83d25f742d4c"
   }
 ]

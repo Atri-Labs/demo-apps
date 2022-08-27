@@ -17,58 +17,6 @@ export function updateStoreStateFromController(pageName, newState) {
 const desktopModeProps = {
   ...{
   "Home": {
-    "TextBox1": {
-      "onClick": false,
-      "styles": {
-        "alignSelf": "",
-        "flexGrow": "",
-        "flexShrink": "",
-        "order": "",
-        "marginTop": "",
-        "marginBottom": "",
-        "marginRight": "",
-        "marginLeft": "",
-        "paddingTop": "",
-        "paddingBottom": "",
-        "paddingRight": "",
-        "paddingLeft": "",
-        "width": "",
-        "height": "",
-        "minWidth": "",
-        "minHeight": "",
-        "maxWidth": "",
-        "maxHeight": "",
-        "overflow": "",
-        "fontFamily": "IBM Plex Sans",
-        "fontWeight": 400,
-        "fontSize": "16px",
-        "textAlign": "left",
-        "color": "",
-        "opacity": "",
-        "borderRadius": "",
-        "borderWidth": "",
-        "borderStyle": "",
-        "borderColor": "",
-        "backgroundImage": "",
-        "backgroundColor": "",
-        "position": "static",
-        "float": "none",
-        "clear": "none",
-        "top": "",
-        "left": "",
-        "bottom": "",
-        "right": "",
-        "zIndex": "",
-        "outlineStyle": "",
-        "outlineColor": "",
-        "outlineOffset": "",
-        "outlineWidth": "",
-        "cursor": "pointer"
-      },
-      "custom": {
-        "text": "Docs"
-      }
-    },
     "TextBox2": {
       "onClick": false,
       "styles": {
@@ -92,7 +40,7 @@ const desktopModeProps = {
         "maxHeight": "",
         "overflow": "",
         "fontFamily": "IBM Plex Sans",
-        "fontWeight": 400,
+        "fontWeight": 500,
         "fontSize": "16px",
         "textAlign": "left",
         "color": "#1E40AF",
@@ -118,7 +66,7 @@ const desktopModeProps = {
         "cursor": "pointer"
       },
       "custom": {
-        "text": "Gallery"
+        "text": "Tests"
       }
     },
     "Flex1": {
@@ -17025,59 +16973,7 @@ const desktopModeProps = {
         "cursor": "pointer"
       },
       "custom": {
-        "text": "Gallery"
-      }
-    },
-    "TextBox75": {
-      "onClick": false,
-      "styles": {
-        "alignSelf": "",
-        "flexGrow": "",
-        "flexShrink": "",
-        "order": "",
-        "marginTop": "",
-        "marginBottom": "",
-        "marginRight": "",
-        "marginLeft": "",
-        "paddingTop": "",
-        "paddingBottom": "",
-        "paddingRight": "",
-        "paddingLeft": "",
-        "width": "",
-        "height": "",
-        "minWidth": "",
-        "minHeight": "",
-        "maxWidth": "",
-        "maxHeight": "",
-        "overflow": "",
-        "fontFamily": "IBM Plex Sans",
-        "fontWeight": 400,
-        "fontSize": "16px",
-        "textAlign": "left",
-        "color": "",
-        "opacity": "",
-        "borderRadius": "",
-        "borderWidth": "",
-        "borderStyle": "",
-        "borderColor": "",
-        "backgroundImage": "",
-        "backgroundColor": "",
-        "position": "static",
-        "float": "none",
-        "clear": "none",
-        "top": "",
-        "left": "",
-        "bottom": "",
-        "right": "",
-        "zIndex": "",
-        "outlineStyle": "",
-        "outlineColor": "",
-        "outlineOffset": "",
-        "outlineWidth": "",
-        "cursor": "pointer"
-      },
-      "custom": {
-        "text": "Docs"
+        "text": "Tests"
       }
     },
     "Flex181": {
@@ -25116,59 +25012,7 @@ const desktopModeProps = {
         "cursor": "pointer"
       },
       "custom": {
-        "text": "Gallery"
-      }
-    },
-    "TextBox110": {
-      "onClick": false,
-      "styles": {
-        "alignSelf": "",
-        "flexGrow": "",
-        "flexShrink": "",
-        "order": "",
-        "marginTop": "",
-        "marginBottom": "",
-        "marginRight": "",
-        "marginLeft": "",
-        "paddingTop": "",
-        "paddingBottom": "",
-        "paddingRight": "",
-        "paddingLeft": "",
-        "width": "",
-        "height": "",
-        "minWidth": "",
-        "minHeight": "",
-        "maxWidth": "",
-        "maxHeight": "",
-        "overflow": "",
-        "fontFamily": "IBM Plex Sans",
-        "fontWeight": 400,
-        "fontSize": "16px",
-        "textAlign": "left",
-        "color": "",
-        "opacity": "",
-        "borderRadius": "",
-        "borderWidth": "",
-        "borderStyle": "",
-        "borderColor": "",
-        "backgroundImage": "",
-        "backgroundColor": "",
-        "position": "static",
-        "float": "none",
-        "clear": "none",
-        "top": "",
-        "left": "",
-        "bottom": "",
-        "right": "",
-        "zIndex": "",
-        "outlineStyle": "",
-        "outlineColor": "",
-        "outlineOffset": "",
-        "outlineWidth": "",
-        "cursor": "pointer"
-      },
-      "custom": {
-        "text": "Docs"
+        "text": "Tests"
       }
     },
     "Button18": {
@@ -31230,59 +31074,7 @@ const desktopModeProps = {
         "cursor": "pointer"
       },
       "custom": {
-        "text": "Gallery"
-      }
-    },
-    "TextBox150": {
-      "onClick": false,
-      "styles": {
-        "alignSelf": "",
-        "flexGrow": "",
-        "flexShrink": "",
-        "order": "",
-        "marginTop": "",
-        "marginBottom": "",
-        "marginRight": "",
-        "marginLeft": "",
-        "paddingTop": "",
-        "paddingBottom": "",
-        "paddingRight": "",
-        "paddingLeft": "",
-        "width": "",
-        "height": "",
-        "minWidth": "",
-        "minHeight": "",
-        "maxWidth": "",
-        "maxHeight": "",
-        "overflow": "",
-        "fontFamily": "IBM Plex Sans",
-        "fontWeight": 400,
-        "fontSize": "16px",
-        "textAlign": "left",
-        "color": "",
-        "opacity": "",
-        "borderRadius": "",
-        "borderWidth": "",
-        "borderStyle": "",
-        "borderColor": "",
-        "backgroundImage": "",
-        "backgroundColor": "",
-        "position": "static",
-        "float": "none",
-        "clear": "none",
-        "top": "",
-        "left": "",
-        "bottom": "",
-        "right": "",
-        "zIndex": "",
-        "outlineStyle": "",
-        "outlineColor": "",
-        "outlineOffset": "",
-        "outlineWidth": "",
-        "cursor": "pointer"
-      },
-      "custom": {
-        "text": "Docs"
+        "text": "Tests"
       }
     },
     "Button35": {

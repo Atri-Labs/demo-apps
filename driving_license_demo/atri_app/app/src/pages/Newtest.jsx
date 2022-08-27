@@ -9,7 +9,7 @@ import { TextBox as TextBox2 } from "@atrilabs/react-component-manifests/src/man
 import { Image as Image2 } from "@atrilabs/react-component-manifests/src/manifests/Image/Image.tsx";
 import { Flex as Flex2 } from "@atrilabs/react-component-manifests/src/manifests/Flex/Flex.tsx";
 import { Upload } from "@atrilabs/react-component-manifests/src/manifests/Upload/Upload.tsx";
-import { useButton17Cb, useTextBox107Cb, useTextBox108Cb, useImage112Cb, useImage113Cb, useTextBox109Cb, useTextBox110Cb, useButton18Cb, useFlex231Cb, useFlex232Cb, useFlex233Cb, useFlex234Cb, useFlex235Cb, useFlex236Cb, useTextBox111Cb, useTextBox112Cb, useUpload1Cb, useFlex237Cb, useImage114Cb, useimage_placeholderCb, useruntestCb, useTextBox113Cb, useImage115Cb, usepreviewCb, usepreview_wrapperCb, usefilenameCb, useFlex370Cb } from "../page-cbs/newtest";
+import { useButton17Cb, useTextBox107Cb, useTextBox108Cb, useImage112Cb, useImage113Cb, useTextBox109Cb, useButton18Cb, useFlex231Cb, useFlex232Cb, useFlex233Cb, useFlex234Cb, useFlex235Cb, useFlex236Cb, useTextBox111Cb, useTextBox112Cb, useUpload1Cb, useFlex237Cb, useImage114Cb, useimage_placeholderCb, useruntestCb, useTextBox113Cb, useImage115Cb, usepreviewCb, usepreview_wrapperCb, usefilenameCb, useFlex370Cb } from "../page-cbs/newtest";
 
 export default function Newtest() {
   const navigate = useNavigate();
@@ -59,9 +59,6 @@ const Image113Cb = useImage113Cb()
 const TextBox109Props = useStore((state)=>state["newtest"]["TextBox109"]);
 const TextBox109IoProps = useIoStore((state)=>state["newtest"]["TextBox109"]);
 const TextBox109Cb = useTextBox109Cb()
-const TextBox110Props = useStore((state)=>state["newtest"]["TextBox110"]);
-const TextBox110IoProps = useIoStore((state)=>state["newtest"]["TextBox110"]);
-const TextBox110Cb = useTextBox110Cb()
 const Button18Props = useStore((state)=>state["newtest"]["Button18"]);
 const Button18IoProps = useIoStore((state)=>state["newtest"]["Button18"]);
 const Button18Cb = useButton18Cb()
@@ -131,7 +128,6 @@ const Flex370Cb = useFlex370Cb()
 </Flex2>
 <Flex2 {...Flex232Props} {...Flex232Cb} {...Flex232IoProps}>
 <TextBox2 {...TextBox109Props} {...TextBox109Cb} {...TextBox109IoProps}/>
-<TextBox2 {...TextBox110Props} {...TextBox110Cb} {...TextBox110IoProps}/>
 </Flex2>
 <Flex2 {...Flex233Props} {...Flex233Cb} {...Flex233IoProps}>
 <Button2 {...Button18Props} {...Button18Cb} {...Button18IoProps}/>
